@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://db.onlinewebfonts.com/c/2a691bed0d21959bed3b21381e52f07d?family=Santral-Book" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,100,0,0" />
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Tailwind CSS CDN 추가 -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./build.css">
+
+  <link rel="stylesheet" href="./src/style.css">
+  
+  <title>티파니앤코 공식 온라인 스토어</title>
+</head>
+<body>
+  <div class="wrap">
+    <header id="navbar" class="fixed top-0 left-0 w-full transition-all duration-300">
+      <div class="container mx-auto flex justify-between items-center p-4 lg:p-8">
+        <!-- 로고 및 메뉴 항목 -->
+        <div class="text-center w-full">
+          <h1 id="logo" class="w-full font-bold transition-all duration-300 font-change">Tiffany & Co.</h1>
+          <nav id="menu" class="hidden lg:flex space-x-4 mt-2 text-sm justify-center">
+            <a href="#" class="hover:underline text-[14px] no-underline text-black font-light">하이주얼리</a>
+            <a href="#" class="hover:underline text-[14px] no-underline text-black font-light">주얼리</a>
+            <a href="#" class="hover:underline text-[14px] no-underline text-black font-light">기프트</a>
+            <a href="#" class="hover:underline text-[14px] no-underline text-black font-light">커플 & 웨딩 링</a>
+            <a href="#" class="hover:underline text-[14px] no-underline text-black font-light">워치</a>
+            <a href="#" class="hover:underline text-[14px] no-underline text-black font-light">홈 & 액세서리</a>
+            <a href="#" class="hover:underline text-[14px] no-underline text-black font-light">World of Tiffany</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- 동영상 배너 -->
+    <!-- <div class="w-full h-[1000px] relative z-10 tf-image">
+      <div class="tf-image-and-text fixedBackground">
+        <div class="contentCustomVideoPlayer js-video-player">
+        <div class="videoControls">
+        <div class="muteunmute muted">
+        <div class="mutebtn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M2 16V8.99996H5.89286L12 4V20L5.89286 16H2ZM18.5909 12.5L16.0454 9.95455L16.9546 9.04541L19.5 11.5908L22.0454 9.04541L22.9546 9.95455L20.4091 12.5L22.9546 15.0454L22.0454 15.9546L19.5 13.4091L16.9546 15.9546L16.0454 15.0454L18.5909 12.5Z" fill="white"></path>
+        </svg>
+        </div>
+        <div class="unmutebtn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M8 15V8.99996H10.8929L16 5V19L10.8929 15H8Z" fill="white"></path>
+        </svg>
+        </div>
+        </div>
+        <div class="playpause playing" style="display: flex;">
+        <div class="playbtn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17 12L8 18V6L17 12Z" fill="white"></path>
+        </svg>
+        </div>
+        <div class="pausebtn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.25 5V19H8.75V5H7.25ZM15.25 5L15.25 19H16.75L16.75 5H15.25Z" fill="white"></path>
+        </svg>
+        </div>
+        </div>
+        </div>
+        <video autoplay="" playsinline="" loop="" muted="" data-smallsrc="https://media.tiffany.com/is/content/tco/2024_ICONS_BC_HP_VIDEO1_Mobile_SFCC-1" data-mediumsrc="https://media.tiffany.com/is/content/tco/2024_ICONS_BC_HP_VIDEO1_Mobile_SFCC-1" data-largesrc="https://media.tiffany.com/is/content/tco/2024_ICONS_BC_HP_VIDEO1_Desktop_SFCC-1" class="ITC-image image-fluid tf-image-component VPY_from_APL1" data-postermobile="https://media.tiffany.com/is/image/tco/2024_ICONS_BC_HP_VIDEO1_Mobile_SFCC" data-posterdesktop="https://media.tiffany.com/is/image/tco/2024_ICONS_BC_HP_VIDEO1_Desktop_SFCC" src="https://media.tiffany.com/is/content/tco/2024_ICONS_BC_HP_VIDEO1_Desktop_SFCC-1" poster="https://media.tiffany.com/is/image/tco/2024_ICONS_BC_HP_VIDEO1_Desktop_SFCC" data-firstpart="true" data-secondpart="true" data-thirdpart="true" data-fourthpart="true" style="">
+        </video>
+        </div>
+        <div class="tf-image-meta">
+        </div>
+      </div>
+    </div> -->
+    <div class="w-full mt-[200px] relative">
+      <figure class="relative">
+        <img src="./public/main-benner.png" alt="">
+      </figure>
+      <div class="xl:absolute relative top-0 left-0 bottom-0 right-0 mx-auto w-full flex items-center  xl:justify-end xl:pr-[190px] p-0  pr-0 justify-center mt-[63px]">
+        <div class="flex flex-col items-center">
+          <h2 class="font-serif text-[32px] font-smbold tracking-[-1.28px] leading-[40px] mb-6 text-center break-keep font-bold">사랑의 언어</h2>
+          <p class="block mb-[27px] text-[14px]">이번 발렌타인데이에 티파니 기프트로 사랑을 표현해보세요.</p>
+          <div class="group bg-black text-white w-[200px] py-[18px] block text-center flex flex-col overflow-hidden">
+            <div class="absolute inset-0 bg-[#81d8d0] transition-transform duration-[500ms] ease-in-out translate-y-full group-hover:translate-y-0"></div>
+            <a href="#" class="relative text-[12px] z-10 group-hover:text-black transition-colors duration-500 ease-in-out">
+              발렌타이데이 기프트 보기
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 컨탠츠 stert -->
+    <div class="w-full relative z-20 bg-[#fff] xl:p-[1.5rem] bg-white-contain">
+      <section class="section-1 bg-[#fff]">
+        <h3 class="xl:text-5xl text-2xl xl:mb-[32px] mb-[5px] leading-[60px] spacing-[-2px] text-center mt-10">
+          With Love, Since 1837
+        </h3>
+        <p class="text-center xl:max-w-[684px] w-full mx-auto leading-[24px] xl:text-sm text-[12px]" style="color: black;">
+          관능미와 지성, 강력한 힘과 우아함이 완벽한 균형을 이루는 엘사 퍼레티™ 본 커프는 사랑의 힘이 실어주는 자신감을 표현합니다.
+        </p>
+        <div class="tf-cta-wrapper text-center block mt-[48px]">
+          <a class="btn text-white bg-black border-0 xl:text-xs text-[10px] font-normal spacing-[0.88px] py-[14px] px-[20px] relative text-center uppercase" href="/index.html">
+            <span>View More</span>
+          </a>
+        </div>
+      </section>
+      <div class="productSlider">
+        <div class="container">
+          <div class="slider-wrapper">
+            <!-- 슬라이드 이미지 컨테이너 -->
+            <div class="slider" id="slider">
+              <div class="slide-item">
+                <img src="./public/proItem1.webp" alt="Item 1">
+                <p>엘사 퍼레티™ 본 링, 옐로우 골드</p>
+              </div>
+              <div class="slide-item">
+                <img src="./public/proItem2.webp" alt="Item 2">
+                <p>엘사 퍼레티™ 빈 디자인 화이어 링, 옐로우 골드</p>
+              </div>
+              <div class="slide-item">
+                <img src="./public/proItem3.webp" alt="Item 3">
+                <p>엘사 퍼레티™ 빈 디자인 펜던트, 로즈 골드</p>
+              </div>
+              <div class="slide-item">
+                <img src="./public/proItem4.webp" alt="Item 4">
+                <p>엘사 퍼레티™ 오픈 하트 펜던트, 옐로우 골드</p>
+              </div>
+              <div class="slide-item">
+                <img src="./public/proItem5.webp" alt="Item 5">
+                <p>엘사 퍼레티™ 다이아몬드 바이 더 야드™ 브레이슬릿</p>
+              </div>
+              <div class="slide-item">
+                <img src="./public/proItem6.webp" alt="Item 6">
+                <p>엘사 퍼레티™ 클래식 목걸이, 화이트 골드</p>
+              </div>
+              <div class="slide-item">
+                <img src="./public/proItem7.webp" alt="Item 7">
+                <p>엘사 퍼레티™ 실버 반지</p>
+              </div>
+              <div class="slide-item">
+                <img src="./public/proItem8.webp" alt="Item 8">
+                <p>엘사 퍼레티™ 펄 이어링</p>
+              </div>
+            </div>
+          </div>
+          <!-- 페이지네이션 -->
+          <div class="pagination-wrapper">
+            <button id="prevBtn">
+              <span class="material-symbols-outlined">
+              arrow_back_ios_new
+              </span>
+            </button>
+            <div class="pagination-line">
+              <div class="pagination-line-fill"></div>
+            </div>
+            <button id="nextBtn">
+              <span class="material-symbols-outlined">
+                arrow_forward_ios
+                </span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <section class="section-2 bg-[#fff]">
+        <ul class="flex items-start gap-[25px] lg:flex-row flex-col">
+          <li>
+            <div class="item">
+                <picture>
+                  <img src="./public/product1.jpeg" alt="티파니 타이탄 by 퍼렐 윌리엄스">
+                </picture>
+                <div class="tf-image-meta w-[50%] mx-auto">
+                  <p class="tf-title font-light text-center text-black xl:text-[32px] xl:leading-[40px] xl:mb-20px mb-15px mt-[15px] xl:mt-[20px]">
+                    티파니 타이탄 by 퍼렐 윌리엄스
+                  </p>
+                  <div class="mb-24 mt-5 text-center">
+                    <div class="text-center inline-block view-more-button">
+                      <a class="w-full h-full" href="./index.html">
+                        <span class="xl:text-[12px] text-[10px]">View More</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="item">
+                <picture>
+                  <img src="./public/produc2.jpeg" alt="가장 인기 있는 주얼리">
+                </picture>
+                <div class="tf-image-meta w-[50%] mx-auto ">
+                  <p class="tf-title font-light text-center text-black xl:text-[32px] xl:leading-[40px] xl:mb-20px mb-15px mt-[15px] xl:mt-[20px]">
+                    가장 인기 있는 주얼리
+                  </p>
+                  <div class="mb-24 mt-5 text-center">
+                    <div class="text-center inline-block view-more-button">
+                      <a class="w-full h-full" href="./index.html">
+                        <span class="xl:text-[12px] text-[10px]">View More</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="section-3 bg-[#fff] xl:block hidden">
+        <h3 class="xl:text-[20px] text-[18px] leading-[28px] mx-[auto] w-full bg-[#fff] Pt-[12px] pb-[28px] text-center">카테고리별로 보기</h3>
+        <ul class="flex items-center gap-[32px]">
+          <li class="w-full">
+            <a href="./index.html">
+              <picture>
+                <img src="./public/item1.jpeg" alt="네크리스& 팬던트">
+              </picture>
+              <div class="product-naem xl:mt-[20px] mt-[18px]">
+                <span class="text-center text-[12px] block w-full">네크리스& 팬던트</span> 
+              </div>
+            </a>
+          </li>
+          <li class="w-full">
+            <a href="./index.html">
+              <picture>
+                <img src="./public/item2.jpeg" alt="이어링">
+              </picture>
+              <div class="product-naem xl:mt-[20px] mt-[18px]">
+                <span class="text-center text-[14px] block w-full">이어링</span> 
+              </div>
+            </a>
+          </li>
+          <li class="w-full" >
+            <a href="./index.html">
+              <picture>
+                <img src="./public/item3.jpeg" alt="브리에슬릿">
+              </picture>
+              <div class="product-naem xl:mt-[20px] mt-[18px]">
+                <span class="text-center text-[14px] block w-full">브리에슬릿</span> 
+              </div>
+            </a>
+          </li>
+          <li class="w-full">
+            <a href="./index.html">
+              <picture>
+                <img src="./public/item4.jpeg" alt="링">
+              </picture>
+              <div class="product-naem xl:mt-[20px] mt-[18px]">
+                <span class="text-center text-[14px] block w-full">링</span> 
+              </div>
+            </a>
+          </li>
+          <li class="w-full">
+            <a href="./index.html">
+              <picture>
+                <img src="./public/item5.jpeg" alt="워치">
+              </picture>
+              <div class="product-naem xl:mt-[20px] mt-[18px]">
+                <span class="text-center text-[14px] block w-full">워치</span> 
+              </div>
+            </a>
+          </li>
+          <li class="w-full">
+            <a href="./index.html">
+              <picture>
+                <img src="./public/item6.jpeg" alt="웨딩 링">
+              </picture>
+              <div class="product-naem xl:mt-[20px] mt-[18px]">
+                <span class="text-center text-[14px] block w-full">웨딩 링</span> 
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="section-4 bg-[#fff] xl:pt-[10rem] pt-[5rem]">
+        <ul class="flex items-start gap-[25px] lg:flex-row flex-col">
+          <li class="w-full">
+            <a class="w-full block" href="./index.html">
+              <picture class="w-full h-full block">
+                <img src="./public/menu1.jpg" alt="티파니 최신 하이 주얼리 컬렉션" class="block">
+              </picture>
+            </a>
+            <div class="row flex flex-wrap max-w-[263px] w-full mx-auto">
+              <p class="xl:text-[32px] xl:mb-[20px] xl:mt-[20px] text-[20px] text-center font-change leading-[1.2] xl:mb-20px mb-15px mt-[15px] xl:mt-[20px]">티파니 최신 하이 주얼리 컬렉션</p>
+              <span class="text-center text-black mb-[24px] text-[16px] block w-full leading-[24px] justify-center">
+                환상적인. 시적인. 우아한. 2024 블루 북: Tiffany Céleste를 만나보세요.
+              </span>
+              <div class="link text-center w-full pt-5 pb-2">
+                <a href="./index.html" class="animated-link">
+                  <span class="text-[14px]">컬랙션 보기</span>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="w-full">
+            <a class="w-full block" href="./index.html">
+              <picture class="w-full h-full block">
+                <img src="./public/menu2.jpg" alt="티파니 워치" class="block">
+              </picture>
+            </a>  
+            <div class="row flex flex-wrap max-w-[263px] w-full mx-auto justify-center">
+              <p class="xl:text-[32px] xl:mb-[20px] xl:mt-[20px] text-[20px] text-center font-change leading-[1.2] xl:mb-20px mb-15px mt-[15px] xl:mt-[20px]">티파니 워치</p>
+              <span class="text-center text-black mb-[24px] text-[16px] block w-full leading-[24px] justify-center">
+                새롭게 추가된 Jean Schlumberger by Tiffany의 플라잉 뚜르비옹 워치를 비롯해 특별한 타임피스를 만나보세요.
+              </span>
+              <div class="link text-center w-full pt-5 pb-2">
+                <a href="./index.html" class="animated-link">
+                  <span class="text-[14px]">자세히 보기</span>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="w-full">
+            <a class="w-full block" href="./index.html">
+              <picture class="w-full h-full block">
+                <img src="./public/menu3.jpg" alt="집에서도 티파니와 함께" class="black">
+              </picture>
+            </a>
+            
+            <div class="row flex flex-wrap max-w-[263px] w-full mx-auto justify-center">
+              <p class="xl:text-[32px] xl:mb-[20px] xl:mt-[20px] text-[20px] text-center font-change leading-[1.2] xl:mb-20px mb-15px mt-[15px] xl:mt-[20px]">집에서도 티파니와 함께</p>
+              <span class="text-center text-black mb-[24px] text-[16px] block w-full leading-[24px]">
+                새로운 티파니 홈 컬렉션으로 삶을 풍요롭게 가꿔보세요.
+              </span>
+              <div class="link text-center w-full pt-5 pb-2">
+                <a href="./index.html" class="animated-link">
+                  <span class="text-[14px]">자세히 보기</span>
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="section-5 bg-[#fff] xl:pt-[10rem] pt-[5rem]">
+        <div class="wrap flex items-center xl:flex-row flex-col">
+          <div class="w-full">
+            <figure>
+              <picture>
+                <img src="./public/banner.jpeg" alt="커플링 & 웨딩 링" class="w-full">
+              </picture>
+            </figure>
+          </div>
+          <div class="title w-full mx-auto">
+            <div class="w-[50%] mx-auto pt-[20px]">
+              <h3 class="xl:text-[48px] text-[32px] mb-[24px] mb-[32px] text-center xl:leading-[60px] xl:tracking-[-1.92px] font-change">커플링 & 웨딩 링</h3>
+              <p class="font-norma xl:text-[16px] text-[12px] break-keep text-center block">티파니 웨딩 링은 200년에 걸쳐 티파니 시그니처로 자리 잡아 왔으며, 세계 최고의 다이아몬드와 독보적인 장인 정신을 만나볼 수 있습니다.</p>
+              <div class="mb-24 mt-5 text-center">
+                <div class="link text-center w-full pt-5 pb-2">
+                  <a href="./index.html" class="animated-link">
+                    <span class="text-[14px] font-change">커플링 & 웨딩 링 보기</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-4 pb-[72px] xl:pb-[96px] mx-auto p-[12px] w-full bg-[#fff]">
+        <ul class="flex items-start justify-center xl:flex-row flex-wrap gap-[25px] ">
+          <li class="se4_items">
+            <a class="w-full block" href="./index.html">
+              <picture class="w-full h-full block">
+                <img src="./public/info1.jpeg" alt="배송 및 반품" class="block">
+              </picture>
+            </a>
+            <div class="row flex flex-wrap max-w-[250px] w-full mx-auto justify-center">
+              <p class="xl:text-[32px] xl:mb-[20px] xl:mt-[20px] md:text-[20px] text-[14px] text-center font-change break-keep whitespace-pre-line xl:font-normal font-bold">배송 및 반품</p>
+              <span class="text-center text-black mb-[24px] md:text-[16px] text-[10px] block w-full  xl:leading-[1.25] leading-[1.75]">
+                구매하신 모든 티파니 제품에 대해 무료 배송 및 반품 서비스가 제공됩니다.
+              </span>
+              <div class="link text-center w-full pt-5 pb-2">
+                <a href="./index.html" class="animated-link">
+                  <span class="font-normal text-[14px]">자세히 보기</span>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="se4_items">
+            <a class="w-full block" href="./index.html">
+              <picture class="w-full h-full block">
+                <img src="./public/info2.jpeg" alt="상담 예약하기" class="block">
+              </picture>
+            </a>
+            <div class="row flex flex-wrap max-w-[235px] w-full mx-auto justify-center">
+              <p class="xl:text-[32px] xl:mb-[20px] xl:mt-[20px] md:text-[20px] text-[14px] text-center font-change break-keep whitespace-pre-line xl:font-normal font-bold">상담 예약하기</p>
+              <span class="text-center text-black mb-[24px] md:text-[16px] text-[10px] block w-full xl:leading-[1.25] leading-[1.75] ">
+                매장 내 방문 예약 또는 온라인 상담 예약을 통해 도와드리겠습니다.
+              </span>
+              <div class="link text-center w-full pt-5 pb-2">
+                <a href="./index.html" class="animated-link">
+                  <span class="font-normal text-[14px]">매장 상담 예약하기</span>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="se4_items">
+            <a class="w-full block" href="./index.html">
+              <picture class="w-full h-full block">
+                <img src="./public/info3.jpeg" alt="티파니 고객 서비스" class="black">
+              </picture>
+            </a>
+            <div class="row flex flex-wrap max-w-[235px] w-full mx-auto justify-center">
+              <p class="xl:text-[32px] xl:mb-[20px] xl:mt-[20px] md:text-[20px] text-[14px] text-center font-change break-keep whitespace-pre-line xl:font-normal font-bold">티파니 고객 서비스</p>
+              <span class="text-center text-black mb-[24px] md:text-[16px] text-[10px] block w-full  xl:leading-[1.25] leading-[1.75]">
+                티파니 고객 케어 전문가들이 도와 드립니다.
+              </span>
+              <div class="link text-center w-full pt-5 pb-2">
+                <a href="./index.html" class="animated-link">
+                  <span class="font-normal text-[14px]">문의하기</span>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="se4_items">
+            <a class="w-full block" href="./index.html">
+              <picture class="w-full h-full block">
+                <img src="./public/info4.jpeg" alt="아이코닉한 블루 박스" class="black">
+              </picture>
+            </a>
+            <div class="row flex flex-wrap max-w-[235px] w-full mx-auto justify-center">
+              <p class="xl:text-[32px] xl:mb-[20px] xl:mt-[20px] md:text-[20px] text-[14px] text-center font-change break-keep whitespace-pre-line xl:font-normal font-bold">아이코닉한 블루 박스</p>
+              <span class="text-center text-black mb-[24px] md:text-[16px] text-[10px] block w-full xl:leading-[1.25] leading-[1.75]">
+                구매하신 모든 티파니 제품은 블루 박스로 포장됩니다.
+              </span>
+              <div class="link text-center w-full pt-5 pb-2">
+                <a href="./index.html" class="animated-link">
+                  <span class="font-normal text-[14px]">모든 기프트 보기</span>
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <footer class="bg-[#fbf9f7] xl:pb-[44px] xl:pt-[72px] pt-[50px] pb-[25px]">
+      <div class="w-10/12 mx-auto">
+        <div class="max-w-[1820px]">
+          <div class="mx-auto block w-full pb-5">
+            <figure>
+              <img src="./public/footer-logo.png" alt="" style="margin: 0 auto;">
+            </figure>
+          </div>
+          <!-- 모바일에서만 보이는 영역 -->
+          <div class="wrap flex items-start lg:flex-row flex-col">
+            <div class="mb-[12px] xl:mb-[0] flex-none w-1/4 xl:max-w-[25%] max-w-[100%] w-full ">
+              <span class="mb-[14px] xl:text-[14px] text-[16px] leading-[16px] block font-bold ">고객지원</span>
+              <ul class="xl:block hidden">
+                <li class="text-[12px] py-[8px]">
+                  <a href="./index.html">
+                    <span class="hover:underline transition-all duration-500">주문조회</span>
+                  </a>
+                </li>
+                <li class="text-[12px] py-[8px]">
+                  <a href="./index.html">
+                    <span class="hover:underline transition-all duration-500">문의하기</span>
+                  </a>
+                </li>
+                <li class="text-[12px] py-[8px]">
+                  <a href="./index.html">
+                    <span class="hover:underline transition-all duration-500">자주 묻는 질문</span>
+                  </a>
+                </li>
+                <li class="text-[12px] py-[8px]">
+                  <a href="./index.html">
+                    <span class="hover:underline transition-all duration-500">배송/교환/반품</span>
+                  </a>
+                </li>
+                <li class="text-[12px] py-[8px]">
+                  <a href="./index.html">
+                    <span class="hover:underline transition-all duration-500">매장 찾기</span>
+                  </a>
+                </li>
+                <li class="text-[12px] py-[8px]">
+                  <a href="./index.html">
+                    <span class="hover:underline transition-all duration-500">사이트맵</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- 1 end -->
+            <div class="mb-[12px] xl:mb-[0] flex-none w-1/4 xl:max-w-[25%] max-w-[100%] w-full">
+              <span class="mb-[14px] xl:text-[14px] text-[16px] leading-[16px] block font-bold">서비스</span>
+              <ul class="xl:block hidden">
+                <li class="xl:text-[14px] text-[10px] py-[8px]">
+                  <a href="./index.html">
+                    <span class="hover:underline transition-all duration-500 text-[12px] py-[8px]">관리 및 수리</span>
+                  </a>
+                </li>
+                <li class="xl:text-[14px] text-[10px] py-[8px]">
+                  <a href="./index.html">
+                    <span class="hover:underline transition-all duration-500 text-[12px] py-[8px]">매장 상담 예약하기</span>
+                  </a>
+                </li>
+                <li class="xl:text-[14px] text-[10px] py-[8px]">
+                  <a href="./index.html">
+                    <span class="hover:underline transition-all duration-500 text-[12px] py-[8px]">퍼스널 서비스</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- 2 end -->
+            <div class="mb-[12px] xl:mb-[0] flex-none w-1/4 xl:max-w-[25%] max-w-[100%] w-full">
+              <span class="mb-[14px] xl:text-[14px] text-[16px] leading-[16px] block font-bold">티파니앤코 소개</span>
+              <ul class="xl:block hidden">
+                <li class="xl:text-[14px] text-[10px] py-[8px]">
+                  <a href="./index.html">
+                    <span class="hover:underline transition-all duration-500 text-[12px] py-[8px]">지속 가능 경영</span>
+                  </a>
+                </li>
+                <li class="xl:text-[14px] text-[10px] py-[8px]">
+                  <a href="./index.html">
+                    <span class="hover:underline transition-all duration-500 text-[12px] py-[8px]">티파니 재단</span>
+                  </a>
+                </li>
+                <li class="xl:text-[14px] text-[10px] py-[8px]">
+                  <a href="./index.html">
+                    <span class="hover:underline transition-all duration-500 text-[12px] py-[8px]">티파니 채용</span>
+                  </a>
+                </li>
+                <li class="xl:text-[14px] text-[10px] py-[8px]">
+                  <a href="./index.html">
+                    <span class="hover:underline transition-all duration-500 text-[12px] py-[8px]">최신 뉴스</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- 3 end -->
+            <div class="mb-[12px] xl:mb-[0] flex-none w-1/4 xl:max-w-[25%] max-w-[100%] w-full">
+              <span class="mb-[14px] xl:text-[14px] text-[16px] leading-[16px] block font-bold">이용약관 및 법적고지</span>
+              <ul class="xl:block hidden">
+                <li class="py-[8px]">
+                  <a href="./index.html">
+                    <strong class="hover:underline transition-all duration-500 text-[14px] py-[8px]">개인정보처리방침</strong>
+                  </a>
+                </li>
+                <li class="py-[8px]">
+                  <a href="./index.html">
+                    <span class="hover:underline transition-all duration-500 text-[12px] py-[8px]">이용약관</span>
+                  </a>
+                </li>
+                <li class="py-[8px]">
+                  <a href="./index.html">
+                    <span class="hover:underline transition-all duration-500 text-[12px] py-[8px]">웹사이트 정책</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- 4 end -->
+            <div class="mb-[12px] xl:mb-[0] flex-none w-1/4 xl:max-w-[25%] max-w-[100%] w-full">
+              <span class="mb-[14px] xl:text-[14px] text-[16px] leading-[16px] block font-bold">소셜 미디어</span>
+              <ul class="xl:block hidden">
+                <li><a href="#"><span class="text-[14px]">인스타그램</span></a></li>
+                <li><a href="#"><span class="text-[14px]">카카오톡</span></a></li>
+                <li><a href="#"><span class="text-[14px]">트위터</span></a></li>
+                <li><a href="#"><span class="text-[14px]">페이스북</span></a></li>
+                <li><a href="#"><span class="text-[14px]">유튜브</span></a></li>
+                <li><a href="#"><span class="text-[14px]">핀터레스트</span></a></li>
+              </ul>
+            </div>
+            <!-- 모바일영역에서만 나오는 링크 -->
+            <!-- 5 end -->
+          </div>
+          <div class="border-t border-t-[#ccc]">
+            <div class="xl:mt-[96px] xl:pt-[40px] pt-[20px] xl:pb-[50px] pb-[20px] flex flex-wrap justify-between items-center">
+              <div class="flex items-center">
+                <span class="opacity-60 xl:text-[14px] xl:mr-[24px] mr-[32px] xl:text-[16px] text-[12px]">T&Co. 2024</span>
+                <div class="xl:text-[14px] text-[12px] mr-[24px]">국가/지역:<span class="underline text-[#000]"> 대한민국</span></div>
+              </div>
+              <div class="" style="display: none;">
+                <a href="/" title="Commerce Cloud Storefront 참조 아키텍처 홈">
+                  <figure>
+                    <picture>
+                      <img src="./public/footer-logo.png" alt="티파니앤코">
+                    </picture>
+                  </figure>
+                </a>
+              </div>
+              <div class="" style="display: none;">
+                <ul class="flex justify-end gap-[19px] xl:black">
+                  <li><a href="#"><span class="text-[14px]">인스타그램</span></a></li>
+                  <li><a href="#"><span class="text-[14px]">카카오톡</span></a></li>
+                  <li><a href="#"><span class="text-[14px]">트위터</span></a></li>
+                  <li><a href="#"><span class="text-[14px]">페이스북</span></a></li>
+                  <li><a href="#"><span class="text-[14px]">유튜브</span></a></li>
+                  <li><a href="#"><span class="text-[14px]">핀터레스트</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="xl:mt-[96px] pt-[50px] pb-[50px] xl:leading-[20px] text-center text-[12px] leading-[24px] foot-area">
+          <p class="">(주)티파니코리아｜대표자: 뤽세이어 서울특별시 중구 청계천로 100 시그니쳐타워 17층｜사업자 등록번호: 
+            <a href="./index.html">
+              <u>106-81-59905</u>
+            </a>
+            <p class="inline-block">통신판매자신고번호: 2023-서울중구-1323｜호스팅서비스: Tiffany &amp; Co. 고객센터: 1670-1837｜
+              <address class="inline-block">이메일:clientcare.kr@tiffany.com</address>
+            </p>
+            <span class="inline-block">SGI 서울 보증을 통해 가입한 지급보증보험으로 안전한 카카오 페이 거래를 보장하고 있습니다.</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- js -->
+  <script src="./src/app.js"></script>
+  <script src="./src/tailwind-config.js"></script>
+</body>
+</html>

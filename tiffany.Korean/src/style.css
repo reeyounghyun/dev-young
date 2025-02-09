@@ -100,6 +100,7 @@ span{
 
 .wrap{
   position: relative;
+  overflow: hidden;
 }
 
 .bg-white-contain{
@@ -135,13 +136,6 @@ span{
 #navbar.nav-hidden {
   transform: translateY(-100%);
   background-color: white;
-}
-
-#menu a{
-  font-size: 10px;
-  text-decoration: none;
-  color: #000;
-  font-weight: 300;
 }
 
 #menu a:hover{
@@ -312,6 +306,8 @@ footer {
 }
 
 .productSlider .container {
+  width: 100%;
+  margin: 0 auto;
   padding: 32px 0;
 }
 
@@ -347,7 +343,7 @@ footer {
 .slide-item p {
   display: block;
   margin-top: 8px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.35;
   word-break: keep-all;
   white-space: pre-line;
@@ -402,5 +398,21 @@ footer {
 
 .menu>span{
   padding: 1rem 0;
-  border-bottom: 1px solid #ccc;
+}
+
+
+/* footer */
+.foot-area{
+  position: relative;
+}
+
+.foot-area::before{
+  content: "";
+  clear: both;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ececec;
 }
