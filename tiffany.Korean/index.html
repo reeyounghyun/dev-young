@@ -20,7 +20,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="./build.css">
 
-  <link rel="stylesheet" href="./src/common.css">
+  <link rel="stylesheet" href="./src/style.css">
   
   <title>티파니앤코 공식 온라인 스토어</title>
 </head>
@@ -32,19 +32,19 @@
         <div class="text-center w-full">
           <h1 id="logo" class="w-full font-bold transition-all duration-300 font-change">Tiffany & Co.</h1>
           <nav id="menu" class="hidden lg:flex space-x-4 mt-2 text-sm justify-center">
-            <a href="#" class="hover:underline">하이주얼리</a>
-            <a href="#" class="hover:underline">주얼리</a>
-            <a href="#" class="hover:underline">기프트</a>
-            <a href="#" class="hover:underline">커플 & 웨딩 링</a>
-            <a href="#" class="hover:underline">워치</a>
-            <a href="#" class="hover:underline">홈 & 액세서리</a>
-            <a href="#" class="hover:underline">World of Tiffany</a>
+            <a href="#" class="hover:underline text-[14px] no-underline text-black font-light">하이주얼리</a>
+            <a href="#" class="hover:underline text-[14px] no-underline text-black font-light">주얼리</a>
+            <a href="#" class="hover:underline text-[14px] no-underline text-black font-light">기프트</a>
+            <a href="#" class="hover:underline text-[14px] no-underline text-black font-light">커플 & 웨딩 링</a>
+            <a href="#" class="hover:underline text-[14px] no-underline text-black font-light">워치</a>
+            <a href="#" class="hover:underline text-[14px] no-underline text-black font-light">홈 & 액세서리</a>
+            <a href="#" class="hover:underline text-[14px] no-underline text-black font-light">World of Tiffany</a>
           </nav>
         </div>
       </div>
     </header>
     <!-- 동영상 배너 -->
-    <div class="w-full h-[1000px] relative z-10 tf-image">
+    <!-- <div class="w-full h-[1000px] relative z-10 tf-image">
       <div class="tf-image-and-text fixedBackground">
         <div class="contentCustomVideoPlayer js-video-player">
         <div class="videoControls">
@@ -79,9 +79,26 @@
         <div class="tf-image-meta">
         </div>
       </div>
+    </div> -->
+    <div class="w-full mt-[200px] relative">
+      <figure class="relative">
+        <img src="./public/main-benner.png" alt="">
+      </figure>
+      <div class="xl:absolute relative top-0 left-0 bottom-0 right-0 mx-auto w-full flex items-center  xl:justify-end xl:pr-[190px] p-0  pr-0 justify-center mt-[63px]">
+        <div class="flex flex-col items-center">
+          <h2 class="font-serif text-[32px] font-smbold tracking-[-1.28px] leading-[40px] mb-6 text-center break-keep font-bold">사랑의 언어</h2>
+          <p class="block mb-[27px] text-[14px]">이번 발렌타인데이에 티파니 기프트로 사랑을 표현해보세요.</p>
+          <div class="group bg-black text-white w-[200px] py-[18px] block text-center flex flex-col overflow-hidden">
+            <div class="absolute inset-0 bg-[#81d8d0] transition-transform duration-[500ms] ease-in-out translate-y-full group-hover:translate-y-0"></div>
+            <a href="#" class="relative text-[12px] z-10 group-hover:text-black transition-colors duration-500 ease-in-out">
+              발렌타이데이 기프트 보기
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- 컨탠츠 stert -->
-    <div class="w-full relative z-20 bg-[#fff] p-[1.5rem] bg-white-contain">
+    <div class="w-full relative z-20 bg-[#fff] xl:p-[1.5rem] bg-white-contain">
       <section class="section-1 bg-[#fff]">
         <h3 class="xl:text-5xl text-2xl xl:mb-[32px] mb-[5px] leading-[60px] spacing-[-2px] text-center mt-10">
           With Love, Since 1837
@@ -215,7 +232,7 @@
                 <img src="./public/item2.jpeg" alt="이어링">
               </picture>
               <div class="product-naem xl:mt-[20px] mt-[18px]">
-                <span class="text-center text-[12px] block w-full">이어링</span> 
+                <span class="text-center text-[14px] block w-full">이어링</span> 
               </div>
             </a>
           </li>
@@ -225,7 +242,7 @@
                 <img src="./public/item3.jpeg" alt="브리에슬릿">
               </picture>
               <div class="product-naem xl:mt-[20px] mt-[18px]">
-                <span class="text-center text-[12px] block w-full">브리에슬릿</span> 
+                <span class="text-center text-[14px] block w-full">브리에슬릿</span> 
               </div>
             </a>
           </li>
@@ -235,7 +252,7 @@
                 <img src="./public/item4.jpeg" alt="링">
               </picture>
               <div class="product-naem xl:mt-[20px] mt-[18px]">
-                <span class="text-center text-[12px] block w-full">링</span> 
+                <span class="text-center text-[14px] block w-full">링</span> 
               </div>
             </a>
           </li>
@@ -245,7 +262,7 @@
                 <img src="./public/item5.jpeg" alt="워치">
               </picture>
               <div class="product-naem xl:mt-[20px] mt-[18px]">
-                <span class="text-center text-[12px] block w-full">워치</span> 
+                <span class="text-center text-[14px] block w-full">워치</span> 
               </div>
             </a>
           </li>
@@ -255,14 +272,14 @@
                 <img src="./public/item6.jpeg" alt="웨딩 링">
               </picture>
               <div class="product-naem xl:mt-[20px] mt-[18px]">
-                <span class="text-center text-[12px] block w-full">웨딩 링</span> 
+                <span class="text-center text-[14px] block w-full">웨딩 링</span> 
               </div>
             </a>
           </li>
         </ul>
       </section>
       <section class="section-4 bg-[#fff] xl:pt-[10rem] pt-[5rem]">
-        <ul class="flex items-start md:flex-row flex-col gap-[25px]">
+        <ul class="flex items-start gap-[25px] lg:flex-row flex-col">
           <li class="w-full">
             <a class="w-full block" href="./index.html">
               <picture class="w-full h-full block">
@@ -276,7 +293,7 @@
               </span>
               <div class="link text-center w-full pt-5 pb-2">
                 <a href="./index.html" class="animated-link">
-                  <span class="xl:text-[12px] text-[10px]">컬랙션 보기</span>
+                  <span class="text-[14px]">컬랙션 보기</span>
                 </a>
               </div>
             </div>
@@ -294,7 +311,7 @@
               </span>
               <div class="link text-center w-full pt-5 pb-2">
                 <a href="./index.html" class="animated-link">
-                  <span class="xl:text-[12px] text-[10px]">자세히 보기</span>
+                  <span class="text-[14px]">자세히 보기</span>
                 </a>
               </div>
             </div>
@@ -313,7 +330,7 @@
               </span>
               <div class="link text-center w-full pt-5 pb-2">
                 <a href="./index.html" class="animated-link">
-                  <span class="xl:text-[12px] text-[10px]">자세히 보기</span>
+                  <span class="text-[14px]">자세히 보기</span>
                 </a>
               </div>
             </div>
@@ -336,7 +353,7 @@
               <div class="mb-24 mt-5 text-center">
                 <div class="link text-center w-full pt-5 pb-2">
                   <a href="./index.html" class="animated-link">
-                    <span class="xl:text-[12px] text-[10px] font-change">커플링 & 웨딩 링 보기</span>
+                    <span class="text-[14px] font-change">커플링 & 웨딩 링 보기</span>
                   </a>
                 </div>
               </div>
@@ -359,7 +376,7 @@
               </span>
               <div class="link text-center w-full pt-5 pb-2">
                 <a href="./index.html" class="animated-link">
-                  <span class="font-normal md:text-[14px] text-[10px]">자세히 보기</span>
+                  <span class="font-normal text-[14px]">자세히 보기</span>
                 </a>
               </div>
             </div>
@@ -377,7 +394,7 @@
               </span>
               <div class="link text-center w-full pt-5 pb-2">
                 <a href="./index.html" class="animated-link">
-                  <span class="font-normal md:text-[14px] text-[10px]">매장 상담 예약하기</span>
+                  <span class="font-normal text-[14px]">매장 상담 예약하기</span>
                 </a>
               </div>
             </div>
@@ -395,7 +412,7 @@
               </span>
               <div class="link text-center w-full pt-5 pb-2">
                 <a href="./index.html" class="animated-link">
-                  <span class="font-normal md:text-[14px] text-[10px]">문의하기</span>
+                  <span class="font-normal text-[14px]">문의하기</span>
                 </a>
               </div>
             </div>
@@ -413,7 +430,7 @@
               </span>
               <div class="link text-center w-full pt-5 pb-2">
                 <a href="./index.html" class="animated-link">
-                  <span class="font-normal md:text-[14px] text-[10px]">모든 기프트 보기</span>
+                  <span class="font-normal text-[14px]">모든 기프트 보기</span>
                 </a>
               </div>
             </div>
@@ -421,92 +438,172 @@
         </ul>
       </section>
     </div>
-    <footer class="bg-[#fbf9f7] xl:pt-[96px] xl:pb-[44px] pt-[72px] pb-[25px]">
-      <div class="p-[12px] w-full mx-auto">
-        <div class="max-w-[1280px] pl-[12px] pr-[12px] relative w-full mx-auto">
+    <footer class="bg-[#fbf9f7] xl:pb-[44px] xl:pt-[72px] pt-[50px] pb-[25px]">
+      <div class="w-10/12 mx-auto">
+        <div class="max-w-[1820px]">
+          <div class="mx-auto block w-full pb-5">
+            <figure>
+              <img src="./public/footer-logo.png" alt="" style="margin: 0 auto;">
+            </figure>
+          </div>
+          <!-- 모바일에서만 보이는 영역 -->
           <div class="wrap flex items-start lg:flex-row flex-col">
-            <div class="menu xl:max-w-[25%] max-w-[100%] w-full xl:flex-[0_0_25%] mb-[12px] xl:mb-[0]">
-              <span class="xl:mb-[24px] xl:text-[11px] text-[12px] leading-[16px] block uppercase">고객지원</span>
+            <div class="mb-[12px] xl:mb-[0] flex-none w-1/4 xl:max-w-[25%] max-w-[100%] w-full ">
+              <span class="mb-[14px] xl:text-[14px] text-[16px] leading-[16px] block font-bold ">고객지원</span>
               <ul class="xl:block hidden">
-                <li class="xl:text-[14px] text-[10px] py-[8px]"><a href="./index.html"><span class="hover:underline transition-all duration-500">주문조회</span></a></li>
-                <li class="xl:text-[14px] text-[10px] py-[8px]"><a href="./index.html"><span class="hover:underline transition-all duration-500">문의하기</span></a></li>
-                <li class="xl:text-[14px] text-[10px] py-[8px]"><a href="./index.html"><span class="hover:underline transition-all duration-500">자주 묻는 질문</span></a></li>
-                <li class="xl:text-[14px] text-[10px] py-[8px]"><a href="./index.html"><span class="hover:underline transition-all duration-500">배송/교환/반품</span></a></li>
-                <li class="xl:text-[14px] text-[10px] py-[8px]"><a href="./index.html"><span class="hover:underline transition-all duration-500">매장 찾기</span></a></li>
-                <li class="xl:text-[14px] text-[10px] py-[8px]"><a href="./index.html"><span class="hover:underline transition-all duration-500">사이트맵</span></a></li>
+                <li class="text-[12px] py-[8px]">
+                  <a href="./index.html">
+                    <span class="hover:underline transition-all duration-500">주문조회</span>
+                  </a>
+                </li>
+                <li class="text-[12px] py-[8px]">
+                  <a href="./index.html">
+                    <span class="hover:underline transition-all duration-500">문의하기</span>
+                  </a>
+                </li>
+                <li class="text-[12px] py-[8px]">
+                  <a href="./index.html">
+                    <span class="hover:underline transition-all duration-500">자주 묻는 질문</span>
+                  </a>
+                </li>
+                <li class="text-[12px] py-[8px]">
+                  <a href="./index.html">
+                    <span class="hover:underline transition-all duration-500">배송/교환/반품</span>
+                  </a>
+                </li>
+                <li class="text-[12px] py-[8px]">
+                  <a href="./index.html">
+                    <span class="hover:underline transition-all duration-500">매장 찾기</span>
+                  </a>
+                </li>
+                <li class="text-[12px] py-[8px]">
+                  <a href="./index.html">
+                    <span class="hover:underline transition-all duration-500">사이트맵</span>
+                  </a>
+                </li>
               </ul>
             </div>
             <!-- 1 end -->
-            <div class="menu xl:max-w-[25%] max-w-[100%] w-full flex-[0_0_25%] mb-[12px] xl:mb-[0]">
-              <span class="xl:mb-[24px] xl:text-[11px] text-[12px] leading-[16px] block uppercase">서비스</span>
+            <div class="mb-[12px] xl:mb-[0] flex-none w-1/4 xl:max-w-[25%] max-w-[100%] w-full">
+              <span class="mb-[14px] xl:text-[14px] text-[16px] leading-[16px] block font-bold">서비스</span>
               <ul class="xl:block hidden">
-                <li class="xl:text-[14px] text-[10px] py-[8px]"><a href="./index.html"><span class="hover:underline transition-all duration-500">관리 및 수리</span></a></li>
-                <li class="xl:text-[14px] text-[10px] py-[8px]"><a href="./index.html"><span class="hover:underline transition-all duration-500">매장 상담 예약하기</span></a></li>
-                <li class="xl:text-[14px] text-[10px] py-[8px]"><a href="./index.html"><span class="hover:underline transition-all duration-500">퍼스널 서비스</span></a></li>
+                <li class="xl:text-[14px] text-[10px] py-[8px]">
+                  <a href="./index.html">
+                    <span class="hover:underline transition-all duration-500 text-[12px] py-[8px]">관리 및 수리</span>
+                  </a>
+                </li>
+                <li class="xl:text-[14px] text-[10px] py-[8px]">
+                  <a href="./index.html">
+                    <span class="hover:underline transition-all duration-500 text-[12px] py-[8px]">매장 상담 예약하기</span>
+                  </a>
+                </li>
+                <li class="xl:text-[14px] text-[10px] py-[8px]">
+                  <a href="./index.html">
+                    <span class="hover:underline transition-all duration-500 text-[12px] py-[8px]">퍼스널 서비스</span>
+                  </a>
+                </li>
               </ul>
             </div>
             <!-- 2 end -->
-            <div class="menu xl:max-w-[25%] max-w-[100%] w-full flex-[0_0_25%] mb-[12px] xl:mb-[0]">
-              <span class="xl:mb-[24px] xl:text-[11px] text-[12px] leading-[16px] block uppercase">티파니앤코 소개</span>
+            <div class="mb-[12px] xl:mb-[0] flex-none w-1/4 xl:max-w-[25%] max-w-[100%] w-full">
+              <span class="mb-[14px] xl:text-[14px] text-[16px] leading-[16px] block font-bold">티파니앤코 소개</span>
               <ul class="xl:block hidden">
-                <li class="xl:text-[14px] text-[10px] py-[8px]"><a href="./index.html"><span class="hover:underline transition-all duration-500">지속 가능 경영</span></a></li>
-                <li class="xl:text-[14px] text-[10px] py-[8px]"><a href="./index.html"><span class="hover:underline transition-all duration-500">티파니 재단</span></a></li>
-                <li class="xl:text-[14px] text-[10px] py-[8px]"><a href="./index.html"><span class="hover:underline transition-all duration-500">티파니 채용</span></a></li>
-                <li class="xl:text-[14px] text-[10px] py-[8px]"><a href="./index.html"><span class="hover:underline transition-all duration-500">최신 뉴스</span></a></li>
+                <li class="xl:text-[14px] text-[10px] py-[8px]">
+                  <a href="./index.html">
+                    <span class="hover:underline transition-all duration-500 text-[12px] py-[8px]">지속 가능 경영</span>
+                  </a>
+                </li>
+                <li class="xl:text-[14px] text-[10px] py-[8px]">
+                  <a href="./index.html">
+                    <span class="hover:underline transition-all duration-500 text-[12px] py-[8px]">티파니 재단</span>
+                  </a>
+                </li>
+                <li class="xl:text-[14px] text-[10px] py-[8px]">
+                  <a href="./index.html">
+                    <span class="hover:underline transition-all duration-500 text-[12px] py-[8px]">티파니 채용</span>
+                  </a>
+                </li>
+                <li class="xl:text-[14px] text-[10px] py-[8px]">
+                  <a href="./index.html">
+                    <span class="hover:underline transition-all duration-500 text-[12px] py-[8px]">최신 뉴스</span>
+                  </a>
+                </li>
               </ul>
             </div>
             <!-- 3 end -->
-            <div class="menu xl:max-w-[25%] max-w-[100%] w-full flex-[0_0_25%] mb-[12px] xl:mb-[0]">
-              <span class="xl:mb-[24px] xl:text-[11px] text-[12px] font-semibold leading-[16px] block uppercase">이용약관 및 법적고지</span>
+            <div class="mb-[12px] xl:mb-[0] flex-none w-1/4 xl:max-w-[25%] max-w-[100%] w-full">
+              <span class="mb-[14px] xl:text-[14px] text-[16px] leading-[16px] block font-bold">이용약관 및 법적고지</span>
               <ul class="xl:block hidden">
-                <li class="xl:text-[14px] text-[10px] py-[8px]"><a href="./index.html"><strong class="hover:underline transition-all duration-500">개인정보처리방침</strong></a></li>
-                <li class="xl:text-[14px] text-[10px] py-[8px]"><a href="./index.html"><span class="hover:underline transition-all duration-500">이용약관</span></a></li>
-                <li class="xl:text-[14px] text-[10px] py-[8px]"><a href="./index.html"><span class="hover:underline transition-all duration-500">웹사이트 정책</span></a></li>
+                <li class="py-[8px]">
+                  <a href="./index.html">
+                    <strong class="hover:underline transition-all duration-500 text-[14px] py-[8px]">개인정보처리방침</strong>
+                  </a>
+                </li>
+                <li class="py-[8px]">
+                  <a href="./index.html">
+                    <span class="hover:underline transition-all duration-500 text-[12px] py-[8px]">이용약관</span>
+                  </a>
+                </li>
+                <li class="py-[8px]">
+                  <a href="./index.html">
+                    <span class="hover:underline transition-all duration-500 text-[12px] py-[8px]">웹사이트 정책</span>
+                  </a>
+                </li>
               </ul>
             </div>
             <!-- 4 end -->
+            <div class="mb-[12px] xl:mb-[0] flex-none w-1/4 xl:max-w-[25%] max-w-[100%] w-full">
+              <span class="mb-[14px] xl:text-[14px] text-[16px] leading-[16px] block font-bold">소셜 미디어</span>
+              <ul class="xl:block hidden">
+                <li><a href="#"><span class="text-[14px]">인스타그램</span></a></li>
+                <li><a href="#"><span class="text-[14px]">카카오톡</span></a></li>
+                <li><a href="#"><span class="text-[14px]">트위터</span></a></li>
+                <li><a href="#"><span class="text-[14px]">페이스북</span></a></li>
+                <li><a href="#"><span class="text-[14px]">유튜브</span></a></li>
+                <li><a href="#"><span class="text-[14px]">핀터레스트</span></a></li>
+              </ul>
+            </div>
+            <!-- 모바일영역에서만 나오는 링크 -->
+            <!-- 5 end -->
           </div>
           <div class="border-t border-t-[#ccc]">
             <div class="xl:mt-[96px] xl:pt-[40px] pt-[20px] xl:pb-[50px] pb-[20px] flex flex-wrap justify-between items-center">
-              <div class="xl:max-w-[41.66666667%] max-w[100%] flex items-center">
+              <div class="flex items-center">
                 <span class="opacity-60 xl:text-[14px] xl:mr-[24px] mr-[32px] xl:text-[16px] text-[12px]">T&Co. 2024</span>
                 <div class="xl:text-[14px] text-[12px] mr-[24px]">국가/지역:<span class="underline text-[#000]"> 대한민국</span></div>
               </div>
-              <div class="xl:max-w-[16.66666667%] hidden">
+              <div class="" style="display: none;">
                 <a href="/" title="Commerce Cloud Storefront 참조 아키텍처 홈">
                   <figure>
                     <picture>
-                      <img src="./public/footer_icon.png" alt="티파니앤코">
+                      <img src="./public/footer-logo.png" alt="티파니앤코">
                     </picture>
                   </figure>
                 </a>
               </div>
-              <div class="max-w-[100%] pl-[12px] w-full relative xl:max-w-[41.66666667%]">
-                <ul class="flex justify-end gap-[19px] xl:black hidden">
-                  <li><a href="#"><span class="text-[16px]">인스타그램</span></a></li>
-                  <li><a href="#"><span class="text-[16px]">카카오톡</span></a></li>
-                  <li><a href="#"><span class="text-[16px]">트위터</span></a></li>
-                  <li><a href="#"><span class="text-[16px]">페이스북</span></a></li>
-                  <li><a href="#"><span class="text-[16px]">유튜브</span></a></li>
-                  <li><a href="#"><span class="text-[16px]">핀터레스트</span></a></li>
+              <div class="" style="display: none;">
+                <ul class="flex justify-end gap-[19px] xl:black">
+                  <li><a href="#"><span class="text-[14px]">인스타그램</span></a></li>
+                  <li><a href="#"><span class="text-[14px]">카카오톡</span></a></li>
+                  <li><a href="#"><span class="text-[14px]">트위터</span></a></li>
+                  <li><a href="#"><span class="text-[14px]">페이스북</span></a></li>
+                  <li><a href="#"><span class="text-[14px]">유튜브</span></a></li>
+                  <li><a href="#"><span class="text-[14px]">핀터레스트</span></a></li>
                 </ul>
               </div>
             </div>
           </div>
-          <div class="border-t border-t-[#ccc]">
-            <div class="xl:mt-[96px] pt-[20px] pb-[50px] text-center xl:text-[12px] xl:leading-[20px] leading-[24px] text-[16px]">
-              <p class="text-center xl:text-[16px] text-[12px]">(주)티파니코리아｜대표자: 뤽세이어 서울특별시 중구 청계천로 100 시그니쳐타워 17층｜사업자 등록번호: 
-                <a href="./index.html">
-                  <u>106-81-59905</u>
-                </a>｜통신판매자신고번호: 2023-서울중구-1323｜호스팅서비스: Tiffany &amp; Co. 고객센터: 1670-1837｜이메일: 
-                <a href="./index.html">
-                  <u>clientcare.kr@tiffany.com</u>
-                </a>
-                <br>
-                SGI 서울 보증을 통해 가입한 지급보증보험으로 안전한 카카오 페이 거래를 보장하고 있습니다.
-              </p>
-              </div>
-          </div>
+        </div>
+        <div class="xl:mt-[96px] pt-[50px] pb-[50px] xl:leading-[20px] text-center text-[12px] leading-[24px] foot-area">
+          <p class="">(주)티파니코리아｜대표자: 뤽세이어 서울특별시 중구 청계천로 100 시그니쳐타워 17층｜사업자 등록번호: 
+            <a href="./index.html">
+              <u>106-81-59905</u>
+            </a>
+            <p class="inline-block">통신판매자신고번호: 2023-서울중구-1323｜호스팅서비스: Tiffany &amp; Co. 고객센터: 1670-1837｜
+              <address class="inline-block">이메일:clientcare.kr@tiffany.com</address>
+            </p>
+            <span class="inline-block">SGI 서울 보증을 통해 가입한 지급보증보험으로 안전한 카카오 페이 거래를 보장하고 있습니다.</span>
+          </p>
         </div>
       </div>
     </footer>
