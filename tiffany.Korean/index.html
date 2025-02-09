@@ -63,7 +63,7 @@
     </div>
     <!-- 컨탠츠 stert -->
     <div class="w-full relative z-20 bg-[#fff] xl:p-[1.5rem] bg-white-contain">
-      <section class="section-1 bg-[#fff]">
+      <!-- <section class="section-1 bg-[#fff]">
         <h3 class="xl:text-5xl text-2xl xl:mb-[32px] mb-[5px] leading-[60px] spacing-[-2px] text-center mt-10">
           With Love, Since 1837
         </h3>
@@ -75,48 +75,48 @@
             <span>View More</span>
           </a>
         </div>
-      </section>
-      <div class="productSlider">
+      </section> -->
+      <!-- <div class="productSlider">
         <div class="container">
           <div class="slider-wrapper">
-            <!-- 슬라이드 이미지 컨테이너 -->
-            <div class="slider" id="slider">
-              <div class="slide-item">
+            슬라이드 이미지 컨테이너 -->
+            <!-- <div class="slider" id="slider">
+              <div class="slide-item swiper-slide">
                 <img src="./public/proItem1.webp" alt="Item 1">
                 <p>엘사 퍼레티™ 본 링, 옐로우 골드</p>
               </div>
-              <div class="slide-item">
+              <div class="slide-item swiper-slide">
                 <img src="./public/proItem2.webp" alt="Item 2">
                 <p>엘사 퍼레티™ 빈 디자인 화이어 링, 옐로우 골드</p>
               </div>
-              <div class="slide-item">
+              <div class="slide-item swiper-slide">
                 <img src="./public/proItem3.webp" alt="Item 3">
                 <p>엘사 퍼레티™ 빈 디자인 펜던트, 로즈 골드</p>
               </div>
-              <div class="slide-item">
+              <div class="slide-item swiper-slide">
                 <img src="./public/proItem4.webp" alt="Item 4">
                 <p>엘사 퍼레티™ 오픈 하트 펜던트, 옐로우 골드</p>
               </div>
-              <div class="slide-item">
+              <div class="slide-item ">
                 <img src="./public/proItem5.webp" alt="Item 5">
                 <p>엘사 퍼레티™ 다이아몬드 바이 더 야드™ 브레이슬릿</p>
               </div>
-              <div class="slide-item">
+              <div class="slide-item swiper-slide">
                 <img src="./public/proItem6.webp" alt="Item 6">
                 <p>엘사 퍼레티™ 클래식 목걸이, 화이트 골드</p>
               </div>
-              <div class="slide-item">
+              <div class="slide-item swiper-slide">
                 <img src="./public/proItem7.webp" alt="Item 7">
                 <p>엘사 퍼레티™ 실버 반지</p>
               </div>
-              <div class="slide-item">
+              <div class="slide-item swiper-slide">
                 <img src="./public/proItem8.webp" alt="Item 8">
                 <p>엘사 퍼레티™ 펄 이어링</p>
               </div>
             </div>
-          </div>
+          </div> -->
           <!-- 페이지네이션 -->
-          <div class="pagination-wrapper">
+          <!-- <div class="pagination-wrapper">
             <button id="prevBtn">
               <span class="material-symbols-outlined">
               arrow_back_ios_new
@@ -132,7 +132,69 @@
             </button>
           </div>
         </div>
+      </div>  -->
+
+      <!-- 스와이퍼 슬라이드1 -->
+      <div class="swiper mySwiper" style="width:90%;">
+        <div class="swiper-wrapper">
+          <div class="slide-item swiper-slide">
+            <img src="./public/proItem1.webp" alt="Item 1">
+            <p>엘사 퍼레티™ 본 링, 옐로우 골드</p>
+          </div>
+          <div class="slide-item swiper-slide">
+            <img src="./public/proItem2.webp" alt="Item 2">
+            <p>엘사 퍼레티™ 빈 디자인 화이어 링, 옐로우 골드</p>
+          </div>
+          <div class="slide-item swiper-slide">
+            <img src="./public/proItem3.webp" alt="Item 3">
+            <p>엘사 퍼레티™ 빈 디자인 펜던트, 로즈 골드</p>
+          </div>
+          <div class="slide-item swiper-slide">
+            <img src="./public/proItem4.webp" alt="Item 4">
+            <p>엘사 퍼레티™ 오픈 하트 펜던트, 옐로우 골드</p>
+          </div>
+          <div class="slide-item ">
+            <img src="./public/proItem5.webp" alt="Item 5">
+            <p>엘사 퍼레티™ 다이아몬드 바이 더 야드™ 브레이슬릿</p>
+          </div>
+          <div class="slide-item swiper-slide">
+            <img src="./public/proItem6.webp" alt="Item 6">
+            <p>엘사 퍼레티™ 클래식 목걸이, 화이트 골드</p>
+          </div>
+          <div class="slide-item swiper-slide">
+            <img src="./public/proItem7.webp" alt="Item 7">
+            <p>엘사 퍼레티™ 실버 반지</p>
+          </div>
+          <div class="slide-item swiper-slide">
+            <img src="./public/proItem8.webp" alt="Item 8">
+            <p>엘사 퍼레티™ 펄 이어링</p>
+          </div>
+        </div>
+        <div class="swiper-button-next" style="right:-10px; z-index:100"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination" style="bottom: 0; top:initial;"></div>
       </div>
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          loop: true,
+          slidesPerView: 5,
+          spaceBetween: 10,
+          centeredSlides: true,
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            type: "progressbar",
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+      <!-- 스와이퍼 슬라이드2 -->
     </div>
       <!-- <section class="section-2 bg-[#fff]">
         <ul class="flex items-start gap-[25px] lg:flex-row flex-col">
