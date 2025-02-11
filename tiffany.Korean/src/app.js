@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 var swiper = new Swiper(".productSlider", {
   loop: true,
-  slidesPerView: 5,
+  slidesPerView: 5, // 기본값
   spaceBetween: 10,
   centeredSlides: true,
   autoplay: {
@@ -162,5 +162,13 @@ var swiper = new Swiper(".productSlider", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    1200: {
+      slidesPerView: 5, // 1200px 이상에서는 5개
+    },
+    0: {
+      slidesPerView: 3, // 1200px 이하에서는 3개
+    },
   },
 });
