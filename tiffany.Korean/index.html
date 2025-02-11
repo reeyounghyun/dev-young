@@ -135,7 +135,7 @@
       </div>  -->
 
       <!-- 스와이퍼 슬라이드1 -->
-      <div class="swiper mySwiper" style="width:90%;">
+      <div class="swiper mySwiper productSlider">
         <div class="swiper-wrapper">
           <div class="slide-item swiper-slide">
             <img src="./public/proItem1.webp" alt="Item 1">
@@ -153,7 +153,7 @@
             <img src="./public/proItem4.webp" alt="Item 4">
             <p>엘사 퍼레티™ 오픈 하트 펜던트, 옐로우 골드</p>
           </div>
-          <div class="slide-item ">
+          <div class="slide-item swiper-slide">
             <img src="./public/proItem5.webp" alt="Item 5">
             <p>엘사 퍼레티™ 다이아몬드 바이 더 야드™ 브레이슬릿</p>
           </div>
@@ -170,30 +170,10 @@
             <p>엘사 퍼레티™ 펄 이어링</p>
           </div>
         </div>
-        <div class="swiper-button-next" style="right:-10px; z-index:100"></div>
+        <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination" style="bottom: 0; top:initial;"></div>
+        <div class="swiper-pagination"></div>
       </div>
-      <script>
-        var swiper = new Swiper(".mySwiper", {
-          loop: true,
-          slidesPerView: 5,
-          spaceBetween: 10,
-          centeredSlides: true,
-          autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-          },
-          pagination: {
-            el: ".swiper-pagination",
-            type: "progressbar",
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-        });
-      </script>
       <!-- 스와이퍼 슬라이드2 -->
     </div>
       <!-- <section class="section-2 bg-[#fff]">
@@ -240,7 +220,8 @@
           </li>
         </ul>
       </section> -->
-    <section class="section2 bg-[#fff] w-full mt-[30px] relative">
+    <section class="section2 bg-[#fff] w-full mt-[30px] relative" style="    margin-top: 0;
+    padding-top: 80px;">
         <figure class="relative">
           <img src="./public/2025_VDAY_BG_MOST_POPULAR_Deskto.jpg" alt="" class="hidden lg:block w-full">
           <img src="./public/2025_VDAY_BG_MOST_POPULAR_Mobile.jpg" alt="" class="block lg:hidden w-full">

@@ -319,7 +319,7 @@ footer {
 }
 
 /* 슬라이드 항목 */
-.productSlider  .slide-item {
+/* .productSlider  .slide-item {
   min-width: 20%;
   padding: 0 15px;
   text-align: center;
@@ -351,6 +351,61 @@ footer {
   line-height: 1.35;
   word-break: keep-all;
   white-space: pre-line;
+} */
+
+
+
+/* 스와이퍼 슬라이드 */
+.productSlider {
+  padding: 10px 0 55px 0;
+}
+.productSlider .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+  background-color: #000;
+}
+
+.productSlider .swiper-button-next, .swiper-button-prev{
+  color: #000;
+}
+
+.productSlider .slide-item img {
+  width:308px;
+}
+
+.productSlider .swiper-horizontal>.swiper-pagination-progressbar, .swiper-pagination-progressbar.swiper-pagination-horizontal{
+  width: 36%;
+  bottom: 0px;
+  top: initial;
+  left: 0;
+  transform: translate(88%, 0);
+}
+
+.productSlider .swiper-button-prev,
+.productSlider .swiper-button-next{
+  top: inherit;
+  bottom: 0;
+}
+
+.productSlider .swiper-button-prev{
+  left: 29%;
+  bottom: 2px;
+}
+
+
+.productSlider .swiper-button-next{
+  right: 29%;
+  bottom: 2px;
+}
+
+:root {
+  --swiper-navigation-size: 25px;
+}
+ /* .swiper-rtl .swiper-button-next */
+
+.productSlider .slide-item p{
+  display: block;
+  text-align: center;
+  word-wrap: break-word;
+  font-size: 13px;
 }
 
 /* 페이지네이션 및 스타일 */
