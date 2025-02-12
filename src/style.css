@@ -1,0 +1,69 @@
+/* main */
+main {position: relative; margin-bottom: 216px; background-color: #fff; z-index: 100;}
+
+@media screen and (max-width:1200px) {
+	main{
+		margin-bottom: 0;
+	}
+}
+main > h2 > span{color:#f2f2f2;}
+.skills {background-color: #363636;}
+.skills span{color: #fff;}
+.skills .skill_list {display: flex; justify-content: center; padding-bottom: 80px;}
+.skills .skill_list > li {width: 25%; color: #f2f2f2; font-size: 23px; letter-spacing: -1px;}
+.skills .skill_list > li + li {margin-left: 15px;}
+.skills .skill_list > li > ul {margin-top: 30px;}
+.skills .skill_list > li > ul > li + li {margin-top: 18px;}
+.skills .skill_list > li > ul > li > span {position: relative; line-height: 1.3; padding-left: 20px; color: #bcbcbc; font-size: 17px;}
+.skills .skill_list > li > ul > li > span::before {position: absolute; top: 7px; left: 0; content: ''; width: 6px; height: 6px; border-radius: 100%; background-color: #a69eb0;}
+.portfolio {padding-bottom: 80px;}
+.portfolio h2 {max-width: 1380px; margin: 0 auto; padding: 80px 0;}
+.portfolio h2::after {left: 11%;}
+.portfolio .portfolio_list li .comm-inner {display: flex; align-items: center; max-width: 1380px; margin: 0 auto;}
+.portfolio .portfolio_list li + li {margin-top: 200px;}
+.portfolio .portfolio_list li .img_area {width: 60%;}
+.portfolio .portfolio_list li:nth-child(odd) .img_area {margin-right: 8%;}
+.portfolio .portfolio_list li:nth-child(even) .img_area {margin-left: 8%; order: 2;}
+.portfolio .portfolio_list li:nth-child(2){background-color: #f7fbff;}
+.portfolio .portfolio_list li:nth-child(4){background-color: #f7fbff;}
+.portfolio .portfolio_list li .image{max-width: 430px; margin: 0 auto;}
+.portfolio .portfolio_list li .image img {width: 100%;}
+.portfolio .portfolio_list li .file_link{max-width: 500px; margin: 0 auto;}
+.portfolio .portfolio_list li .portfolio_cont {width: 40%; padding-top: 8%;}
+.portfolio .portfolio_list li:nth-child(6) .portfolio_cont {padding-top: 0;}
+.portfolio .portfolio_list li:nth-child(7) .portfolio_cont {padding-top: 0;}
+.portfolio .portfolio_list li:nth-child(9) .portfolio_cont {padding-top: 0;}
+.btn_top { visibility: hidden; position: fixed; bottom: 24px; right: 32px; width: 58px; height: 58px; border: 0; background-color: transparent; text-align: center; color: #fff; font-size: 15px; font-weight: 500; cursor: pointer;}
+.btn_top::before {position: absolute; top: 0; left: 0; content: ''; width: 100%; height: 100%; border-radius: 5px; background-color: #a69eb0; transition: all 0.2s linear;}
+.btn_top::after {position: absolute; top: 50%; left: 0; right: 0; content: 'TOP'; transform: translateY(-50%);}
+.btn_top:hover::before {border-radius: 12px; background-color: #766d81; transform: rotate(-45deg) scale(0.8, 0.8);}
+
+
+/* 아코디언 */
+.accordion{margin-bottom: 18px;}
+.accordion > div + div{margin-top: 7px;}
+.accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease;}
+.accordion-content p{ padding: 10px; font-size: 14px; line-height: 1.37; color: #585858; word-break: keep-all;}
+
+@media screen and (max-width:1024px) {
+	.accordion-content p{
+		text-align: left;
+	}
+}
+
+.accordion-content p span{display: block;}
+.accordion-content p span + span{margin-top: 5px;}
+.accordion-button {position: relative; width: 100%; padding: 17px 10px 17px 21px; border: none; border-radius: 7px; font-weight: 600; font-size: 13px; letter-spacing: -1px; background-color: #fff; text-align: left; color: #333; cursor: pointer;}
+li:nth-child(odd) .comm-inner .accordion-button{background-color: #f3f3f3f3;}
+.accordion-button-last{border-bottom: 0;}
+.accordion-button:focus {outline: none;}
+.accordion-item.active .accordion-content {max-height: 200px; /* 원하는 높이로 조정 가능 */}
+
+
+/* 최상단 배너 */
+/* .image-main{
+  background: url(./public/main1.png) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+} */
