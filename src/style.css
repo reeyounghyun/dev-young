@@ -1,4 +1,3 @@
-/* main */
 main {position: relative; margin-bottom: 216px; background-color: #fff; z-index: 100;}
 
 @media screen and (max-width:1200px) {
@@ -16,6 +15,28 @@ main > h2 > span{color:#f2f2f2;}
 .skills .skill_list > li > ul > li + li {margin-top: 18px;}
 .skills .skill_list > li > ul > li > span {position: relative; line-height: 1.3; padding-left: 20px; color: #bcbcbc; font-size: 17px;}
 .skills .skill_list > li > ul > li > span::before {position: absolute; top: 7px; left: 0; content: ''; width: 6px; height: 6px; border-radius: 100%; background-color: #a69eb0;}
+
+@media screen and (max-width:1024px) {
+  .portfolio h2::after {left: 215px;}
+	.skills .skill_list {text-align: center; flex-wrap: wrap; align-items: flex-start;}
+	.skills .skill_list > li {font-size: 18px; width: calc(44% - 10px);}
+	.skills .skill_list > li + li {margin-top: 0; margin-left: 0;}
+	.skills .skill_list > li > ul {margin-top: 20px;}
+  .skills .skill_list > li > ul > li > span{font-size: 14px;}
+}
+
+@media screen and (max-width:768px) {
+  .num_portfolio {font-size: 20px;}
+	.point > li > span {font-size: 16px;}
+	.skills .skill_list > li {position: relative; font-size: 16px; width: 100%; font-weight: 400;}
+  .skills .skill_list > li::after{content: ""; clear: both; position: absolute; width: 94%; height: 0.5px; left: 50%; bottom: -15px; margin: 0 auto; border-bottom: 1px solid #5f5f5f; transform: translate(-50%, -50%);}
+  .skills .skill_list > li:last-child:after{position: inherit;}
+	.skills .skill_list > li + li {margin: 10px 0px; padding: 20px 0;}
+	.skills .skill_list > li > ul > li > span {font-size: 13px;}
+	.portfolio h2 {padding: 60px 0;}
+	.btn_top {display: none;}
+}
+
 .portfolio {padding-bottom: 80px;}
 .portfolio h2 {max-width: 1380px; margin: 0 auto; padding: 80px 0;}
 .portfolio h2::after {left: 11%;}
@@ -33,6 +54,25 @@ main > h2 > span{color:#f2f2f2;}
 .portfolio .portfolio_list li:nth-child(6) .portfolio_cont {padding-top: 0;}
 .portfolio .portfolio_list li:nth-child(7) .portfolio_cont {padding-top: 0;}
 .portfolio .portfolio_list li:nth-child(9) .portfolio_cont {padding-top: 0;}
+
+@media screen and (max-width:1300px) {
+  .portfolio .portfolio_list li .comm-inner{padding: 0 15px;}
+}
+
+@media screen and (max-width:1024px) {
+  .portfolio h2{max-width: 90%;}
+  .portfolio .portfolio_list li .comm-inner{width: 80%; flex-direction: column;}
+  .portfolio .portfolio_list li .img_area {width: 100%;}
+  .portfolio .portfolio_list li .portfolio_cont{width: 100%;}
+  .portfolio .portfolio_list li + li{margin-top: 0;}
+	.portfolio .portfolio_list > li:nth-child(odd) .img_area {margin-right: 0;}
+  .portfolio .portfolio_list li:nth-child(even) .comm-inner{flex-direction: column-reverse;}
+  .portfolio .portfolio_list li:nth-child(even) .img_area{margin-left: 0;}
+	.portfolio .portfolio_list > li:nth-child(6) .portfolio_cont {padding-top: 8%;}
+	.portfolio .portfolio_list > li:nth-child(7) .portfolio_cont {padding-top: 8%;}
+	.portfolio .portfolio_list > li:nth-child(9) .portfolio_cont {padding-top: 8%;}
+}
+
 .btn_top { visibility: hidden; position: fixed; bottom: 24px; right: 32px; width: 58px; height: 58px; border: 0; background-color: transparent; text-align: center; color: #fff; font-size: 15px; font-weight: 500; cursor: pointer;}
 .btn_top::before {position: absolute; top: 0; left: 0; content: ''; width: 100%; height: 100%; border-radius: 5px; background-color: #a69eb0; transition: all 0.2s linear;}
 .btn_top::after {position: absolute; top: 50%; left: 0; right: 0; content: 'TOP'; transform: translateY(-50%);}
