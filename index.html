@@ -15,7 +15,6 @@
   </head>
   <body>
     <div class="wrap">
-      
       <main>
         <div class="image-main"></div>
         <div class="skills">
@@ -317,7 +316,7 @@
                         <span>#이벤트 효과</span>
                       </li>
                       <li>
-                        <span>#반응형형</span>
+                        <span>#반응형</span>
                       </li>
                     </ul>
                     <div class="btn_area">
@@ -483,11 +482,12 @@
             </ol>
           </div>
         </div>
-        <button type="button" class="btn_top" style="visibility: visible;">
+        <button type="button" class="btn_top" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
           <span class="hidden_text">최상단으로 가기</span>
-        </button>
+      </button>
+
+
       </main>
-      <!-- 푸터 -->
       <footer>
         <ul class="contact_list">
           <li>
@@ -499,53 +499,7 @@
       </footer>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js"></script>
-    <script>
-      // icon js
-      lucide.createIcons();
-
-      //btn_top js
-      const html = document.querySelector('html');
-      const btnTop = html.querySelector('.btn_top');
-    
-      window.addEventListener('scroll', () => { // 스크롤 노출설정
-        if (html.scrollTop > 1170) {
-          btnTop.style.visibility = 'block';
-        } else {
-          btnTop.style.visibility = 'block';
-        }
-      });
-    
-      btnTop.addEventListener('click', () => { // 클릭시
-        window.scroll({
-          behavior: 'smooth',
-          top: 0
-        });
-      });
-    </script>
-
-
-    <script>
-      //accordion js
-      document.querySelectorAll('.accordion-button').forEach(button => {
-      button.addEventListener('click', () => {
-        const content = button.nextElementSibling;
-
-        // 나머지 아코디언 아이템 닫기
-        document.querySelectorAll('.accordion-content').forEach(item => {
-          if (item !== content) {
-            item.style.maxHeight = null;
-          }
-        });
-
-        // 선택된 아이템 토글
-        if (content.style.maxHeight) {
-          content.style.maxHeight = null;
-        } else {
-          content.style.maxHeight = content.scrollHeight + 'px';
-        }
-      });
-    });
-    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="./src/script.js"></script>
   </body>
 </html>

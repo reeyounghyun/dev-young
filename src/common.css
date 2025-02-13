@@ -58,7 +58,9 @@ h3 {font-size: 32px; font-weight: 500; letter-spacing: -1px; color: #0b1a2e;}
 /* .point > li > span::before {position: absolute; top: 6px; left: 0; content: ''; width: 6px; height: 6px; border-radius: 100%; background-color: #a69eb0;} */
 
 @media screen and (max-width:768px) {	
+	.skill_list li .title{justify-content: center;}
 	.point > li > span {font-size: 14px;}
+	.summary{margin: 7px 0 19px 0;}
 }
 .btn_area {margin: 36px 0; text-align: left;}
 .btn_area .btn_goto {font-size: 15px; display: inline-block; width: 115px; text-align: center; padding: 10px 0; border-radius: 25px; background-color: #2e70d0; color: #fff; letter-spacing: 1px;}
