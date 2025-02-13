@@ -71,7 +71,6 @@ h3 {font-size: 32px; font-weight: 500; letter-spacing: -1px; color: #0b1a2e;}
 
 @media screen and (max-width:1024px) {
 	.btn_area .btn_goto{width: 100%; padding: 13px 0; font-size: 16px;}
-
 }
 
 .file_link {font-size: 15px;}
