@@ -75,6 +75,7 @@ h3 {font-size: 32px; font-weight: 500; letter-spacing: -1px; color: #0b1a2e;}
 
 @media screen and (max-width:768px) {
   .btn_area .btn_goto:before{display: none;}
+  .btn_area .btn_goto:hover {font-weight: inherit;}
 }
 
 .file_link {font-size: 15px;}
