@@ -11,9 +11,9 @@ main > h2 > span{color:#f2f2f2;}
 .skills .skill_list {display: flex; justify-content: center; padding-bottom: 80px;}
 .skills .skill_list > li {width: 25%; color: #f2f2f2; font-size: 23px; letter-spacing: -1px;}
 .skills .skill_list > li + li {margin-left: 15px;}
-.skills .skill_list > li > ul {margin-top: 30px;}
+.skills .skill_list > li > ul {margin-top: 16px;}
 .skills .skill_list > li > ul > li + li {margin-top: 18px;}
-.skills .skill_list > li > ul > li > span {position: relative; line-height: 1.3; padding-left: 50px; color: #bcbcbc; font-size: 20px;}
+.skills .skill_list > li > ul > li > span {position: relative; line-height: 1.3; padding-left: 50px; color: #bcbcbc; font-size: 17px;}
 .skills .skill_list > li > ul > li > span::before {position: absolute; top: 9px; left: 35px; content: ''; width: 6px; height: 6px; border-radius: 100%; background-color: #a69eb0;}
 
 @media screen and (max-width:1024px) {
