@@ -62,7 +62,7 @@ main > h2 > span{color:#f2f2f2;}
   .portfolio h2{max-width: 90%;}
   .portfolio .portfolio_list li .comm-inner{width: 80%; flex-direction: column;}
   .portfolio .portfolio_list li .img_area {width: 100%;}
-  .portfolio .portfolio_list li .portfolio_cont{width: 100%;}
+  .portfolio .portfolio_list li .portfolio_cont{width: 100%; margin-top: 25px;}
   .portfolio .portfolio_list li + li{margin-top: 0;}
 	.portfolio .portfolio_list > li:nth-child(odd) .img_area {margin-right: 0;}
   .portfolio .portfolio_list li:nth-child(even) .comm-inner{flex-direction: column-reverse;}
