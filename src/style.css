@@ -26,7 +26,7 @@ main > h2 > span{color:#f2f2f2;}
 }
 
 @media screen and (max-width:768px) {
-  .num_portfolio {font-size: 20px;}
+
 	.skills .skill_list > li {position: relative; font-size: 16px; width: 100%; font-weight: 400;}
   .skills .skill_list > li::after{content: ""; clear: both; position: absolute; width: 94%; height: 0.5px; left: 50%; bottom: -15px; margin: 0 auto; border-bottom: 1px solid #5f5f5f; transform: translate(-50%, -50%);}
   .skills .skill_list > li:last-child:after{position: inherit;}
@@ -34,6 +34,20 @@ main > h2 > span{color:#f2f2f2;}
 	.skills .skill_list > li > ul > li > span {font-size: 15px;}
 	.portfolio h2 {padding: 60px 0;}
 	.btn_top {display: none;}
+}
+
+
+.num_portfolio {font-size: 20px;}
+.portfolio_cont .mobile-title{display: block;}
+.comm-inner>.img_area >.mobile-title{display: none;}
+@media screen and (max-width:1024px) {
+  .portfolio_cont .mobile-title{display: none;}
+  .comm-inner> .img_area>.mobile-title{display: block; font-size: 24px; margin-bottom: 32px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .num_portfolio {font-size: 27px;}
 }
 
 .portfolio {padding-bottom: 80px;}
@@ -53,17 +67,19 @@ main > h2 > span{color:#f2f2f2;}
 .portfolio .portfolio_list li:nth-child(7) .portfolio_cont {padding-top: 0;}
 .portfolio .portfolio_list li:nth-child(9) .portfolio_cont {padding-top: 0;}
 
+.portfolio .portfolio_list .point li+li{margin: 0; padding: 0;}
+
 @media screen and (max-width:1300px) {
   .portfolio .portfolio_list li .comm-inner{padding: 0 15px;}
 }
 
 @media screen and (max-width:1024px) {
   .portfolio {padding-bottom: 0px;}
-  .portfolio h2{max-width: 90%; font-size: 31px; font-weight: 400; padding: 60px 0 46px 0;}
+  .portfolio h2{max-width: 90%;font-size: 36px;font-weight: 400; padding: 60px 0 46px 0;}
   .portfolio .portfolio_list li .comm-inner{width: 80%; flex-direction: column;}
   .portfolio .portfolio_list li .img_area {width: 100%;}
-  .portfolio .portfolio_list li .portfolio_cont{width: 100%; margin-top: 25px;}
-  .portfolio .portfolio_list li + li{margin: 2rem auto;}
+  .portfolio .portfolio_list li .portfolio_cont{width: 100%;margin-top: 5px; }
+  .portfolio .portfolio_list li + li{margin: 2rem auto; padding: 2rem 0;}
 	.portfolio .portfolio_list > li:nth-child(odd) .img_area {margin-right: 0;}
   .portfolio .portfolio_list li:nth-child(even) .comm-inner{flex-direction: column-reverse;}
   .portfolio .portfolio_list li:nth-child(even) .img_area{margin-left: 0;}
@@ -106,3 +122,4 @@ li:nth-child(odd) .comm-inner .accordion-button{background-color: #f3f3f3f3;}
   width: 100%;
   height: 100vh;
 } */
+
