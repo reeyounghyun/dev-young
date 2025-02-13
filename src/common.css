@@ -31,8 +31,6 @@ address {font-style: normal;}
 button {outline: 0;}
 
 .lucide-icon{color: #747474; position: absolute; right: 20px; width: 20px; height: 20px;}
-
-/* common */
 .skills .inner{max-width: 1380px;margin: 0 auto;}
 .inner {position: relative; overflow: hidden; }
 h2 {position: relative; padding: 60px 0; font-size: 40px; font-weight: 300; letter-spacing: -3px;}
@@ -40,7 +38,7 @@ h2::after {position: absolute;     width: 87%; top: 50%; left: 235px; right: 0; 
 h3 {font-size: 32px; font-weight: 500; letter-spacing: -1px; color: #0b1a2e;}
 @media screen and (max-width: 1024px) {
 	h2 {padding: 40px 0; position:inherit;}
-  h2::after{width: 0;}
+	h2::after{width: 0;}
 }
 
 @media screen and (max-width: 768px) {
@@ -48,20 +46,26 @@ h3 {font-size: 32px; font-weight: 500; letter-spacing: -1px; color: #0b1a2e;}
 	h3 {font-size: 18px;}
 }
 
+.skill_list li .title{display: flex; align-items: center;}
+.skill_list li .title span{display: block; margin-left: 8px; font-size: 18px;}
 .num_portfolio {margin-right: 3px; color: #2e70d0; font-size: 40px; font-weight: 400;}
 .summary {line-height: 1.3; margin: 7px 0 40px 0; font-size: 14px; font-weight: 400; word-break: keep-all;}
-.portfolio .portfolio_list .point li+li{margin-top: 14px;}
+.portfolio .portfolio_list .point li+li{margin: 14px 0 0 0; padding-top: 0;}
 .portfolio .portfolio_list li:nth-child(3) .point li{background-color: transparent;}
 .portfolio .portfolio_list li:nth-child(1) .point li{background-color: transparent;}
 .point > li > span {position: relative; line-height: 1.3; padding-left: 20px; font-size: 14px; word-break: keep-all;}
 .point > li > span::before {position: absolute; top: 6px; left: 0; content: ''; width: 6px; height: 6px; border-radius: 100%; background-color: #a69eb0;}
 
 @media screen and (max-width:1024px) {
-  .portfolio .portfolio_list .point li{text-align: left;}
+	.portfolio .portfolio_list .point li{text-align: left;}
 }
 .btn_area {margin: 36px 0; text-align: left;}
 .btn_area .btn_goto {font-size: 15px; display: inline-block; width: 115px; text-align: center; padding: 10px 0; border-radius: 25px; background-color: #2e70d0; color: #fff; letter-spacing: 1px;}
-.btn_area .btn_goto:hover {background-color: #766d81;}
+.btn_area .btn_goto {display: inline-block; width: 115px; text-align: center; padding: 10px 0; border-radius: 25px; letter-spacing: 1px; position: relative; background: #020202; overflow: hidden; z-index: 1; font-size: 15px; transition: all 0.3s ease; color: rgba(255, 255, 255, 0.9);}
+.btn_area .btn_goto:hover {color: #ffffff; font-weight: 500;}
+.btn_area .btn_goto:before {content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: #287ccf; /* 더 밝은 파란색 */ transition: all 0.7s ease; z-index: -1;}
+.btn_area .btn_goto:hover:before {left: 0;}
+
 .file_link {font-size: 15px;}
 .file_link th {padding: 17px 11px; border-bottom: 1px solid #e0e0e0; background-color: #0b1a2e; color: #fff; font-size: 14px; font-weight: 500;}
 .file_link th#col1 {width: 50%; padding-left: 25px;}
@@ -76,7 +80,7 @@ h3 {font-size: 32px; font-weight: 500; letter-spacing: -1px; color: #0b1a2e;}
 .hidden_text {position: absolute; display: inline-block; text-indent: -9999px;}
 
 /* footer */
-footer {position: fixed; bottom: 0; left: 0; right: 0; padding:20px 0 50px; background-color: #f0f0f0; text-align: center;}
+footer {position: fixed; bottom: 0; left: 0; right: 0; padding: 50px 0; background-color: #f0f0f0; text-align: center;}
 footer h2 {padding: 30px 0; font-size: 33px; letter-spacing: -1px;}
 footer h2::after {display: none;}
 .contact_list > li i {margin-right: 7px;}

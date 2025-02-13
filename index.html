@@ -6,7 +6,6 @@
 
     <!-- icon js -->
     <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js"></script>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
 
     <!-- style -->
@@ -24,7 +23,13 @@
             <h2><span>활용능력 Skills</span></h2>
             <ul class="skill_list">
               <li>
-                Markup Languages
+                <div class="title">
+                  <!-- Markup Languages 아이콘 -->
+                  <svg width="30" height="30" viewBox="0 0 40 40">
+                    <text x="8" y="25" font-size="24" fill="#fff">&lt;/&gt;</text>
+                  </svg>
+                  <span>Markup Languages</span>
+                </div>
                 <ul>
                   <li><span>HTML 5</span></li>
                   <li><span>웹 표준 / 접근성 준수</span></li>
@@ -32,7 +37,15 @@
                 </ul>
               </li>
               <li>
-                Responsive Design
+                <div class="title">
+                  <!-- Responsive Design 아이콘 -->
+                  <svg width="30" height="30" viewBox="0 0 40 40">
+                    <rect x="5" y="8" width="30" height="20" fill="none" stroke="#fff" stroke-width="2"/>
+                    <rect x="12" y="12" width="16" height="12" fill="none" stroke="#fff" stroke-width="2"/>
+                    <rect x="16" y="16" width="8" height="8" fill="none" stroke="#fff" stroke-width="2"/>
+                  </svg>
+                  <span>Responsive Design</span>
+                </div>
                 <ul>
                   <li><span>Tailwind</span></li>
                   <li><span>CSS 3 / SCSS</span></li>
@@ -40,20 +53,37 @@
                 </ul>
               </li>
               <li>
-                JavaScript & Frameworks 
+                <div class="title">
+                  <!-- JavaScript & Frameworks 아이콘 -->
+                  <svg width="30" height="30" viewBox="0 0 40 40">
+                    <circle cx="20" cy="20" r="15" fill="none" stroke="#fff" stroke-width="2"/>
+                    <text x="12" y="26" font-size="16" fill="#fff">JS</text>
+                  </svg>
+                  <span>JavaScript & Frameworks </span>
+                </div>
                 <ul>
                   <li><span>JavaScript</span></li>
-                  <li><span>React(UI)</span></li>
-                  <li><span>React+GSAP</span></li>
-                  <li><span>Next.js(UI)</span></li>
                   <li><span>jQuery</span></li>
+                  <li><span>React(UI)</span></li>
+                  <li><span>GSAP</span></li>
+                  <li><span>Next.js(UI)</span></li>
                 </ul>
               </li>
               <li>
-                Version Control
+                <div class="title">
+                  <!-- Version Control 아이콘 -->
+                  <svg width="30" height="30" viewBox="0 0 40 40">
+                    <path d="M10,20 L20,10 L30,20 L20,30 Z" fill="none" stroke="#fff" stroke-width="2"/>
+                    <circle cx="20" cy="20" r="4" fill="#fff"/>
+                  </svg>
+                  <span>Version Control</span>
+                </div>
                 <ul>
                   <li><span>Git / GitHub</span></li>
-                  <li><span>디자인 툴 사용 가능</span></li>
+                  <li><span>Figma</span></li>
+                  <li><span>Adobe Photoshop</span></li>
+                  <li><span>Adobe XD </span></li>
+                  <li><span>Zeplin</span></li>
                 </ul>
               </li>
             </ul>
@@ -439,11 +469,12 @@
             </ol>
           </div>
         </div>
-        <button type="button" class="btn_top" style="visibility: visible;"><span class="hidden_text">최상단으로 가기</span></button>
+        <button type="button" class="btn_top" style="visibility: visible;">
+          <span class="hidden_text">최상단으로 가기</span>
+        </button>
       </main>
       <!-- 푸터 -->
       <footer>
-        <h2>Get in Touch!</h2>
         <ul class="contact_list">
           <li>
             <i class="far fa-envelope"></i>
