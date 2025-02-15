@@ -1,82 +1,94 @@
-main {position: relative; margin-bottom: 216px; background-color: #fff; z-index: 100;}
+main {position: relative; overflow: hidden;}
 
-@media screen and (max-width:1200px) {
-	main{
-		margin-bottom: 0;
-	}
+.intro_bg {width: 100%; height: auto;}
+.intro_bg img{width: 100%;  height: auto; display: block; object-fit: cover; object-position: center;}
+.intro_bg .intro{display: block;}
+.intro_bg .mobile_intro{display: none;}
+@media screen and (max-width:1400px) {
+  .intro_bg .mobile_intro{display: block;}
+  .intro_bg .intro{display: none;}
 }
-main > h2 > span{color:#f2f2f2;}
-.skills {background-color: #363636;}
+
+.skills { background: url(../src/public/bg.png)no-repeat;  background-size: cover; max-width: 1920px;}
+.skills .inner{max-width: 1480px; margin: 0 auto;}
+.skills .inner h2 {position: relative; height: 152px;}
+.skills>.inner h2 span{color: #fff; position: absolute; top: 87px; left: 75px;  font-size: 40px; font-weight: 300; letter-spacing: -3px;}
 .skills span{color: #fff;}
-.skills .skill_list {display: flex; justify-content: center; padding-bottom: 80px;}
+.skills .skill_list {display: flex; justify-content: center; padding-bottom: 4rem;
+  margin-top: 40px;}
 .skills .skill_list > li {width: 25%; color: #f2f2f2; font-size: 23px; letter-spacing: -1px;}
-.skills .skill_list > li + li {margin-left: 15px;}
-.skills .skill_list > li > ul {margin-top: 16px;}
+.skills .skill_list > li > ul {margin-top: 37px;}
 .skills .skill_list > li > ul > li + li {margin-top: 18px;}
-.skills .skill_list > li > ul > li > span {position: relative; line-height: 1.3; padding-left: 50px; color: #bcbcbc; font-size: 17px;}
-.skills .skill_list > li > ul > li > span::before {position: absolute; top: 9px; left: 35px; content: ''; width: 6px; height: 6px; border-radius: 100%; background-color: #a69eb0;}
+.skills .skill_list > li > ul > li > span {position: relative; padding-left: 6rem; color: #fff; font-size: 18px;}
+.skills .skill_list > li > ul > li > span::before {position: absolute; top: 9px; left: 77px; content: ''; width: 6px; height: 6px; border-radius: 100%; background-color: #ffffff;}
+
 
 @media screen and (max-width:1024px) {
+  h2 {padding: 40px 0; position:inherit;}
+	h2::after{width: 0;}
   .portfolio h2::after {left: 215px;}
-	.skills .skill_list {text-align: center; flex-wrap: wrap; align-items: flex-start;}
-	.skills .skill_list > li {font-size: 18px; width: calc(44% - 10px);}
+  .skills>.inner h2 span {top: 183px;}
+  .skills { background: url(../src/public/bg_mb.png)no-repeat; background-size: cover;max-width: inherit;}
+	.skills .skill_list {text-align: center; flex-wrap: wrap; align-items: flex-start;         gap: 4rem 0;}
+	.skills .skill_list > li {font-size: 18px; width: 50%;}
 	.skills .skill_list > li + li {margin-top: 0; margin-left: 0;}
 	.skills .skill_list > li > ul {margin-top: 20px;}
-  .skills .skill_list > li > ul > li > span{font-size: 14px;}
+  .skills .skill_list > li > ul > li > span{padding-left: 0; font-size: 14px;color: #eaeaea;}
+  .skills .skill_list > li > ul > li > span::before {top: 5px;left: -16px;}
 }
 
 @media screen and (max-width:768px) {
+  h2 {font-size: 24px; width: 80%; margin: 0 auto; letter-spacing: 0px;}
+  .skills .inner h2{width: 100%;height: auto; margin: 0 auto; letter-spacing: 0px;}
+  .skills>.inner h2 span{position: initial; width: 100%; display: block; text-align: center;font-size: 32px;}
+  .skills .skill_list {margin-top: 10px;}
 	.skills .skill_list > li {position: relative; font-size: 16px; width: 100%; font-weight: 400;}
-  .skills .skill_list > li::after{content: ""; clear: both; position: absolute; width: 94%; height: 0.5px; left: 50%; bottom: -15px; margin: 0 auto; border-bottom: 1px solid #5f5f5f; transform: translate(-50%, -50%);}
+  .skills .skill_list > li::after{content: ""; clear: both; position: absolute; width: 100%; height: 0.5px; left: 50%; bottom: -34px; margin: 0 auto; border-bottom: 1px solid #95b1e3; transform: translate(-50%, -50%);}
   .skills .skill_list > li:last-child:after{position: inherit;}
-	.skills .skill_list > li + li {margin: 10px 0px; padding: 20px 0;}
 	.skills .skill_list > li > ul > li > span {font-size: 15px;}
 	.portfolio h2 {padding: 60px 0;}
 	.btn_top {display: none;}
 }
 
-.portfolio_cont .mobile-title{display: block;}
+.portfolio_cont .mobile-title{display: none;}
 .comm-inner>.img_area >.mobile-title{display: none;}
 @media screen and (max-width:1024px) {
   .portfolio_cont .mobile-title{display: none;}
   .comm-inner> .img_area>.mobile-title{display: block; font-size: 24px; margin-bottom: 32px;
   }
 }
-
 @media screen and (max-width:768px) {
   .num_portfolio {font-size: 27px;}
 }
-
-.portfolio {padding-bottom: 80px;}
-.portfolio h2 {max-width: 1380px; margin: 0 auto; padding: 80px 0;}
+.portfolio h2 {max-width: 1380px; margin: 0 auto; padding: 80px 0;     font-size: 50px; font-weight: bold;}
 .portfolio h2::after {left: 11%;}
-.portfolio .portfolio_list li .comm-inner {display: flex; align-items: flex-start; justify-content: space-between; max-width: 1280px; margin: 0 auto; padding: 6rem 0}
-.portfolio .portfolio_list li .comm-inner > div{flex: 1;}
+.portfolio .portfolio_list li .comm-inner {display: flex; align-items: flex-start; justify-content: space-between; max-width: 1280px; margin: 0 auto; padding-bottom:6rem ;}
+.portfolio .portfolio_list li .comm-inner > div{flex: 1; max-width: 563px; width: 100%;height: 100%;}
+.portfolio .portfolio_list li .comm-inner > div:nth-child(1){max-width: 671px; width: 100%; min-height: 400px;}
+.portfolio .portfolio_list li .comm-inner > div:nth-child(2){max-width: 563px; width: 100%; min-height: 400px;}
 .portfolio .portfolio_list li + li {margin: 5rem auto}
-.portfolio .portfolio_list li:nth-child(even) .img_area { order: 2;}
-.portfolio .portfolio_list li:nth-child(2){background-color: #f7fbff;}
+.portfolio .portfolio_list li:nth-child(even) .img_area {position: relative; order: 2; margin-left: 4rem;}
+.portfolio .portfolio_list li>div.bg{background-color: #f7fbff; padding: 107px 0;}
 .portfolio .portfolio_list li:nth-child(4){background-color: #f7fbff;}
-.portfolio .portfolio_list li .image{max-width: 430px; margin: 0 auto;}
-.portfolio .portfolio_list li .image img {width: 100%;}
+.portfolio .portfolio_list li .image{max-width: 500px; width: 100%;height: 100%;}
+.portfolio .portfolio_list li .image img {width: 100%; height: 100%; object-fit: contain;}
 .portfolio .portfolio_list li .file_link{max-width: 500px; margin: 0 auto;}
-/* .portfolio .portfolio_list li .portfolio_cont {width: 40%; padding-top: 8%;} */
 .portfolio .portfolio_list li:nth-child(6) .portfolio_cont {padding-top: 0;}
 .portfolio .portfolio_list li:nth-child(7) .portfolio_cont {padding-top: 0;}
 .portfolio .portfolio_list li:nth-child(9) .portfolio_cont {padding-top: 0;}
 .portfolio .portfolio_list .point li+li{margin: 0; padding: 0;}
 
-@media screen and (max-width:1300px) {
-  .portfolio .portfolio_list li .comm-inner{padding: 0 15px;}
-}
-
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1200px) {
   .portfolio {padding-bottom: 0px;}
   .portfolio h2{max-width: 90%;font-size: 36px;font-weight: 400; padding: 60px 0 46px 0;}
-  .portfolio .portfolio_list li .comm-inner{width: 80%; flex-direction: column;}
+  .portfolio .portfolio_list li .image img{object-fit: cover;}
+  .portfolio .portfolio_list li .image img.sub-img{display: none;}
+  .portfolio .portfolio_list li .comm-inner{margin: 0 15px;}
   .portfolio .portfolio_list li .img_area {width: 100%;}
-  .portfolio .portfolio_list li .portfolio_cont{width: 100%;margin-top: 5px; }
+  .portfolio .portfolio_list li .comm-inner > div:nth-child(2){margin-left: 12px;}
   .portfolio .portfolio_list li + li{margin: 2rem auto; padding: 2rem 0;}
 	.portfolio .portfolio_list > li:nth-child(odd) .img_area {margin-right: 0;}
+  .portfolio .portfolio_list li .image{max-width: 600px; min-height: 316px; position: inherit;} 
   .portfolio .portfolio_list li:nth-child(even) .comm-inner{flex-direction: column-reverse;}
   .portfolio .portfolio_list li:nth-child(even) .img_area{margin-left: 0;}
 	.portfolio .portfolio_list > li:nth-child(6) .portfolio_cont {padding-top: 8%;}
@@ -86,13 +98,26 @@ main > h2 > span{color:#f2f2f2;}
 }
 
 @media screen and (max-width:768px) {
-  .portfolio .portfolio_list li .comm-inner{width: 100%;}
+  .portfolio h2{max-width: 100%; width: 100%; margin: 0; padding: 4rem 0 5rem 1rem; font-size: 36px; font-weight: 400;}
+  .portfolio .portfolio_list li + li{margin: 0; padding: 0;}
+  .portfolio .portfolio_list li>div.bg{padding: 30px 0;}
+  .portfolio .portfolio_list li .comm-inner{width: 90%; margin: 0 auto;}
+  .portfolio .portfolio_list li .image {max-width: 500px;}
+  .portfolio .portfolio_list > li .img_area{max-width: 500px;}
+  .portfolio .portfolio_list li .comm-inner > div:nth-child(1){max-width: 500px;min-height: 359px;}
+  .portfolio .portfolio_list li .comm-inner > div:nth-child(2){margin-left: 0;}
+  .portfolio .portfolio_list li .comm-inner{flex-direction: column; justify-content: center; align-items: center;        padding-bottom: 2rem;}
 }
+
+@media screen and (max-width:640px) {
+  .img_area .add-icon {bottom: -19px;}
+  .portfolio .portfolio_list li .comm-inner > div:nth-child(2){margin-top:0;}
+}
+
 .btn_top { visibility: hidden; position: fixed; bottom: 24px; right: 32px; width: 58px; height: 58px; border: 0; background-color: transparent; text-align: center; color: #fff; font-size: 15px; font-weight: 500; cursor: pointer;}
 .btn_top::before {position: absolute; top: 0; left: 0; content: ''; width: 100%; height: 100%; border-radius: 5px; background-color: #a69eb0; transition: all 0.2s linear;}
 .btn_top::after {position: absolute; top: 50%; left: 0; right: 0; content: 'TOP'; transform: translateY(-50%);}
 .btn_top:hover::before {border-radius: 12px; background-color: #766d81; transform: rotate(-45deg) scale(0.8, 0.8);}
-
 
 /* 아코디언 */
 .accordion{margin-bottom: 18px;}
@@ -108,18 +133,31 @@ main > h2 > span{color:#f2f2f2;}
 
 .accordion-content p span{display: block;}
 .accordion-content p span + span{margin-top: 5px;}
-.accordion-button {position: relative; width: 100%; padding: 17px 10px 17px 21px; border: none; border-radius: 7px; font-weight: 600; font-size: 13px; letter-spacing: -1px; background-color: #fff; text-align: left; color: #333; cursor: pointer;}
-li:nth-child(odd) .comm-inner .accordion-button{background-color: #f3f3f3f3;}
+.accordion-button {display: flex; align-items: center; justify-content: space-between;  position: relative; width: 100%; height: 62px; padding: 0 20px; border: none; border-radius: 7px; font-weight: 600; font-size: 16px; background-color: #fff; text-align: left; color: #000; cursor: pointer; font-weight: bold;}
+li:nth-child(odd) .comm-inner .accordion-button{background-color: #F5F5F5;}
 .accordion-button-last{border-bottom: 0;}
 .accordion-button:focus {outline: none;}
 .accordion-item.active .accordion-content {max-height: 200px; /* 원하는 높이로 조정 가능 */}
 
+.img_area{position: relative;}
+.img_area .image{    position: absolute;}
+.img_area .image>img.main-img{position: absolute; z-index: 200;}
+.img_area .image>img.sub-img{position: absolute; top: 35px; right: -67px; z-index: 100;}
+.img_area .add-icon{position: absolute; display: flex; justify-content: space-between; width: 67%; z-index: 120;  right: 127px; bottom: -7px; align-items: center;}
+.img_area .add-icon>span{position: relative; color:#fff; font-size: 20px; font-weight: bold;}
+.img_area .add-icon>span::after{content: ""; clear: both; position: absolute;     width: 265px; height: 1.3px; background-color: hsl(0deg 0% 100% / 80%); border-radius: 20px; top: 9px; left: 44px;}
+.btn_area{margin: 0;}
+@media screen and (max-width:1200px) {
+  .btn_area .btn_goto{background-color: #000; color: #fff;}
+  .img_area .add-icon>span{color: #000;}
+  .img_area .add-icon>span::after{background-color: #000; width: 336px;}
+  .img_area .add-icon{width:100%; right: 0; bottom: 32px;}
+}
 
-/* 최상단 배너 */
-/* .image-main{
-  background: url(./public/main1.png) no-repeat center;
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
-} */
+@media screen and (max-width:768px) {
+  .img_area .add-icon {right: 0; bottom: -23px;}
+}
 
+@media screen and (max-width:420px) {
+.img_area .add-icon>span::after {width: 148px;}
+}
