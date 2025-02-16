@@ -39,7 +39,7 @@ h3 {max-width: 1280px; margin: 0 auto;   display: block;  margin-bottom: 57px; f
 .portfolio .portfolio_list li:nth-child(1) .point li{background-color: transparent;}
 @media screen and (max-width:768px) {	
 	.skill_list li .title{justify-content: center;flex-direction: row;}
-  .skill_list li .title span{font-size: 18px; padding-top: 0;margin-left: 2px;} 
+	.skill_list li .title span{font-size: 18px; padding-top: 0;margin-left: 2px;} 
 	.summary{margin: 7px 0 19px 0;}
 }
 .btn_area .btn_goto {font-size: 14px; display: inline-block; width: 115px; text-align: center; padding: 10px 0; border-radius: 25px; background-color: #2e70d0; color: #fff; letter-spacing: 1px;}
