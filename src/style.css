@@ -89,7 +89,6 @@ main {position: relative; overflow: hidden;}
   .portfolio .portfolio_list li + li{margin: 2rem auto; padding: 2rem 0;}
 	.portfolio .portfolio_list > li:nth-child(odd) .img_area {margin-right: 0;}
   .portfolio .portfolio_list li .image{max-width: 600px; min-height: 316px; position: inherit;} 
-  /* .portfolio .portfolio_list li:nth-child(even) .comm-inner{flex-direction: column-reverse;} */
   .portfolio .portfolio_list li:nth-child(even) .img_area{margin-left: 0;}
 	.portfolio .portfolio_list > li:nth-child(6) .portfolio_cont {padding-top: 8%;}
 	.portfolio .portfolio_list > li:nth-child(7) .portfolio_cont {padding-top: 8%;}
@@ -99,14 +98,14 @@ main {position: relative; overflow: hidden;}
 
 @media screen and (max-width:768px) {
   .portfolio h2{max-width: 100%; width: 100%; margin: 0; padding: 4rem 0 5rem 1rem; font-size: 36px; font-weight: 400;}
-  .portfolio .portfolio_list li + li{margin: 0; padding: 0;}
+  .portfolio .portfolio_list li + li{margin: 1rem 0; padding: 0;}
   .portfolio .portfolio_list li>div.bg{padding: 30px 0;}
-  .portfolio .portfolio_list li .comm-inner{width: 90%; margin: 0 auto;}
   .portfolio .portfolio_list li .image {max-width: 500px;}
   .portfolio .portfolio_list > li .img_area{max-width: 500px;}
   .portfolio .portfolio_list li .comm-inner > div:nth-child(1){max-width: 500px;min-height: 359px;}
   .portfolio .portfolio_list li .comm-inner > div:nth-child(2){margin-left: 0;}
-  .portfolio .portfolio_list li .comm-inner{flex-direction: column; justify-content: center; align-items: center;  padding-bottom: 2rem;}
+  .portfolio .portfolio_list li .comm-inner{width: 90%; margin: 0 auto; flex-direction: column; justify-content: center; align-items: center;  padding-bottom: 2rem;}
+  .portfolio .portfolio_list li:nth-child(even) .comm-inner{flex-direction: column-reverse;}
 }
 
 @media screen and (max-width:640px) {
@@ -159,5 +158,5 @@ li:nth-child(odd) .comm-inner .accordion-button{background-color: #F5F5F5;}
 }
 
 @media screen and (max-width:420px) {
-.img_area .add-icon>span::after {width: 148px;}
+.img_area .add-icon>span::after {width: 179px;}
 }
