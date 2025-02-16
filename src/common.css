@@ -33,7 +33,8 @@ h3 {max-width: 1280px; margin: 0 auto;   display: block;  margin-bottom: 57px; f
 .summary>span{display: block;}
 .summary>span>strong{display: inline-block;}
 .summary-list p+p{    margin-top: 6px;}
-.portfolio .portfolio_list p{color: #000;}
+.portfolio .portfolio_list p{color: hsla(0, 0%, 0%, 0.733);}
+.portfolio .portfolio_list p strong{color: hsla(0, 0%, 0%, 0.89);}
 .portfolio .portfolio_list .point li+li{margin: 0; padding-top: 0; background: transparent;}
 .portfolio .portfolio_list li:nth-child(3) .point li{background-color: transparent;}
 .portfolio .portfolio_list li:nth-child(1) .point li{background-color: transparent;}

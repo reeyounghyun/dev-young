@@ -122,7 +122,7 @@ main {position: relative; overflow: hidden;}
 .accordion{margin-bottom: 18px;}
 .accordion > div + div{margin-top: 7px;}
 .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease;}
-.accordion-content p{ padding: 10px; font-size: 14px; line-height: 1.37; color: #585858; word-break: keep-all;}
+.accordion-content p{padding: 10px; line-height: 1.5; color: #585858; font-size: 15px; word-break: keep-all;}
 
 @media screen and (max-width:1024px) {
 	.accordion-content p{
