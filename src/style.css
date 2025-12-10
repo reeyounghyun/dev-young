@@ -9,7 +9,7 @@ main {position: relative; overflow: hidden;}
   .intro_bg .intro{display: none;}
 }
 
-.skills { background: url(../src/public/bg.png)no-repeat;  background-size: cover; max-width: 1920px;}
+.skills {background: url(../src/public/bg.png)no-repeat; background-size: cover;}
 .skills .inner{max-width: 1480px; margin: 0 auto;}
 .skills .inner h2 {position: relative; height: 152px;}
 .skills>.inner h2 span{color: #fff; position: absolute; top: 87px; left: 75px;  font-size: 40px; font-weight: 300; letter-spacing: -3px;}
