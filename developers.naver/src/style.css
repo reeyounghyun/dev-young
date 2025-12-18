@@ -340,17 +340,21 @@ textarea {
 /* 네비게이션 이미지 버튼 스타일 */
 .navigation {
   position: absolute;
+  right: 0;
+  left: 0;
   top: 50%;
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  pointer-events: none;
   transform: translateY(-50%);
-  pointer-events: none; 
 }
 
 .nav-prev, .nav-next {
-  width: 86px;
-  height: 40px;
+  width: 78px;
+  height: 27px;
   background-size: cover;
   background-repeat: no-repeat;
   border: none;
@@ -377,7 +381,7 @@ textarea {
 /* 페이지네이션 버튼 스타일 */
 .pagination {
   position: absolute;
-  bottom: 10px;
+  bottom: 48px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -427,7 +431,6 @@ textarea {
   display: inline-block;
   font-size: 16px;
   vertical-align: middle;
-  transition: transform 0.2s ease-in-out;
 }
 
 @media screen and (max-width:768px) {
@@ -435,11 +438,6 @@ textarea {
     max-width: 70px;
     width: 100%;
   }
-}
-
-.cont1 .cont_wrap ul li:hover{
-  transition: transform 0.2s ease-in-out;
-  transform: scale(1.2);
 }
 
 @media screen and (max-width:768px) {
