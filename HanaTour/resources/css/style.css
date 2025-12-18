@@ -819,7 +819,7 @@
     display: inline-block;
     position: absolute;
     left: 85px;
-    top: 7px;
+    top: 11px;
     color: #777;
 }
 .main_slider .swiper-button-next{
@@ -827,7 +827,7 @@
     background-repeat: no-repeat;
     bottom: 0;
     left: 0;
-    transform: translate(141px, 248px);
+    transform: translate(141px, 246px);
     width: 16px;
     height: 16px;
     position: absolute;
@@ -837,7 +837,7 @@
     background-repeat: no-repeat;
     left:0;  
     bottom: 0;
-    transform: translate(107px, 248px);
+    transform: translate(107px, 246px);
     z-index: 119;
     width: 16px;
     height: 19px;
@@ -977,6 +977,7 @@
 .price_group .unit span{
     font-size: 16px;
     color: #111;
+    font-weight: 400;
 }
 /* 마침내 특가 추운 겨울에도 여행 텐션 UP!! */
 .inner_tab .con_inner {
