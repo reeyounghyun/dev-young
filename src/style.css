@@ -4,7 +4,7 @@ main {position: relative; overflow: hidden;}
 .intro_bg img{width: 100%;  height: auto; display: block; object-fit: cover; object-position: center;}
 .intro_bg .intro{display: block;}
 .intro_bg .mobile_intro{display: none;}
-@media screen and (max-width:1400px) {
+@media screen and (max-width:990px) {
   .intro_bg .mobile_intro{display: block;}
   .intro_bg .intro{display: none;}
 }
