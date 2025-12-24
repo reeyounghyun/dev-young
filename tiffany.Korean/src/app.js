@@ -145,30 +145,52 @@ document.addEventListener('DOMContentLoaded', () => {
 
   init();
 });
-
-var swiper = new Swiper(".productSlider", {
+const productSwiper = new Swiper(".productSlider", {
   loop: true,
-  slidesPerView: 5, // 기본값
+  slidesPerView: 5,
   spaceBetween: 10,
   centeredSlides: true,
+
   autoplay: {
     delay: 3000,
     disableOnInteraction: false,
   },
+
   pagination: {
-    el: ".swiper-pagination",
+    el: ".productSlider .swiper-pagination",
     type: "progressbar",
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".productSlider .swiper-button-next",
+    prevEl: ".productSlider .swiper-button-prev",
   },
+
   breakpoints: {
-    1200: {
-      slidesPerView: 5, // 1200px 이상에서는 5개
-    },
-    0: {
-      slidesPerView: 3, // 1200px 이하에서는 3개
-    },
+    0: { slidesPerView: 3 },
+    1200: { slidesPerView: 5 },
   },
 });
+
+const topSwiper = new Swiper(".topBanner", {
+  slidesPerView: "auto",
+  loop: true,
+  centeredSlides: true,
+  spaceBetween: 30,
+
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  },
+
+  speed: 2000,
+  allowTouchMove: true,
+  grabCursor: true,
+
+  pagination: {
+    el: ".topBanner .swiper-pagination",
+    clickable: true,
+  },
+});
+
+
