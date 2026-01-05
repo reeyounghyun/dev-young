@@ -146,9 +146,9 @@ document.addEventListener('DOMContentLoaded', () => {
   init();
 });
 const productSwiper = new Swiper(".productSlider", {
-  loop: true,
-  slidesPerView: 5,
-  spaceBetween: 10,
+  loop: true, // 768px 미만(모바일) 기본 설정
+  slidesPerView: 1.2, 
+  spaceBetween: 20,
   centeredSlides: true,
 
   autoplay: {
@@ -157,17 +157,28 @@ const productSwiper = new Swiper(".productSlider", {
   },
 
   pagination: {
-    el: ".productSlider .swiper-pagination",
+    el: ".productSlider .swiper-pagination", // HTML 구조와 일치해야 함
     type: "progressbar",
   },
+  
   navigation: {
-    nextEl: ".productSlider .swiper-button-next",
-    prevEl: ".productSlider .swiper-button-prev",
+    nextEl: ".productSlider-next",
+    prevEl: ".productSlider-prev",
   },
 
   breakpoints: {
-    0: { slidesPerView: 3 },
-    1200: { slidesPerView: 5 },
+    // 768px 이상일 때
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      centeredSlides: false, // PC에서는 왼쪽 정렬이 깔끔함
+    },
+    // 1200px 이상일 때
+    1200: {
+      slidesPerView: 5,
+      spaceBetween: 30,
+      centeredSlides: false,
+    },
   },
 });
 

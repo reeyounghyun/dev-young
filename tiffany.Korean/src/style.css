@@ -205,6 +205,18 @@ footer {
 }
 
 /**** 콘텐츠 영역 ******/
+@media screen and (min-width:1024px) {
+  .topBanner {
+    display: block;
+  }
+}
+
+.main-banner {
+  background: url(/tiffany.Korean/public/main-benner.png) no-repeat center center;
+  background-size: cover;
+  background-position: center;
+  height: 687px;
+}
 
 /* 1.버튼 애니메이션 */
 .w-full.relative.z-20 {
@@ -354,10 +366,9 @@ footer {
 } */
 
 
-
 /* 스와이퍼 슬라이드 */
 .productSlider {
-  padding: 10px 0 55px 0;
+  padding: 10px 0 90px 0;
 }
 
 @media screen and (max-width:1300px) {
@@ -366,23 +377,12 @@ footer {
   }
 }
 
-.productSlider {
-  padding: 10px 0 90px 0;
-}
-
-
 .productSlider .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
   background-color: #000;
 }
 
-.productSlider .swiper-button-next, .swiper-button-prev{
-  color: #000;
-}
-
-.productSlider .slide-item img {
-  max-width: 308px;
-  width: 100%;
-  margin: 0 auto;
+.productSlider .productSlider-next, .productSlider .productSlider-prev{
+  color:  rgb(53 51 51 / 77%);
 }
 
 .productSlider .swiper-horizontal>.swiper-pagination-progressbar, .swiper-pagination-progressbar.swiper-pagination-horizontal{
@@ -404,39 +404,37 @@ footer {
   width: 32%;
   transform: translate(0);
 }
+
 @media screen and (max-width:740px) {
   .swiper-pagination-progressbar.swiper-pagination-horizontal{
     left: 8%;
     width: 80%;
-
   }
 }
 
-
-.productSlider .swiper-button-prev,
-.productSlider .swiper-button-next{
+.productSlider .productSlider-prev, .productSlider .productSlider-next{
   top: inherit;
   bottom: 0;
 }
 
-.productSlider .swiper-button-prev{
-  left: 29%;
-  bottom: 2px;
+.productSlider .productSlider-prev{
+  left: 0!important;
+  bottom: 2pximportant;
 }
 
 @media screen and (max-width:740px) {
-  .productSlider .swiper-button-prev {
+  .productSlider .productSlider-prev {
     left: 0%;
   }
 }
 
-.productSlider .swiper-button-next{
-  right: 29%;
-  bottom: 2px;
+.productSlider .productSlider-next{
+  right: 0!important;
+  bottom: 2px!important;
 }
 
 @media screen and (max-width:740px) {
-  .productSlider .swiper-button-next{
+  .productSlider .productSlider-next{
     right: 0%;
   }
 }
