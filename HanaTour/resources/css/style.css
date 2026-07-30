@@ -307,7 +307,7 @@
     margin: 24px 0 40px 0;
     transition: all 0.5s;
 }
-.tab_content.acitve{
+.tab_content.active{
     display: block;
     transition: all 0.3s;
 }
@@ -316,7 +316,7 @@
     margin: 24px 0 40px 0;
     transition: all 0.5s;
 }
-.tits_cons.acitve{
+.tits_cons.active{
     display: block;
     transition: all 0.3s;
 }
@@ -377,7 +377,7 @@
     margin-right: 5px;
     color: #000;
 }
-.tab_2 .but_tits span button.acitve {
+.tab_2 .but_tits span button.active {
     background-color: #111!important;
     color: #fff!important;
 }
@@ -525,7 +525,7 @@
     cursor: pointer;
 }/* 패키지/항공/호텔 버튼 */
 
-.main_le .but_tit>a.acitve {
+.main_le .but_tit>a.active {
     transition: all 0.3s;
     font-weight: 600;
     color: #111!important;

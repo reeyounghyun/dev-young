@@ -16,7 +16,7 @@ function common_load() {
 
 		// 전체메뉴 클릭 이벤트
 		$('.mb_right_btn').click(function () {
-			$('.quick_menu').toggleClass('acitve');
+			$('.quick_menu').toggleClass('active');
 			$('body').css({
 				overflow: 'hidden',
 				position: 'fixed',
@@ -25,12 +25,12 @@ function common_load() {
 
 		// 모바일 메뉴 취소버튼
 		$('.quick_menu .mobile_close').click(function () {
-			if ($('.quick_menu').hasClass('acitve')) {
-				$('.quick_menu').removeClass('acitve');
-				$('this').removeClass('acitve');
+			if ($('.quick_menu').hasClass('active')) {
+				$('.quick_menu').removeClass('active');
+				$('this').removeClass('active');
 			} else {
-				$('.quick_menu').addClass('acitve');
-				$(this).addClass('acitve');
+				$('.quick_menu').addClass('active');
+				$(this).addClass('active');
 			}
 			$('body').css({
 				overflow: 'visible',
@@ -260,19 +260,19 @@ function tab_event() {
 	// 패키지 항공 호텔 탭 버튼
 	$('.but_tit a').click(function () {
 		var tab_id = $(this).attr('data-tab');
-		$('.but_tit a').removeClass('acitve');
-		$('.tab_content').removeClass('acitve');
-		$(this).addClass('acitve');
-		$('#' + tab_id).addClass('acitve');
+		$('.but_tit a').removeClass('active');
+		$('.tab_content').removeClass('active');
+		$(this).addClass('active');
+		$('#' + tab_id).addClass('active');
 	});
 
 	// 왕복 편도 다구간 탭 버튼
 	$('.but_tits span button').click(function () {
 		var tab_id = $(this).attr('data-tab');
-		$('.but_tits span button').removeClass('acitve');
-		$('.tits_cons').removeClass('acitve');
-		$(this).addClass('acitve');
-		$('#' + tab_id).addClass('acitve');
+		$('.but_tits span button').removeClass('active');
+		$('.tits_cons').removeClass('active');
+		$(this).addClass('active');
+		$('#' + tab_id).addClass('active');
 	});
 
 	// 마침내 특가
@@ -308,7 +308,6 @@ function btnClick_event() {
 	$('.btn_closed').click(function () {
 		$('.card_area').removeClass('off');
 		$(this).addClass('off');
-		$('.card_area').removeClass('off');
 	});
 
 	//bnt_ri button
@@ -332,7 +331,6 @@ function btnClick_event() {
 	$('.btn_closed').click(function () {
 		$('.card_area1').removeClass('off');
 		$(this).addClass('off');
-		$('.card_area1').removeClass('off');
 	});
 
 	// footer 하나투어
@@ -359,12 +357,12 @@ function btnClick_event() {
 
 	//서브페이지 메뉴 버튼
 	$('.sub_menu').click(function () {
-		if ($('.menu_list').hasClass('acitve')) {
-			$('.menu_list').removeClass('acitve');
-			$('this').removeClass('acitve');
+		if ($('.menu_list').hasClass('active')) {
+			$('.menu_list').removeClass('active');
+			$('this').removeClass('active');
 		} else {
-			$('.menu_list').addClass('acitve');
-			$(this).addClass('acitve');
+			$('.menu_list').addClass('active');
+			$(this).addClass('active');
 		}
 	});
 
@@ -405,12 +403,12 @@ function btnClick_event() {
 
 	//가상요소 스크립트
 	// $(".sub_menu").click(function () {
-	//     if ($(".menu_icon::after").hasClass("acitve")) {
-	//         $(".menu_icon::after").removeClass("acitve");
-	//         $("this").removeClass("acitve");
+	//     if ($(".menu_icon::after").hasClass("active")) {
+	//         $(".menu_icon::after").removeClass("active");
+	//         $("this").removeClass("active");
 	//     } else {
-	//         $(".menu_icon::after").addClass("acitve");
-	//         $(this).addClass("acitve");
+	//         $(".menu_icon::after").addClass("active");
+	//         $(this).addClass("active");
 	//     }
 	// })
 }

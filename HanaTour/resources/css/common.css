@@ -873,7 +873,7 @@
         visibility: hidden;
         transition: all 0.2s;
     }
-    .quick_menu.acitve{
+    .quick_menu.active{
         right:0;
         opacity: 1;
         visibility: visible;
@@ -994,7 +994,7 @@
         font-size: 14px;
         padding-bottom: 5px;
     }
-    .m_menu a.actvie{
+    .m_menu a.active{
         border-bottom: 2px solid #000;
         padding-bottom: 5px;
         color: #111;

@@ -103,7 +103,7 @@
     display: none;
     background: #f7f7f7;
 }
-.menu_list.acitve{
+.menu_list.active{
     display: block;
 }
 .menu_list li{
@@ -498,7 +498,7 @@ ul.menu_sub li a::after {
         opacity: 0.5;
     } */
     
-    .sub_aside ul li .menu_icon::after.acitve{
+    .sub_aside ul li .menu_icon::after.active{
         content: "";
         clear: both;
         position: absolute;
