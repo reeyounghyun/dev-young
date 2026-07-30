@@ -53,7 +53,7 @@
         <!-- 로고 및 메뉴 항목 -->
         <div class="text-center w-full">
           <h1 id="logo" class="w-full font-bold transition-all duration-300 font-change">Tiffany & Co.</h1>
-          <nav id="menu" class="hidden lg:flex space-x-4 mt-5 justify-center">
+          <nav id="menu" class="flex flex-wrap gap-x-4 gap-y-2 mt-5 justify-center px-2">
             <a href="#" class="hover:underline text-[14px] no-underline text-[#000] font-normal">하이주얼리</a>
             <a href="#" class="hover:underline text-[14px] no-underline text-[#000] font-normal">주얼리</a>
             <a href="#" class="hover:underline text-[14px] no-underline text-[#000] font-normal">기프트</a>
@@ -134,8 +134,8 @@
         <img src="./public/2025_VDAY_BG_MOST_POPULAR_Deskto.jpg" alt="" class="hidden lg:block w-full">
         <img src="./public/2025_VDAY_BG_MOST_POPULAR_Mobile.jpg" alt="" class="block lg:hidden w-full">
       </figure>
-      <div class="xl:absolute relative top-0 left-0 bottom-0 right-0 mx-auto w-full flex items-center xl:justify-start xl:pl-[38rem] pl-[0] justify-center mt-[63px]">
-        <div class="flex flex-col items-center">
+      <div class="xl:absolute relative top-0 left-0 bottom-0 right-0 mx-auto w-full flex items-center justify-center pl-[0] mt-[63px]">
+        <div class="flex flex-col items-center xl:bg-white/85 xl:backdrop-blur-sm xl:rounded-2xl xl:px-12 xl:py-10">
           <h3 class="font-bold text-[32px] tracking-[-1.28px] leading-[40px] mb-6 text-center break-keep">
             아이코닉 기프트, Since 1837
           </h3>
@@ -151,11 +151,11 @@
         </div>
       </div>
     </section>
-    <section class="mt-[clamp(100px,15vw,150px)] bg-[#fff] xl:block hidden max-w-[1600px] mx-auto w-full mt-10">
+    <section class="mt-[clamp(100px,15vw,150px)] bg-[#fff] max-w-[1600px] mx-auto w-full mt-10 px-4 xl:px-0">
       <h3 class="xl:text-[23px] font-bold text-[18px] leading-[28px] mx-auto w-full bg-[#fff] Pt-[12px] pb-[28px] text-center">
         카테고리별로 보기
       </h3>
-      <ul class="flex items-center gap-[32px]">
+      <ul class="grid grid-cols-2 sm:grid-cols-3 xl:flex gap-x-4 gap-y-8 xl:gap-[32px] items-center">
         <li class="w-full">
           <a href="./index.html" class="group block">
             <picture class="block max-w-[496px] w-full mx-auto overflow-hidden aspect-square">

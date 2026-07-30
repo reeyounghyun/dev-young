@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
   const navbar = document.getElementById("navbar");
   const logo = document.getElementById("logo");
+  const mainBanner = document.querySelector(".main-banner");
 
   if (!navbar || !logo) {
     // Navbar 또는 logo 요소가 없을 때의 처리.
@@ -17,9 +18,17 @@ document.addEventListener("DOMContentLoaded", function() {
       navbar.classList.remove('scrolled');
       logo.classList.remove('hidden');
     }
+    syncBannerOffset();
+  }
+
+  // 고정 헤더의 실제 높이만큼 배너 상단 여백을 맞춰서 겹침을 방지
+  function syncBannerOffset() {
+    if (!mainBanner) return;
+    mainBanner.style.marginTop = navbar.offsetHeight + 'px';
   }
 
   window.addEventListener("scroll", handleScroll);
+  window.addEventListener("resize", syncBannerOffset);
   handleScroll(); // 페이지 로드 시 초기화
 });
 
