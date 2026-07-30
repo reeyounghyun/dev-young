@@ -122,9 +122,11 @@ function Swiper_event() {
 		if (state) {
 			visual_swiper.autoplay.start();
 			$(this).removeClass('stop');
+			$(this).attr({ 'aria-pressed': 'false', 'aria-label': '슬라이드 자동재생 정지' });
 		} else if (!state) {
 			visual_swiper.autoplay.stop();
 			$(this).addClass('stop');
+			$(this).attr({ 'aria-pressed': 'true', 'aria-label': '슬라이드 자동재생 시작' });
 		}
 	});
 

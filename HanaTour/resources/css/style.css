@@ -2273,11 +2273,11 @@ color: #32363C;
 border-radius: 16px;
 background-color: #F4F7FB;
 }
-.card_container .card_calendar #tableCalendar tr th {
+.card_container .card_calendar .tableCalendar tr th {
     text-align: center;
     padding: 6px 0;
 }
-.card_container .card_calendar #tableCalendar tr td {
+.card_container .card_calendar .tableCalendar tr td {
     padding: 6px 0;
     text-align: center;
     height: 25px;
@@ -2286,11 +2286,11 @@ background-color: #F4F7FB;
     border-right: 1px solid #ccc;
     border-left: 1px solid #ccc;
 }
-.card_container .card_calendar #tableCalendar tr td a {
+.card_container .card_calendar .tableCalendar tr td a {
     z-index: 100;
     position: relative;
 }
-.card_container .card_calendar #tableCalendar tr td a:hover::before {
+.card_container .card_calendar .tableCalendar tr td a:hover::before {
 content: "";
 position: absolute;
 top: calc(50% - 18px);
