@@ -20,6 +20,7 @@ h3 {max-width: 1280px; margin: 0 auto;   display: block;  margin-bottom: 57px; f
 .inner ol li:nth-child(3) .num_portfolio{color:#11a658;}
 .inner ol li:nth-child(4) .num_portfolio{color: #489fa7;}
 .inner ol li:nth-child(5) .num_portfolio{color: #e0857d;}
+.inner ol li:nth-child(6) .num_portfolio{color: #7a68d8;}
 
 /* list background color */
 .inner ol li:nth-child(1) .portfolio_cont .summary{background: rgb(174 200 226 / 30%);}
@@ -27,6 +28,7 @@ h3 {max-width: 1280px; margin: 0 auto;   display: block;  margin-bottom: 57px; f
 .inner ol li:nth-child(3) .portfolio_cont .summary{background: rgb(214 241 225 / 40%);}
 .inner ol li:nth-child(4) .portfolio_cont .summary{background: rgb(141 201 207 / 41%);}
 .inner ol li:nth-child(5) .portfolio_cont .summary{background: rgb(239 184 179 / 13%);}
+.inner ol li:nth-child(6) .portfolio_cont .summary{background: rgb(122 104 216 / 12%);}
 
 .summary .title{display: flex; align-items: center; margin-bottom: 8px;}
 .summary .title h3{display: inline-block; margin-bottom: -6px; margin-left: 4px; font-size: 16px;}
