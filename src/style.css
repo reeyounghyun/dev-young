@@ -29,12 +29,6 @@ main {position: relative; overflow: hidden;}
 }
 
 .portfolio_cont .mobile-title{display: none;}
-.comm-inner>.img_area >.mobile-title{display: none;}
-@media screen and (max-width:1024px) {
-  .portfolio_cont .mobile-title{display: none;}
-  .comm-inner> .img_area>.mobile-title{display: block; font-size: 24px; margin-bottom: 32px;
-  }
-}
 @media screen and (max-width:768px) {
   .num_portfolio {font-size: 27px;}
 }
