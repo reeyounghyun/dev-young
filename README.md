@@ -16,95 +16,6 @@ html, css, javascript tailwind
 - tiffany.Korean  <br/>
 
 
-## 클론코딩
-메인포트폴리오
-
-React와 GSAP ScrollTrigger Plugin을 활용하여 개발했습니다.
-내용은 현업 Project 결과물을 중심으로 Portfolio를 구성했습니다.
-제작 기간은 2개월이 소요됐습니다.
-
-[프로젝트 목적]
-React와 GSAP(GreenSock Animation Platform)을 활용하여 제작한 Desktop Portfolio 웹사이트입니다.
-
-[기술적인 세부 사항]
-GSAP ScrollTrigger를 활용한 스크롤 인터랙션 구현
-Screen Resolution에 따른 반응형 레이아웃 최적화
-React Component 모듈화로 유지보수성 향상
-Animation Timeline 최적화 및 Performance 개선
-
-[개선 사항 또는 느낀 점]
-GSAP Animation 충돌 이슈 해결: 각 섹션의 Animation 구현 과정에서 발생한 Performance 저하 문제를 파악했습니다. ChatGPT와 GSAP 공식문서, 개발자 커뮤니티의 Reference를 활용하여 Animation Timeline 최적화를 진행했습니다. 그 결과 Animation 간 충돌을 해결하고 페이지의 안정성을 개선할 수 있었습니다.
-
-[주요 기술]
-#React.js #TailwindCSS #GSAP #ScrollTrigger 
-
--------------------------------------------------------------------------------
-하나투어
-HTML, CSS, jQuery를 활용하여 제작한 반응형 웹사이트입니다. Desktop, Tablet, Mobile 환경에 최적화된 UI/UX를 구현했습니다.
-[프로젝트 목적]
-두개의 메뉴, 슬라이드 등 웹사이트의 핵심적인 UI/UX 요소들을 직접 구현하며 실무 역량을 강화하고자 프로젝트를 진행했습니다.
-
-[기술적인 세부 사항]
-Swiper.js를 활용하여 "Infinite Loop"와 "Pagination" 기능을 구현한 Custom Slider를 개발했습니다.
-다양한 디바이스에 최적화 사용을 위해 반응형 웹페이지로 제작했습니다.
-
-[개선 사항 또는 느낀 점]
-단일 페이지 내 복수의 Swiper Slider 구현 과정에서 Controller 충돌 문제가 발생했습니다. 이를 해결하기 위해 각 Slider Instance에 고유 식별자를 할당하고 독립적으로 관리하는 구조로 개선하여, 안정적인 동작과 효율적인 유지보수가 가능하도록 구현했습니다.
-
-[주요 기술]
-#HTML+CSS #JavaScript #Swiper.js
-
--------------------------------------------------------------------------------
-네이버개발자센터
-JavaScript의 DOM 조작과 Event Handling을 학습하며 개발한 Desktop 기반 웹사이트입니다.
-
-[프로젝트 목적]
-Naver Developers Center의 UI/UX를 Clone구현하며 Front-end 핵심 기술을 실습하고, Responsive Design 패턴을 학습했습니다.
-
-[기술적인 세부 사항]
-JavaScript 사용하여 Slider와와 Event Handling을 구현했습니다
-
-[개선 사항 또는 느낀 점]
-JavaScript를 사용해  Custom Slider를 구현을 통해 새로운 기술적 인사이트를 얻었습니다. 이 과정에서 평소에 자주 사용하던 Swiper.js와 달리, Slider의 동작 원리와 Pagination, Navigation  기능에 대한 깊은 이해를 얻을 수 있었습니다. 이를 통해 슬라이더의 작동 원리뿐만 아니라, 기술적인 부분에 대해 더 깊이 생각하고 새로운 시각을 갖게 되는 기회가 되었습니다.
-
-[주요 기술]
-#VanillaJS #EventHandling #ResponsiveWeb 
-
--------------------------------------------------------------------------------
-티파니앤코코
-Swiper.js를 활용하여 제작한 반응형 웹사이트입니다. Mobile 환경에서 최적화된 UI/UX를 구현했습니다.
-
-[프로젝트 목적]
-자주 방문하는 Tiffany & Co 웹사이트의 Interactive UI와 Animation 효과를 직접 구현하며 Front-end 개발 역량을 강화하고자 프로젝트를 진행했습니다.
-
-[기술적인 세부 사항]
-Swiper.js를 활용하여 "Infinite Loop"와 "Pagination" 기능을 구현한 Custom Slider를 개발했습니다.
-Navigation Bar에 Scroll Event를 따라 적용하여 활성화되도록 설정하여 사용자가 직관적으로 사이트 내에서 이동할 수 있도록 설계했습니다
-
-[개선 사항 또는 느낀 점]
-Clone Coding과 Swiper.js을 활용하여 개발하는 과정에서 커스텀 기능을 적용하는 역량을 키울 수 있었습니다. 또한, 오류가 발생했을 때는 ChatGPT와 구글링을 통해 해결 방법을 찾았으며,코드에 주석을 추가하여 유지보수성과 가독성을 높이는 데 집중했습니다.
-
-[주요 기술]
-#TailwindCSS #Swiper.js #ResponsiveWeb
-
--------------------------------------------------------------------------------
-Tving 티빙
-React를 활용하여 개발한 OTT 플랫폼의 Desktop Web Application입니다.
-
-[프로젝트 목적]
-Tving 플랫폼의 UI/UX를 분석하고, 실제 서비스와 동일한 사용자 경험을 제공하는 데 목표를 두어 개발하였습니다.
-
-[기술적인 세부 사항]
-TailwindCSS를 활용함으로써 클래스 네이밍의 복잡성을 줄이고, 코드 내에서 직접 스타일을 정의해 작업 효율을 크게 향상시켰습니다.
-
-[개선 사항 또는 느낀 점]
-초기 셋팅부터 배포까지 모든 과정을 직접 진행한 프로젝트입니다.React를 활용해 퍼블리싱 방식과 달리 컴포넌트 단위로 코드를 구조화하여 유지보수의 효율성을 높였습니다.
-특히, 여러 슬라이드가 있는 페이지에서 발생한 다양한 버그와 오류를 해결하는 데 어려움이 있었지만, 컴포넌트를 나누어 작업함으로써 HTML로 작업하는 것보다 더 유연하게 문제를 관리할 수 있었습니다.
-또한, 데이터를 관리할 때는 "JSON 파일"을 활용하여 "import"로 타이틀과 내용을 불러오는 방식을 사용해 코드의 가독성과 유지보수성을 크게 향상시켰습니다.
-
-[주요 기술]
-#React.js #Swiper.js #Netlify
-
 ## 실무경험
 ------------------------------------------------------------------------------------------------------------------------
 KT닷컴
@@ -181,3 +92,101 @@ HTML5, CSS3, SCSS, jQuery
 
 [참여 인원]
 6명 (기획/디자인/퍼블2/프론트/백엔드)
+
+## 클론코딩
+메인포트폴리오
+
+React와 GSAP ScrollTrigger Plugin을 활용하여 개발했습니다.
+내용은 현업 Project 결과물을 중심으로 Portfolio를 구성했습니다.
+제작 기간은 2개월이 소요됐습니다.
+
+[프로젝트 목적]
+React와 GSAP(GreenSock Animation Platform)을 활용하여 제작한 Desktop Portfolio 웹사이트입니다.
+
+[기술적인 세부 사항]
+GSAP ScrollTrigger를 활용한 스크롤 인터랙션 구현
+Screen Resolution에 따른 반응형 레이아웃 최적화
+React Component 모듈화로 유지보수성 향상
+Animation Timeline 최적화 및 Performance 개선
+
+[개선 사항 또는 느낀 점]
+GSAP Animation 충돌 이슈 해결: 각 섹션의 Animation 구현 과정에서 발생한 Performance 저하 문제를 파악했습니다. ChatGPT와 GSAP 공식문서, 개발자 커뮤니티의 Reference를 활용하여 Animation Timeline 최적화를 진행했습니다. 그 결과 Animation 간 충돌을 해결하고 페이지의 안정성을 개선할 수 있었습니다.
+
+[주요 기술]
+#React.js #TailwindCSS #GSAP #ScrollTrigger 
+
+-------------------------------------------------------------------------------
+하나투어
+HTML, CSS, jQuery를 활용하여 제작한 반응형 웹사이트입니다. Desktop, Tablet, Mobile 환경에 최적화된 UI/UX를 구현했습니다.
+[프로젝트 목적]
+두개의 메뉴, 슬라이드 등 웹사이트의 핵심적인 UI/UX 요소들을 직접 구현하며 실무 역량을 강화하고자 프로젝트를 진행했습니다.
+
+[기술적인 세부 사항]
+Swiper.js를 활용하여 "Infinite Loop"와 "Pagination" 기능을 구현한 Custom Slider를 개발했습니다.
+다양한 디바이스에 최적화 사용을 위해 반응형 웹페이지로 제작했습니다.
+
+[개선 사항 또는 느낀 점]
+단일 페이지 내 복수의 Swiper Slider 구현 과정에서 Controller 충돌 문제가 발생했습니다. 이를 해결하기 위해 각 Slider Instance에 고유 식별자를 할당하고 독립적으로 관리하는 구조로 개선하여, 안정적인 동작과 효율적인 유지보수가 가능하도록 구현했습니다.
+
+[유지보수/개선]
+레거시 코드 감사를 진행하여 마크업 구조 오류와 오타를 정리하고, 미사용 리소스(jQuery UI 등 18,000줄 이상)를 제거했습니다. 이미지 지연 로딩, 시맨틱 태그, ARIA 속성을 추가해 성능과 접근성을 함께 개선했습니다.
+
+[주요 기술]
+#HTML+CSS #JavaScript #Swiper.js
+
+-------------------------------------------------------------------------------
+네이버개발자센터
+JavaScript의 DOM 조작과 Event Handling을 학습하며 개발한 Desktop 기반 웹사이트입니다.
+
+[프로젝트 목적]
+Naver Developers Center의 UI/UX를 Clone구현하며 Front-end 핵심 기술을 실습하고, Responsive Design 패턴을 학습했습니다.
+
+[기술적인 세부 사항]
+JavaScript 사용하여 Slider와와 Event Handling을 구현했습니다
+
+[개선 사항 또는 느낀 점]
+JavaScript를 사용해  Custom Slider를 구현을 통해 새로운 기술적 인사이트를 얻었습니다. 이 과정에서 평소에 자주 사용하던 Swiper.js와 달리, Slider의 동작 원리와 Pagination, Navigation  기능에 대한 깊은 이해를 얻을 수 있었습니다. 이를 통해 슬라이더의 작동 원리뿐만 아니라, 기술적인 부분에 대해 더 깊이 생각하고 새로운 시각을 갖게 되는 기회가 되었습니다.
+
+[유지보수/개선]
+전체 페이지의 `<li>` 요소에 이벤트가 걸려 있어 마우스를 올릴 때마다 콘솔 에러가 발생하던 스크립트 버그를 수정했습니다. 시맨틱 마크업과 ARIA 속성을 보강해 접근성도 함께 개선했습니다.
+
+[주요 기술]
+#VanillaJS #EventHandling #ResponsiveWeb 
+
+-------------------------------------------------------------------------------
+티파니앤코코
+Swiper.js를 활용하여 제작한 반응형 웹사이트입니다. Mobile 환경에서 최적화된 UI/UX를 구현했습니다.
+
+[프로젝트 목적]
+자주 방문하는 Tiffany & Co 웹사이트의 Interactive UI와 Animation 효과를 직접 구현하며 Front-end 개발 역량을 강화하고자 프로젝트를 진행했습니다.
+
+[기술적인 세부 사항]
+Swiper.js를 활용하여 "Infinite Loop"와 "Pagination" 기능을 구현한 Custom Slider를 개발했습니다.
+Navigation Bar에 Scroll Event를 따라 적용하여 활성화되도록 설정하여 사용자가 직관적으로 사이트 내에서 이동할 수 있도록 설계했습니다
+
+[개선 사항 또는 느낀 점]
+Clone Coding과 Swiper.js을 활용하여 개발하는 과정에서 커스텀 기능을 적용하는 역량을 키울 수 있었습니다. 또한, 오류가 발생했을 때는 ChatGPT와 구글링을 통해 해결 방법을 찾았으며,코드에 주석을 추가하여 유지보수성과 가독성을 높이는 데 집중했습니다.
+
+[유지보수/개선]
+Swiper 도입 이후 정리되지 않은 채 남아있던 레거시 슬라이더 코드를 제거해 콘솔 에러를 해결했습니다. 또한 카테고리 섹션과 nav 메뉴가 모바일/태블릿에서 통째로 사라지던 반응형 브레이크포인트 버그, 고정 헤더와 히어로 배너가 겹치던 레이아웃 버그를 수정해 전 디바이스에서 안정적으로 동작하도록 개선했습니다.
+
+[주요 기술]
+#TailwindCSS #Swiper.js #ResponsiveWeb
+
+-------------------------------------------------------------------------------
+Tving 티빙
+React를 활용하여 개발한 OTT 플랫폼의 Desktop Web Application입니다.
+
+[프로젝트 목적]
+Tving 플랫폼의 UI/UX를 분석하고, 실제 서비스와 동일한 사용자 경험을 제공하는 데 목표를 두어 개발하였습니다.
+
+[기술적인 세부 사항]
+TailwindCSS를 활용함으로써 클래스 네이밍의 복잡성을 줄이고, 코드 내에서 직접 스타일을 정의해 작업 효율을 크게 향상시켰습니다.
+
+[개선 사항 또는 느낀 점]
+초기 셋팅부터 배포까지 모든 과정을 직접 진행한 프로젝트입니다.React를 활용해 퍼블리싱 방식과 달리 컴포넌트 단위로 코드를 구조화하여 유지보수의 효율성을 높였습니다.
+특히, 여러 슬라이드가 있는 페이지에서 발생한 다양한 버그와 오류를 해결하는 데 어려움이 있었지만, 컴포넌트를 나누어 작업함으로써 HTML로 작업하는 것보다 더 유연하게 문제를 관리할 수 있었습니다.
+또한, 데이터를 관리할 때는 "JSON 파일"을 활용하여 "import"로 타이틀과 내용을 불러오는 방식을 사용해 코드의 가독성과 유지보수성을 크게 향상시켰습니다.
+
+[주요 기술]
+#React.js #Swiper.js #Netlify
