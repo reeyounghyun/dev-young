@@ -10,8 +10,9 @@ if (accordionButtons.length > 0) {
             const content = button.nextElementSibling;
             if (!content) return;
             const accordionItem = button.closest('.accordion-item');
+            const accordionGroup = button.closest('.accordion');
 
-            document.querySelectorAll('.accordion-content').forEach(item => {
+            (accordionGroup ?? document).querySelectorAll('.accordion-content').forEach(item => {
                 if (item !== content) {
                     item.style.maxHeight = null;
                     item.closest('.accordion-item')?.classList.remove('active');
@@ -26,6 +27,16 @@ if (accordionButtons.length > 0) {
                 accordionItem?.classList.add('active');
             }
         });
+    });
+
+    // 카드별 첫 번째 아코디언(주요 개발내용)은 기본 펼침 상태로 초기화
+    document.querySelectorAll('.accordion').forEach(group => {
+        const firstItem = group.querySelector('.accordion-item');
+        if (!firstItem) return;
+        const firstContent = firstItem.querySelector('.accordion-content');
+        if (!firstContent) return;
+        firstContent.style.maxHeight = firstContent.scrollHeight + 'px';
+        firstItem.classList.add('active');
     });
 }
 
