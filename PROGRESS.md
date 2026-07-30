@@ -4,10 +4,65 @@
 
 이 문서는 Claude Code와 함께 진행한 리팩토링/버그 수정 작업 기록입니다. 다음 작업 시작할 때 "완료" 항목은 건너뛰고 "미완료"부터 이어가면 됩니다.
 
-## 루트 포트폴리오 (`index.html`)
+## ⚠️ 브랜치 상태 (중요, 다음 세션에서 꼭 먼저 확인)
+
+- 현재 작업 브랜치: **`codex/renewal`** (`main`이 아님)
+- `main`에도 비슷한 작업이 별도 커밋으로 일부 존재함 (다른 AI 툴 Codex가 작업한 흔적, `portfolio-renewal-notes.md` 참고)
+- `codex/renewal`과 `main`은 `cee9581` 커밋에서 갈라진 뒤 각자 진행됨 — **아직 병합/동기화 안 함**
+- 지금 커밋 안 된 변경사항 있음 (`index.html`, `src/css/*.css`, `src/js/script.js`) — 토큰 정리 작업까지 반영된 상태
+- 정체불명 미추적 파일 `src/image/add_project_bg-6.png` 존재 (이번 세션에서 만든 게 아님, 용도 확인 필요)
+- 다음 세션 시작하면: **1) 브랜치가 `codex/renewal`인지 확인, 2) `git status`로 미커밋 변경사항부터 커밋할지 확인, 3) main과 언제 합칠지 사용자에게 확인**
+
+## 루트 포트폴리오 (`index.html`) — 1차 버그 수정 (구조/재배치 이전)
 
 - [x] `<!DOCTYPE html>` 누락 + `<html>` 태그 조기 종료 버그 수정
 - [x] 네이버 카드 링크 절대경로 → 상대경로
+- [x] `<meta name="description">` 추가, alt 텍스트 복붙 오류 수정, 죽은 CSS 셀렉터 정리
+
+## 루트 포트폴리오 — 2차 대규모 리뉴얼 (Codex 작업 + 이어서 진행)
+
+작업 중 `portfolio-renewal-notes.md`를 발견해서, 다른 AI 툴(Codex)이 `codex/renewal` 브랜치에서 커밋 안 된 채로 대규모 리뉴얼을 진행해둔 걸 확인함. 그걸 커밋하고 그 위에 계속 다듬는 방식으로 진행했음.
+
+### Codex가 만든 기반 (그대로 유지)
+- 상단 nav(`Intro`/`Skills`/`Portfolio`) 신설
+- "퍼블리셔로서의 역량" 섹션 신설 — **사용자가 이 섹션 내용/카드는 건들이지 말라고 지시함, 계속 유지할 것**
+- 프로젝트 카드를 뱃지+상세카드 구조로 전면 개편
+- `src/public/` → `src/css`(CSS+JS) / `src/image` / `src/fonts`(Pretendard 로컬 폰트)로 폴더 재구성
+- 06번 "퍼블리싱 컨벤션 + 가이드" 프로젝트 카드 추가 (css-token-publishing 프로젝트 연결)
+
+### 이어서 진행한 것 (완료)
+- [x] `src/css/script.js` 한글 주석 인코딩 손상(mojibake) 복구
+- [x] 프로젝트 순서 재배치: GSAP(01) → 퍼블리싱가이드(02) → 하나투어(03) → 네이버(04) → 티파니앤코(05) → Tving(06)
+- [x] 하나투어/네이버 뱃지 "실무 프로젝트" → "사이드 프로젝트"로 수정 (전부 사이드 프로젝트라는 사용자 확인)
+- [x] "기술 개선 포인트" / "기술 개선" 문구 혼용 → "기술 개선"으로 통일
+- [x] `project-role`(담당) 표기 6곳 전부 삭제 (마크업+CSS 다 정리, 죽은 코드 없음)
+- [x] 죽은 `<h3>`/`.mobile-title` 마크업 6곳 + 관련 죽은 CSS 정리 (실제로는 `.project-detail-card__title`이 타이틀 역할 전담 중이었음)
+- [x] `script.js` 위치 `src/css/` → `src/js/`로 이동, 빈 파일 `main.scss` 삭제
+- [x] 전체 컨텐츠 배경 `#eef1f6`, 프로젝트 카드 배경 `#fff`로 통일 (기존엔 카드 배경이 홀/짝 교차였음)
+- [x] 컨테이너 너비 축소 (`--container-width` 80rem→72rem 등), 여백 확대
+- [x] 카드 간 옅은 그림자 + 여백 분리 추가 (카드가 다 흰색이라 구분감 보완, 장식 이미지 겹침 때문에 `overflow:hidden`/둥근테두리는 안 씀)
+- [x] 헤더 영역 폰트 사이즈 정리: "Portfolio" 50px→34px, eyebrow 16px→12px (위 섹션과 통일), "N Projects" 20px→14px, 설명문구 18px→15px
+- [x] "Portfolio"와 "N Projects" 사이 간격 축소, 위 섹션과의 간격 154px→80px로 축소
+- [x] 뱃지(`project-badges`) 폰트 15px→13px
+- [x] 카드 내부 요소 간격(뱃지-제목-설명-태그) 및 본문 line-height 전반 축소, 아코디언 위 여백도 축소
+- [x] **버그**: 프로젝트 번호(01~06)가 화면 폭에 따라 장식 배경(`sub-img`)보다 왼쪽으로 밀려나 흰 배경과 겹쳐 안 보이던 문제 → `.add-icon`에 `padding-left` 추가로 수정 (1201~1920px 전 구간 검증)
+- [x] 이미지 좌측 상단 위치를 제목(`project-detail-card__title`) 상단과 정렬 (기존엔 뱃지 줄과 맞춰져 있었음)
+- [x] 이미지-콘텐츠 간격이 홀수 카드는 0px, 짝수 카드는 64px로 불균형하던 것 → `comm-inner`에 `gap`으로 통일
+- [x] 아코디언: "주요 개발내용"이 카드별 기본 펼침 상태로 로드되도록 변경, "기술 개선" 클릭 시 그 카드만 전환(다른 카드 영향 없음)되도록 JS 스코프 수정 (기존엔 페이지 전체 기준으로 닫혀서 다른 카드까지 닫히는 버그가 있었음)
+- [x] `.tech-stack li`/`.tech-stack li span`/`.tech-stack strong`의 px 하드코딩 → rem 변환
+
+### 디자인 토큰(`global.css :root`) 정리 (완료)
+- [x] 미사용 토큰 5개 삭제 (`--color-bg-muted`, `--color-bg-section`, `--color-surface-subtle`, `--space-107`, `--space-74`)
+- [x] 같은 값·다른 이름 중복 토큰 4쌍 통합 (`--color-link`→`--color-body`, `--color-accordion-border`→`--color-border`, `--color-surface`→`--color-white`, `--color-surface-subtle` 삭제)
+- [x] 프로젝트 뱃지 하드코딩 색상 8개 → `--color-badge-{purple,green,teal,pink}-{bg,text}` 토큰화
+- [x] `--space-*` 스케일 20개 → 14개로 정리, 전부 4px 배수로 통일(8/12/16/20/24/28/32/40/44/48/52/60/64/80). 반올림 여파로 이미지-제목 정렬이 2px 어긋난 것도 재보정 완료
+
+### 미완료 / 참고사항
+- [ ] 히어로 이미지(`intro.png`)에 "2022~2024 PORTFOLIO"라는 문구가 이미지 자체에 박혀있어서, 실제 연도("2022-2026")와 안 맞음 — 이미지 재제작 또는 실제 HTML 텍스트 오버레이 필요 (코드 수정만으로는 불가)
+- [ ] `src/image/oder/`(구 `src/public/oder/`) — 예전부터 미사용으로 확인된 폴더, 리뉴얼 때 삭제 안 되고 이름만 이동됨. 여전히 미사용
+- [ ] 정체불명 `src/image/add_project_bg-6.png` — 용도 확인 필요
+- [ ] `main` 브랜치와 병합/동기화 필요 (사용자 확인 후 진행)
+- [ ] 그리드+모달 형태로 프로젝트 리스트 재구성하는 안은 검토 후 **보류 결정함** (6개 규모에서는 클릭 유도가 오히려 정보 노출을 줄인다고 판단) — 재검토 원하면 대화 참고
 
 ## HanaTour
 
@@ -56,9 +111,8 @@
 ### 미완료 / 참고사항
 - [ ] README에 "Swiper.js 사용 안 함"이라고 적혀있는데 실제로는 `.productSlider`/`.topBanner`에서 사용 중 — 사실과 다름, 수정 필요
 - [ ] Tailwind CDN(`cdn.tailwindcss.com`) 프로덕션 비권장 경고 — 실제 콘솔에서도 확인됨. 제대로 고치려면 Tailwind CLI/빌드 파이프라인 구성 필요 (`tailwind-config.js`는 이미 있음). 단순 코드 수정이 아니라 별도 작업으로 판단, 착수 여부 결정 필요
-- [ ] `design-review-request.md` (저장소 루트) — 이번 세션에서 의도적으로 만든 파일 아님, 정체 확인 후 삭제 여부 결정 필요
 
-## 커밋 이력 (이번 세션)
+## 커밋 이력 (`codex/renewal` 브랜치, `main`과 공통인 `cee9581`부터)
 
 1. `fix: 루트 포트폴리오 index.html 마크업 구조 버그 수정`
 2. `fix: HanaTour 오타 및 깨진 링크 정리`
@@ -68,7 +122,14 @@
 6. `fix: tiffany.Korean 죽은 슬라이더 코드로 인한 콘솔 에러 수정`
 7. `fix: tiffany.Korean 마크업/오타 정리`
 8. `fix: tiffany.Korean 반응형 레이아웃 버그 수정`
+9. `docs: 작업 기록 PROGRESS.md 추가`
+10. `docs: 루트 README 구조 재배치 및 유지보수 내역 반영`
+11. `docs: 메인 포트폴리오 디자인 리뷰 요청 문서 추가`
+12. `Add publishing guide project` (Codex)
+13. `Clean up portfolio mobile title styles` (Codex)
+14. `fix: 루트 포트폴리오 마무리 정리 및 버그 수정` (Codex 리뉴얼 커밋 + 인코딩/구조 정리)
+15. *(미커밋)* 재배치/뱃지/너비·배경/간격/그림자/폰트/아코디언/토큰 정리 등 이번 세션 후반부 전체
 
 ## 커리어 관련 메모
 
-3년 6개월 경력 기준으로 HanaTour/developers.naver/tiffany.Korean 클론코딩 3개는 "학습용" 인상이 강해서, 대표 포트폴리오보다는 README의 "실무경험"(KT닷컴, 롯데그룹 등) 섹션을 앞으로 배치하는 걸 고려 중. 클론코딩 자체보다 "레거시 코드 분석 → 버그 수정 → 반응형 개선"한 이번 작업 과정 자체가 실무 스킬을 보여주는 소재로 더 유용할 수 있음.
+3년 6개월 경력 기준으로 HanaTour/developers.naver/tiffany.Korean 클론코딩 3개는 "학습용" 인상이 강해서, 대표 포트폴리오보다는 README의 "실무경험"(KT닷컴, 롯데그룹 등) 섹션을 앞으로 배치함 (이미 반영됨). 클론코딩 자체보다 "레거시 코드 분석 → 버그 수정 → 반응형 개선"한 이번 작업 과정 자체가 실무 스킬을 보여주는 소재로 더 유용할 수 있음. 루트 포트폴리오 디자인 리뷰 요청(`design-review-request.md`)도 같은 맥락에서 진행 중.
