@@ -8,18 +8,22 @@ if (accordionButtons.length > 0) {
     accordionButtons.forEach(button => {
         button.addEventListener('click', () => {
             const content = button.nextElementSibling;
-            if (!content) return; // content가 없으면 실행하지 않음
+            if (!content) return;
+            const accordionItem = button.closest('.accordion-item');
 
             document.querySelectorAll('.accordion-content').forEach(item => {
                 if (item !== content) {
                     item.style.maxHeight = null;
+                    item.closest('.accordion-item')?.classList.remove('active');
                 }
             });
 
             if (content.style.maxHeight) {
                 content.style.maxHeight = null;
+                accordionItem?.classList.remove('active');
             } else {
                 content.style.maxHeight = content.scrollHeight + 'px';
+                accordionItem?.classList.add('active');
             }
         });
     });
@@ -29,7 +33,7 @@ const btnTop = document.querySelector('.btn_top');
 
 if (btnTop) {
     // 초기 상태는 이미 CSS에서 visibility: hidden으로 설정되어 있음
-    
+
     window.addEventListener('scroll', () => {
         if (window.scrollY > 1170) {
             btnTop.style.visibility = 'visible';

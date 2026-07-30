@@ -7,31 +7,94 @@
     <title>이영현 포트폴리오</title>
 
     <!-- style -->
-    <link rel="stylesheet" href="./src/global.css">
-    <link rel="stylesheet" href="./src/common.css">
-    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./src/css/global.css">
+    <link rel="stylesheet" href="./src/css/common.css">
+    <link rel="stylesheet" href="./src/css/style.css">
   </head>
   <body>
     <div class="wrap">
-      <main>
-        <div class="intro_bg">
-          <img src="./src/public/intro.png" alt="" class="intro">
-          <img src="./src/public/intro_mb.png" alt="" class="mobile_intro">
+      <header class="site-header">
+        <div class="site-header__inner">
+          <a href="#intro" class="site-logo" aria-label="Young Hyun 포트폴리오 처음 화면으로 이동">Young Hyun</a>
+          <nav class="site-nav" aria-label="주요 메뉴">
+            <a href="#intro">Intro</a>
+            <a href="#publisher-skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
+          </nav>
         </div>
-        <div class="portfolio">
+      </header>
+      <main>
+        <div class="intro_bg" id="intro">
+          <img src="./src/image/intro.png" alt="" class="intro">
+          <img src="./src/image/intro_mb.png" alt="" class="mobile_intro">
+        </div>
+        <section class="publisher-skills" id="publisher-skills" aria-labelledby="publisher-skills-title">
           <div class="inner">
-            <h2><span>Portfolio</span></h2>
+            <div class="section-header">
+              <div>
+                <span class="section-eyebrow">WHAT I DO</span>
+                <h2 id="publisher-skills-title">퍼블리셔로서의 역량</h2>
+              </div>
+              <p>
+                단순히 화면을 그리는 것을 넘어, 이후 유지보수와 고도화까지
+                기준을 고려해 작업합니다.
+              </p>
+            </div>
+            <ul class="capability-list">
+              <li>
+                <span class="capability-num">01</span>
+                <strong>마크업 & 구조</strong>
+                <p>시맨틱 HTML과 BEM/SCSS 기반의 재사용 가능한 구조를 설계합니다.</p>
+              </li>
+              <li>
+                <span class="capability-num">02</span>
+                <strong>반응형 & 크로스브라우징</strong>
+                <p>모바일부터 데스크톱까지 안정적인 화면을 구현하고 검토합니다.</p>
+              </li>
+              <li>
+                <span class="capability-num">03</span>
+                <strong>인터랙션 구현</strong>
+                <p>GSAP, Swiper, JavaScript로 자연스러운 UI 동작을 구현합니다.</p>
+              </li>
+              <li>
+                <span class="capability-num">04</span>
+                <strong>협업 & 유지보수</strong>
+                <p>명확한 네이밍과 일관된 규칙으로 수정하기 좋은 코드를 만듭니다.</p>
+              </li>
+            </ul>
+            <div class="tech-stack">
+              <strong>기술 스택</strong>
+              <ul>
+                <li><span style="background-color:#ef4444;"></span>HTML5</li>
+                <li><span style="background-color:#3b82f6;"></span>CSS3 / SCSS</li>
+                <li><span style="background-color:#facc15;"></span>JavaScript</li>
+                <li><span style="background-color:#2563eb;"></span>jQuery</li>
+                <li><span style="background-color:#38bdf8;"></span>Swiper</li>
+                <li><span style="background-color:#84cc16;"></span>GSAP</li>
+                <li><span style="background-color:#7c3aed;"></span>반응형 웹</li>
+                <li><span style="background-color:#06b6d4;"></span>React 학습중</li>
+                <li><span style="background-color:#0ea5e9;"></span>Tailwind 학습중</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <div class="portfolio" id="portfolio">
+          <div class="inner">
+            <div class="portfolio-header">
+              <span class="portfolio-eyebrow">SELECTED WORK · 2022-2026</span>
+              <div class="portfolio-title-row">
+                <h2><span>Portfolio</span></h2>
+                <span class="portfolio-count">6 Projects</span>
+              </div>
+              <p>담당 범위·기간·스택 배치와 명확한 CTA를 갖춘 카드를 세로로 나열했습니다.</p>
+            </div>
             <ol class="portfolio_list">
               <li>
-                <h3>
-                  <span class="num_portfolio">01</span>
-                  <b>GSAP</b>을 활용한 포트폴리오 입니다.
-                </h3>
                 <div class="section1 comm-inner">
                   <div class="img_area">
                     <div class="image">
-                      <img src="./src/public/add_project.png" alt="경력 포트폴리오 입니다. welcome to my projects" class="main-img">
-                      <img src="./src/public/add_project_bg.png" alt="경력 포트폴리오 입니다. welcome to my projects" class="sub-img">
+                      <img src="./src/image/add_project.png" alt="경력 포트폴리오 입니다. welcome to my projects" class="main-img">
+                      <img src="./src/image/add_project_bg.png" alt="경력 포트폴리오 입니다. welcome to my projects" class="sub-img">
                     </div>
                     <div class="add-icon">
                       <span>01</span>
@@ -40,22 +103,26 @@
                       </div>
                     </div>
                   </div>
-                  <div class="portfolio_cont">
-                  <div class="summary">
-                    <div class="title">
-                      <svg width="20" height="20" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2">
-                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
-                      </svg>
-                      <h3 class="intro-title">프로젝트 소개</h3>
+                  <div class="portfolio_cont project-card-panel">
+                    <div class="project-detail-card">
+                      <ul class="project-badges" aria-label="프로젝트 요약 정보">
+                        <li>개인 프로젝트</li>
+                        <li>제작 4주</li>
+                        <li>퍼블리싱 100%</li>
+                      </ul>
+                      <strong class="project-detail-card__title">GSAP 인터랙티브 포트폴리오</strong>
+                      <p class="project-detail-card__desc">
+                        React·Tailwind 환경에서 GSAP ScrollTrigger로 스크롤 인터랙션을 구현한 포트폴리오 사이트입니다.
+                        실무에서 참여한 주요 프로젝트들을 중심으로 구성했습니다.
+                      </p>
+                      <p class="project-role"><strong>담당</strong> 기획/디자인/퍼블리싱 전체 직접 수행</p>
+                      <ul class="project-stack" aria-label="사용 기술">
+                        <li>React</li>
+                        <li>Tailwind CSS</li>
+                        <li>GSAP</li>
+                        <li>ScrollTrigger</li>
+                      </ul>
                     </div>
-                    <div class="summary-list">
-                      <p>- <strong>React와 GSAP ScrollTrigger Plugin</strong>을 활용하여 개발한 포트폴리오입니다.</p>
-                      <p>- <strong>실무에서 참여한</strong> 주요 프로젝트들을 중심으로 구성했습니다.</p>
-                      <p>- 각 프로젝트별 역할과 기술적 성과를 상세히 담았습니다.</p>
-                      <p>- <strong>개발 환경</strong>: React/Tailwind.CSS/GSAP</p>
-                      <p>- <strong>제작 기간</strong>: 4주</p>
-                    </div>
-                  </div>
                     <div class="accordion">
                       <div class="accordion-item">
                         <button class="accordion-button">
@@ -70,10 +137,10 @@
                         </button>
                         <div class="accordion-content">
                           <p class="accordion-list">
-                            <span>- <strong>GSAP ScrollTrigger</strong>를 활용한 스크롤 인터랙션 구현</span>
-                            <span>- <strong>Screen Resolution</strong>에 따른 반응형 레이아웃 최적화</span>
-                            <span>- <strong> Component</strong> 모듈화로 유지보수성 향상</span>
-                            <span>- <strong>Animation Timeline</strong> 최적화 및 성능개선</span>
+                            <span><strong>GSAP ScrollTrigger</strong>를 활용한 스크롤 인터랙션 구현</span>
+                            <span><strong>Screen Resolution</strong>에 따른 반응형 레이아웃 최적화</span>
+                            <span><strong> Component</strong> 모듈화로 유지보수성 향상</span>
+                            <span><strong>Animation Timeline</strong> 최적화 및 성능개선</span>
                           </p>
                         </div>
                       </div>
@@ -95,97 +162,84 @@
                         </div>
                       </div>
                     </div>
+                    <div class="project-cta">
+                      <a href="https://main--leeyounghyun.netlify.app/" target="_blank" class="btn_goto">사이트 방문하기 <span aria-hidden="true">&#8599;</span></a>
+                    </div>
                   </div>
                 </div>
               </li>
               <li>
                 <div class="bg">
-                  <h3 class="mobile-title">
-                    <span class="num_portfolio">02</span>
-                    하나 투어
-                  </h3>
                   <div class="section2 comm-inner">
                     <div class="img_area">
                       <div class="image">
-                        <img src="./src/public/add_project-2.png" alt="하나 투어" class="main-img">
-                        <img src="./src/public/add_project_bg-2.png" alt="하나 투어" class="sub-img">
+                        <img src="./src/image/add_project-2.png" alt="하나 투어" class="main-img">
+                        <img src="./src/image/add_project_bg-2.png" alt="하나 투어" class="sub-img">
                       </div>
                       <div class="add-icon">
                         <span>02</span>
-                        <div class="btn_area">
+                        <div class="btn_area" style="margin: 0;">
                           <a href="./HanaTour/html/index.html" target="_blank" class="btn_goto">Click</a>
                         </div>
                       </div>
                     </div>
-                    <div class="portfolio_cont">
-                      <h3 class="mobile-title">
-                        <span class="num_portfolio">02</span>
-                        하나 투어
-                      </h3>
-                      <div class="summary">
-                        <div class="title">
-                          <svg width="20" height="20" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2">
-                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
-                          </svg>
-                          <h3 class="intro-title">프로젝트 소개</h3>
-                        </div>
-                        <div class="summary-list">
-                          <p>- HTML, CSS, jQuery를 활용하여 제작한 <strong>반응형 웹사이트</strong>입니다.</p>
-                          <p>- Desktop, Mobile 환경에 최적화된 UI/UX를 구현했습니다.</p>
-                          <p>- <strong>개발 환경</strong>: HTML/CSS/jQuery</p>
-                          <p>- <strong>제작 기간</strong>: 3주</p>
-                        </div>
+                    <div class="portfolio_cont project-card-panel">
+                      <div class="project-detail-card">
+                        <ul class="project-badges" aria-label="프로젝트 요약 정보">
+                          <li>실무 프로젝트</li>
+                          <li>제작 3주</li>
+                          <li>퍼블리싱 100%</li>
+                        </ul>
+                        <strong class="project-detail-card__title">하나 투어</strong>
+                        <p class="project-detail-card__desc">
+                          HTML·CSS·jQuery로 제작한 반응형 여행 예약 웹사이트입니다. Desktop·Mobile 환경 모두에 최적화된 UI/UX를 구현했습니다.
+                        </p>
+                        <p class="project-role"><strong>담당</strong> 반응형 마크업 및 크로스브라우징 전체</p>
+                        <ul class="project-stack" aria-label="사용 기술">
+                          <li>HTML5</li>
+                          <li>CSS3</li>
+                          <li>jQuery</li>
+                          <li>반응형</li>
+                        </ul>
                       </div>
                       <div class="accordion">
                         <div class="accordion-item">
                           <button class="accordion-button">주요 개발내용
-                            <i class="icon">
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" style="width:18px;">
-                                <rect x="0" y="0" width="16" height="16" fill="white" stroke="#6C6C6C" stroke-width="1"/>
-                                <line x1="4" y1="8" x2="12" y2="8" stroke="#6C6C6C" stroke-width="1.5" stroke-linecap="square"/>
-                                <line x1="8" y1="4" x2="8" y2="12" stroke="#6C6C6C" stroke-width="1.5" stroke-linecap="square"/>
-                              </svg>
-                            </i>  
+                            <i class="icon"></i>
                           </button>
                           <div class="accordion-content">
                             <p class="accordion-list">
-                              <span>- <strong>Swiper.js</strong>를 활용하여 "무한 루프"와 "페이지네이션" 기능을 구현한 커스텀 슬라이더 개발</span>
-                              <span>- 다양한 디바이스에 최적화된 사용성을 위한 반응형 웹페이지로 제작</span>
+                              <span>- PC와 Mobile 해상도에 맞춘 반응형 레이아웃 구현</span>
+                              <span>- jQuery 기반 메뉴, 탭, 슬라이드 인터랙션 구현</span>
                             </p>
                           </div>
                         </div>
                         <div class="accordion-item">
                           <button class="accordion-button accordion-button-last">
-                            기술 개선
-                            <i class="icon">
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" style="width:18px;">
-                                <rect x="0" y="0" width="16" height="16" fill="white" stroke="#6C6C6C" stroke-width="1"/>
-                                <line x1="4" y1="8" x2="12" y2="8" stroke="#6C6C6C" stroke-width="1.5" stroke-linecap="square"/>
-                                <line x1="8" y1="4" x2="8" y2="12" stroke="#6C6C6C" stroke-width="1.5" stroke-linecap="square"/>
-                              </svg>
-                            </i>  
+                            기술 개선 포인트
+                            <i class="icon"></i>
                           </button>
                           <div class="accordion-content">
                             <p class="accordion-list">
-                              <strong>슬라이더 성능 최적화</strong>: 각각의 슬라이드마다 중복된 코드로 인해 유지보수가 어려웠던 문제점을 발견했습니다. <strong>공통 로직을 분리</strong>하고 하나의 이벤트 핸들러로 여러 슬라이드를 관리하도록 개선했습니다. 이를 통해 <strong>코드 중복을 줄이고</strong> 유지보수가 용이한 구조로 변경했습니다.
+                              <span>- 반복되는 섹션 구조를 공통 클래스 기준으로 정리해 유지보수성을 개선했습니다.</span>
+                              <span>- 화면 너비별 이미지와 여백을 조정해 모바일 사용성을 높였습니다.</span>
                             </p>
                           </div>
                         </div>
+                      </div>
+                      <div class="project-cta">
+                        <a href="./HanaTour/html/index.html" target="_blank" class="btn_goto">사이트 방문하기 <span aria-hidden="true">&#8599;</span></a>
                       </div>
                     </div>
                   </div>
                 </div>
               </li>
               <li>
-                <h3 class="mobile-title">
-                  <span class="num_portfolio">03</span>
-                  네이버 개발자 센터
-                </h3>
                 <div class="section1 comm-inner">
                   <div class="img_area">
                     <div class="image">
-                      <img src="./src/public/add_project-3.png" alt="네이버 개발자 센터"  class="main-img">
-                      <img src="./src/public/add_project_bg-3.png" alt="네이버 개발자 센터" class="sub-img">
+                      <img src="./src/image/add_project-3.png" alt="네이버 개발자 센터"  class="main-img">
+                      <img src="./src/image/add_project_bg-3.png" alt="네이버 개발자 센터" class="sub-img">
                     </div>
                     <div class="add-icon">
                       <span>03</span>
@@ -194,25 +248,25 @@
                       </div>
                     </div>
                   </div>
-                  <div class="portfolio_cont">
-                    <h3 class="mobile-title">
-                      <span class="num_portfolio">03</span>
-                      네이버 개발자 센터
-                    </h3>
-                    <div class="summary">
-                      <div class="title">
-                        <svg width="20" height="20" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2">
-                          <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
-                        </svg>
-                        <h3 class="intro-title">프로젝트 소개</h3>
+                    <div class="portfolio_cont project-card-panel">
+                      <div class="project-detail-card">
+                        <ul class="project-badges" aria-label="프로젝트 요약 정보">
+                          <li>실무 프로젝트</li>
+                          <li>제작 1주</li>
+                          <li>퍼블리싱 100%</li>
+                        </ul>
+                        <strong class="project-detail-card__title">네이버 개발자 센터</strong>
+                        <p class="project-detail-card__desc">
+                          JavaScript의 DOM 조작과 Event Handling을 학습하며 개발한 Desktop 기반 웹사이트입니다. HTML·CSS·JavaScript로 반응형 웹사이트를 제작했습니다.
+                        </p>
+                        <p class="project-role"><strong>담당</strong> 메인 마크업 및 스크롤 인터랙션 구현</p>
+                        <ul class="project-stack" aria-label="사용 기술">
+                          <li>HTML5</li>
+                          <li>CSS3</li>
+                          <li>JavaScript</li>
+                          <li>반응형</li>
+                        </ul>
                       </div>
-                      <div class="summary-list">
-                        <p>- JavaScript의 DOM 조작과 Event Handling을 학습하며 개발한 Desktop 기반 웹사이트입니다.</p>
-                        <p>- HTML, CSS, JavaScript 활용하여 제작한 <strong>반응형 웹사이트</strong>입니다.</p>
-                        <p>- <strong>개발 환경</strong>: HTML/CSS/javaScript</p>
-                        <p>- <strong>제작 기간</strong>: 1주</p>
-                      </div>
-                    </div>
                     <div class="accordion">
                       <div class="accordion-item">
                         <button class="accordion-button">주요 개발내용
@@ -249,20 +303,19 @@
                         </div>
                       </div>
                     </div>
+                      <div class="project-cta">
+                        <a href="./developers.naver/index.html" target="_blank" class="btn_goto">사이트 방문하기 <span aria-hidden="true">&#8599;</span></a>
+                      </div>
                   </div>
                 </div>
               </li>
               <li>
                 <div class="bg">
-                  <h3 class="mobile-title">
-                    <span class="num_portfolio">04</span>
-                    티파니앤코
-                  </h3>
                   <div class="section2 comm-inner">
                     <div class="img_area">
                       <div class="image">
-                        <img src="./src/public/add_project-4.png" alt="티파니앤코" class="main-img">
-                        <img src="./src/public/add_project_bg-4.png" alt="티파니앤코" class="sub-img">
+                        <img src="./src/image/add_project-4.png" alt="티파니앤코" class="main-img">
+                        <img src="./src/image/add_project_bg-4.png" alt="티파니앤코" class="sub-img">
                       </div>
                       <div class="add-icon">
                         <span>04</span>
@@ -271,75 +324,62 @@
                         </div>
                       </div>
                     </div>
-                    <div class="portfolio_cont">
-                      <h3 class="mobile-title">
-                        <span class="num_portfolio">04</span>
-                        티파니앤코
-                      </h3>
-                      <div class="summary">
-                        <div class="title">
-                          <svg width="20" height="20" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2">
-                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
-                          </svg>
-                          <h3 class="intro-title">프로젝트 소개</h3>
-                        </div>
-                        <div class="summary-list">
-                          <p>- <strong>Swiper.js</strong>를 활용하여 제작한 반응형 웹사이트입니다.</p>
-                          <p>- Mobile 환경에서 최적화된 UI/UX를 구현했습니다.</p>
-                          <p>- <strong>개발환경</strong>: Html/Tailwind.CSS/Swiper</p>
-                          <p>- <strong>제작 기간</strong>: 1주</p>
-                        </div>
+                    <div class="portfolio_cont project-card-panel">
+                      <div class="project-detail-card">
+                        <ul class="project-badges" aria-label="프로젝트 요약 정보">
+                          <li>개인 프로젝트</li>
+                          <li>제작 1주</li>
+                          <li>퍼블리싱 100%</li>
+                        </ul>
+                        <strong class="project-detail-card__title">티파니앤코</strong>
+                        <p class="project-detail-card__desc">
+                          Swiper.js를 활용하여 제작한 반응형 웹사이트입니다. Mobile 환경에 최적화된 UI/UX를 구현했습니다.
+                        </p>
+                        <p class="project-role"><strong>담당</strong> 퍼블리싱 및 인터랙션 구현 전체</p>
+                        <ul class="project-stack" aria-label="사용 기술">
+                          <li>HTML5</li>
+                          <li>Tailwind CSS</li>
+                          <li>Swiper</li>
+                        </ul>
                       </div>
                       <div class="accordion">
                         <div class="accordion-item">
-                          <button class="accordion-button">
-                            주요 개발내용
-                            <i class="icon">
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" style="width:18px;">
-                                <rect x="0" y="0" width="16" height="16" fill="white" stroke="#6C6C6C" stroke-width="1"/>
-                                <line x1="4" y1="8" x2="12" y2="8" stroke="#6C6C6C" stroke-width="1.5" stroke-linecap="square"/>
-                                <line x1="8" y1="4" x2="8" y2="12" stroke="#6C6C6C" stroke-width="1.5" stroke-linecap="square"/>
-                              </svg>
-                            </i>    
+                          <button class="accordion-button">주요 개발내용
+                            <i class="icon"></i>
                           </button>
                           <div class="accordion-content">
                             <p class="accordion-list">
-                              <span>- <strong>Swiper.js</strong>를 활용한 무한 루프, 페이지네이션 기능의 커스텀 슬라이더 구현</span>
-                              <span>- <strong>Scroll Position</strong> 기반의 자동 활성화 네비게이션 바 개발</span>
+                              <span>- Swiper.js를 사용해 무한 루프, 페이지네이션 기능을 갖춘 커스텀 슬라이더 구현</span>
+                              <span>- Scroll Position 기반의 자동 활성화 내비게이션 구현</span>
                             </p>
                           </div>
                         </div>
                         <div class="accordion-item">
                           <button class="accordion-button accordion-button-last">
-                            기술 개선
-                            <i class="icon">
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" style="width:18px;">
-                                <rect x="0" y="0" width="16" height="16" fill="white" stroke="#6C6C6C" stroke-width="1"/>
-                                <line x1="4" y1="8" x2="12" y2="8" stroke="#6C6C6C" stroke-width="1.5" stroke-linecap="square"/>
-                                <line x1="8" y1="4" x2="8" y2="12" stroke="#6C6C6C" stroke-width="1.5" stroke-linecap="square"/>
-                              </svg>
-                            </i> 
+                            기술 개선 포인트
+                            <i class="icon"></i>
                           </button>
                           <div class="accordion-content">
                             <p class="accordion-list">
-                              <strong>커스텀 기능 구현과 문제 해결 능력 향상</strong>: <strong>Swiper.js</strong>의 기본 기능을 넘어 프로젝트에 특화된 커스텀 기능을 구현하는 과정에서 플러그인에 대한 이해도를 높였습니다. 발생한 오류는 <strong>GPT AI</strong>을 활용한 체계적인 문제 해결 방식으로 접근했으며, <strong>코드 문서화</strong>를 통해 유지보수성과 가독성을 개선했습니다.</p>
+                              <span>- Swiper 기본 기능을 프로젝트에 맞게 확장하며 플러그인 이해도를 높였습니다.</span>
+                              <span>- 모바일 환경에서 이미지와 터치 인터랙션 흐름을 정리했습니다.</span>
+                            </p>
                           </div>
                         </div>
+                      </div>
+                      <div class="project-cta">
+                        <a href="./tiffany.Korean/index.html" target="_blank" class="btn_goto">사이트 방문하기 <span aria-hidden="true">&#8599;</span></a>
                       </div>
                     </div>
                   </div>
                 </div>
               </li>
               <li>
-                <h3 class="mobile-title">
-                  <span class="num_portfolio">05</span>
-                  Tving 티빙
-                </h3>
                 <div class="section1 comm-inner">
                   <div class="img_area">
                     <div class="image">
-                      <img src="./src/public/add_project-5.png" alt="Tving 티빙"  class="main-img">
-                      <img src="./src/public/add_project_bg-5.png" alt="Tving 티빙" class="sub-img">
+                      <img src="./src/image/add_project-5.png" alt="Tving 티빙"  class="main-img">
+                      <img src="./src/image/add_project_bg-5.png" alt="Tving 티빙" class="sub-img">
                     </div>
                     <div class="add-icon">
                       <span>05</span>
@@ -348,25 +388,23 @@
                       </div>
                     </div>
                   </div>
-                  <div class="portfolio_cont">
-                    <h3 class="mobile-title">
-                      <span class="num_portfolio">05</span>
-                      Tving 티빙
-                    </h3>
-                    <div class="summary">
-                      <div class="title">
-                        <svg width="20" height="20" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2">
-                          <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
-                        </svg>
-                        <h3 class="intro-title">프로젝트 소개</h3>
+                    <div class="portfolio_cont project-card-panel">
+                      <div class="project-detail-card">
+                        <ul class="project-badges" aria-label="프로젝트 요약 정보">
+                          <li>개인 프로젝트</li>
+                          <li>제작 1.5일</li>
+                          <li>퍼블리싱 100%</li>
+                        </ul>
+                        <strong class="project-detail-card__title">Tving 티빙</strong>
+                        <p class="project-detail-card__desc">
+                          React를 활용하여 개발한 OTT 플랫폼의 Desktop Web Application입니다. Tailwind CSS를 활용해 클래스 네이밍의 복잡성을 최소화했습니다.
+                        </p>
+                        <p class="project-role"><strong>담당</strong> 컴포넌트 설계 및 퍼블리싱 전체</p>
+                        <ul class="project-stack" aria-label="사용 기술">
+                          <li>React</li>
+                          <li>Tailwind CSS</li>
+                        </ul>
                       </div>
-                      <div class="summary-list">
-                        <p>- <strong>React</strong>를 활용하여 개발한 OTT 플랫폼의 Desktop Web Application입니다.</p>
-                        <p>- <strong>TailwindCSS</strong>를 활용함으로써 클래스 네이밍의 복잡성을 최소화 했습니다.</p>
-                        <p>- <strong>개발 환경</strong>: React/Tailwind.css</p>
-                        <p>- <strong>제작 기간</strong>: 1.5일</p>
-                      </div>
-                    </div>
                     <div class="accordion">
                       <div class="accordion-item">
                         <button class="accordion-button">주요 개발내용
@@ -403,20 +441,19 @@
                         </div>
                       </div>
                     </div>
+                      <div class="project-cta">
+                        <a href="https://tving.netlify.app/" target="_blank" class="btn_goto">사이트 방문하기 <span aria-hidden="true">&#8599;</span></a>
+                      </div>
                   </div>
                 </div>
               </li>
               <li>
                 <div class="bg">
-                  <h3 class="mobile-title">
-                    <span class="num_portfolio">06</span>
-                    퍼블리싱 컨벤션 + 가이드
-                  </h3>
                   <div class="section2 comm-inner">
                     <div class="img_area">
                       <div class="image">
-                        <img src="./src/public/add_project-6.svg" alt="퍼블리싱 컨벤션 + 가이드" class="main-img">
-                        <img src="./src/public/add_project_bg.png" alt="퍼블리싱 컨벤션 + 가이드" class="sub-img">
+                        <img src="./src/image/add_project-6.svg" alt="퍼블리싱 컨벤션 + 가이드" class="main-img">
+                        <img src="./src/image/add_project_bg.png" alt="퍼블리싱 컨벤션 + 가이드" class="sub-img">
                       </div>
                       <div class="add-icon">
                         <span>06</span>
@@ -425,61 +462,53 @@
                         </div>
                       </div>
                     </div>
-                    <div class="portfolio_cont">
-                      <h3 class="mobile-title">
-                        <span class="num_portfolio">06</span>
-                        퍼블리싱 컨벤션 + 가이드
-                      </h3>
-                      <div class="summary">
-                        <div class="title">
-                          <svg width="20" height="20" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2">
-                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
-                          </svg>
-                          <h3 class="intro-title">프로젝트 소개</h3>
-                        </div>
-                        <div class="summary-list">
-                          <p>- <strong>CSS 디자인 토큰</strong>을 기준으로 컴포넌트 스타일과 퍼블리싱 규칙을 정리한 가이드 프로젝트입니다.</p>
-                          <p>- 반복되는 UI 작업에서 마크업, 네이밍, 반응형, 접근성 기준을 일관되게 적용할 수 있도록 구성했습니다.</p>
-                          <p>- <strong>개발 환경</strong>: HTML/CSS/JavaScript</p>
-                          <p>- <strong>제작 기간</strong>: 2주</p>
-                        </div>
+                    <div class="portfolio_cont project-card-panel">
+                      <div class="project-detail-card">
+                        <ul class="project-badges" aria-label="프로젝트 요약 정보">
+                          <li>개인 프로젝트</li>
+                          <li>제작 2주</li>
+                          <li>퍼블리싱 100%</li>
+                        </ul>
+                        <strong class="project-detail-card__title">퍼블리싱 컨벤션 + 가이드</strong>
+                        <p class="project-detail-card__desc">
+                          CSS 디자인 토큰을 기반으로 컴포넌트 스타일과 퍼블리싱 규칙을 정리한 가이드 프로젝트입니다. 반복되는 UI 작업에 일관된 기준을 적용할 수 있도록 구성했습니다.
+                        </p>
+                        <p class="project-role"><strong>담당</strong> 디자인 토큰 설계 및 가이드 문서화 전체</p>
+                        <ul class="project-stack" aria-label="사용 기술">
+                          <li>HTML5</li>
+                          <li>CSS3</li>
+                          <li>JavaScript</li>
+                          <li>Design Token</li>
+                        </ul>
                       </div>
                       <div class="accordion">
                         <div class="accordion-item">
                           <button class="accordion-button">주요 개발내용
-                            <i class="icon">
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" style="width:18px;">
-                                <rect x="0" y="0" width="16" height="16" fill="white" stroke="#6C6C6C" stroke-width="1"/>
-                                <line x1="4" y1="8" x2="12" y2="8" stroke="#6C6C6C" stroke-width="1.5" stroke-linecap="square"/>
-                                <line x1="8" y1="4" x2="8" y2="12" stroke="#6C6C6C" stroke-width="1.5" stroke-linecap="square"/>
-                              </svg>
-                            </i>
+                            <i class="icon"></i>
                           </button>
                           <div class="accordion-content">
                             <p class="accordion-list">
-                              <span>- <strong>tokens.css</strong>를 기준으로 색상, 간격, 타이포, radius, shadow 값을 관리하는 구조를 정리</span>
-                              <span>- Button, Form, Table, Modal 등 반복 사용되는 UI 컴포넌트를 문서화하고 미리보기 화면으로 구성</span>
-                              <span>- BEM 네이밍, CSS 작성 순서, 접근성 QA 기준을 퍼블리싱 규칙 문서로 정리</span>
+                              <span>- tokens.css를 기준으로 색상, 간격, 타이포, radius, shadow 값을 관리하는 구조 정리</span>
+                              <span>- Button, Form, Table, Modal 등 반복 사용되는 UI 컴포넌트를 문서화</span>
+                              <span>- BEM 네이밍, CSS 작성 순서, 접근성 QA 기준을 퍼블리싱 규칙으로 정리</span>
                             </p>
                           </div>
                         </div>
                         <div class="accordion-item">
                           <button class="accordion-button accordion-button-last">
-                            기술 개선
-                            <i class="icon">
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" style="width:18px;">
-                                <rect x="0" y="0" width="16" height="16" fill="white" stroke="#6C6C6C" stroke-width="1"/>
-                                <line x1="4" y1="8" x2="12" y2="8" stroke="#6C6C6C" stroke-width="1.5" stroke-linecap="square"/>
-                                <line x1="8" y1="4" x2="8" y2="12" stroke="#6C6C6C" stroke-width="1.5" stroke-linecap="square"/>
-                              </svg>
-                            </i>
+                            기술 개선 포인트
+                            <i class="icon"></i>
                           </button>
                           <div class="accordion-content">
                             <p class="accordion-list">
-                              <strong>퍼블리싱 기준 문서화</strong>: 화면별로 반복되던 스타일 작성 방식을 디자인 토큰과 컴포넌트 단위로 정리했습니다. 이를 통해 색상과 간격의 하드코딩을 줄이고, 신규 화면 제작 시 같은 기준으로 빠르게 UI를 구성할 수 있도록 개선했습니다. 또한 작업 전 요구사항 정리, 구현 단계, QA 체크리스트를 분리해 유지보수성과 협업 효율을 높였습니다.
+                              <span>- 화면별로 반복되던 스타일 작성 방식을 디자인 토큰과 컴포넌트 단위로 정리했습니다.</span>
+                              <span>- 작업 전 요구사항 정리, 구현 단계, QA 체크리스트를 분리해 작업 효율을 높였습니다.</span>
                             </p>
                           </div>
                         </div>
+                      </div>
+                      <div class="project-cta">
+                        <a href="https://reeyounghyun.github.io/css-token-publishing/" target="_blank" class="btn_goto">사이트 방문하기 <span aria-hidden="true">&#8599;</span></a>
                       </div>
                     </div>
                   </div>
@@ -495,6 +524,6 @@
     </div>
     <!-- js -->
     <script src="https://unpkg.com/lucide@latest"></script>
-    <script src="./src/script.js"></script>
+    <script src="./src/js/script.js"></script>
   </body>
 </html>
