@@ -1,0 +1,26 @@
+<svg width="500" height="360" viewBox="0 0 500 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="500" height="360" rx="18" fill="#111827"/>
+  <rect x="28" y="28" width="444" height="304" rx="14" fill="#0B1220" stroke="#293244"/>
+  <circle cx="52" cy="52" r="5" fill="#FF6B6B"/>
+  <circle cx="68" cy="52" r="5" fill="#FFD166"/>
+  <circle cx="84" cy="52" r="5" fill="#4ADE80"/>
+  <rect x="44" y="82" width="110" height="10" rx="5" fill="#7C8BFF"/>
+  <rect x="44" y="104" width="180" height="8" rx="4" fill="#566176"/>
+  <rect x="44" y="122" width="136" height="8" rx="4" fill="#3D4658"/>
+  <rect x="44" y="158" width="92" height="92" rx="12" fill="#172033" stroke="#2B354A"/>
+  <rect x="154" y="158" width="92" height="92" rx="12" fill="#172033" stroke="#2B354A"/>
+  <rect x="264" y="158" width="92" height="92" rx="12" fill="#172033" stroke="#2B354A"/>
+  <rect x="374" y="158" width="54" height="92" rx="12" fill="#172033" stroke="#2B354A"/>
+  <circle cx="76" cy="188" r="13" fill="#7C8BFF"/>
+  <circle cx="108" cy="188" r="13" fill="#66D9C5"/>
+  <circle cx="200" cy="188" r="13" fill="#F7C948"/>
+  <circle cx="310" cy="188" r="13" fill="#F472B6"/>
+  <rect x="64" y="218" width="52" height="7" rx="3.5" fill="#657087"/>
+  <rect x="174" y="218" width="52" height="7" rx="3.5" fill="#657087"/>
+  <rect x="284" y="218" width="52" height="7" rx="3.5" fill="#657087"/>
+  <rect x="388" y="218" width="26" height="7" rx="3.5" fill="#657087"/>
+  <rect x="44" y="278" width="140" height="10" rx="5" fill="#293244"/>
+  <rect x="44" y="298" width="238" height="8" rx="4" fill="#1F2937"/>
+  <text x="250" y="98" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="30" font-weight="800">PUBLISHING GUIDE</text>
+  <text x="250" y="130" text-anchor="middle" fill="#7C8BFF" font-family="Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="2">DESIGN TOKENS · BEM · QA</text>
+</svg>
