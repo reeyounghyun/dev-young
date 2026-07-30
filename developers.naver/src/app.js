@@ -49,7 +49,9 @@ navNext.addEventListener('click', () => {
 function updatePagination() {
   // 모든 페이지네이션 버튼을 순회하며 현재 슬라이드에 맞는 버튼에 active 클래스를 추가
   pageBtns.forEach((btn, idx) => {
-    btn.classList.toggle('active', idx === currentIndex);
+    const isCurrent = idx === currentIndex;
+    btn.classList.toggle('active', isCurrent);
+    btn.setAttribute('aria-current', isCurrent ? 'true' : 'false');
   });
 }
 
@@ -63,7 +65,7 @@ updatePagination();
 
 //changeBackgroundImage
 function applyGreenFilter() {
-  const listItems = document.querySelectorAll('li');
+  const listItems = document.querySelectorAll('.cont2 li');
   
   listItems.forEach(item => {
     const back1imgDiv = item.querySelector('.back1img'); 

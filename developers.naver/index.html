@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +9,7 @@
   <title>네이버 개발자 센터 - NAVER Developers</title>
 </head>
 <body>
+  <h1 class="blind">네이버 개발자 센터 - NAVER Developers</h1>
   <nav>
     <div class="f1itmfnm">
       <div class="f1g9a9nk h_inner">
@@ -40,7 +41,7 @@
                   </g>
                 </g>
               </svg>
-              <a href="http://www.naver.com" target="_blank"></a>
+              <a href="http://www.naver.com" target="_blank" rel="noopener noreferrer" aria-label="네이버 홈으로 이동 (새 창)"></a>
             </div>
           </div>
           <!-- logo end -->
@@ -81,7 +82,6 @@
                 </span>
               </li>
             </ul>
-            <div class="broadMenu" tabindex="0"></div>
           </div>
           <div class="right_area">
             <div class="f1ope6py success">
@@ -94,7 +94,7 @@
               <input type="text" hidden="" name="tags" value="ndc" readonly="">
               <div class="srch">
                 <span class="srch_inp">
-                  <input type="text" name="keyword" placeholder="Search Here">
+                  <input type="text" name="keyword" placeholder="Search Here" aria-label="검색어 입력">
                 </span>
                 <button type="button" class="btn_srch cursor">
                   <span class="material-symbols-outlined">
@@ -122,24 +122,25 @@
     </ul>
     <!-- 네비게이션 이미지 버튼 -->
     <div class="navigation">
-      <button class="nav-prev"></button>
-      <button class="nav-next"></button>
+      <button class="nav-prev" aria-label="이전 배너"></button>
+      <button class="nav-next" aria-label="다음 배너"></button>
     </div>
     <!-- 페이지네이션 버튼 -->
     <div class="pagination">
-      <button class="page-btn" type="button" data-slide="0"></button>
-      <button class="page-btn" type="button" data-slide="1"></button>
-      <button class="page-btn" type="button" data-slide="2"></button>
-      <button class="page-btn" type="button" data-slide="3"></button>
+      <button class="page-btn" type="button" data-slide="0" aria-label="1번째 배너로 이동"></button>
+      <button class="page-btn" type="button" data-slide="1" aria-label="2번째 배너로 이동"></button>
+      <button class="page-btn" type="button" data-slide="2" aria-label="3번째 배너로 이동"></button>
+      <button class="page-btn" type="button" data-slide="3" aria-label="4번째 배너로 이동"></button>
     </div>
   </div>
+  <main>
   <section class="content">
     <div class="cont1">
       <div class="cont_wrap">
         <ul>
           <li>
             <div class="itemLink">
-              <a href="./index.html" ait="CLOVA">
+              <a href="./index.html" title="CLOVA">
                 <img src="./public/clova.png" alt="CLOVA">
                 <span class="list-naem">CLOVA</span>
               </a>
@@ -147,7 +148,7 @@
           </li>
           <li>
             <div class="itemLink">
-              <a href="./index.html" ait="CLOVA">
+              <a href="./index.html" title="네이버 로그인">
                 <img src="./public/naver.png" alt="네이버 로그인">
                 <span class="list-naem">네이버 로그인</span>
               </a>
@@ -155,7 +156,7 @@
           </li>
           <li>
             <div class="itemLink">
-              <a href="./index.html" ait="CLOVA">
+              <a href="./index.html" title="서비스 API">
                 <img src="./public/api.png" alt="서비스 API">
                 <span class="list-naem">서비스 API</span>
               </a>
@@ -163,7 +164,7 @@
           </li>
           <li>
             <div class="itemLink">
-              <a href="./index.html" ait="CLOVA">
+              <a href="./index.html" title="네이버 클라우드 플랫폼">
                 <img src="./public/naverClound.png" alt="네이버 클라우드 플랫폼">
                 <span class="list-naem">네이버 클라우드 플랫폼</span>
               </a>
@@ -268,33 +269,34 @@
       </div>
     </div>
   </section>
+  </main>
   <footer>
     <div class="footer_inner">
       <ul>
         <li>
-          <a href="./index.html" alt="이용약관"><span>이용약관</span></a>
+          <a href="./index.html" title="이용약관"><span>이용약관</span></a>
         </li>
         <li class="bold">
-          <a href="./index.html" alt="개인정보처리방침"><span>개인정보처리방침</span></a>
+          <a href="./index.html" title="개인정보처리방침"><span>개인정보처리방침</span></a>
         </li>
         <li>
-          <a href="./index.html" alt="제휴신청"><span>제휴신청</span></a>
+          <a href="./index.html" title="제휴신청"><span>제휴신청</span></a>
         </li>
         <li>
-          <a href="./index.html" alt="개발자포럼"><span>개발자포럼</span></a>
+          <a href="./index.html" title="개발자포럼"><span>개발자포럼</span></a>
         </li>
         <li>
-          <a href="./index.html" alt="개발자채용"><span>개발자채용</span></a>
+          <a href="./index.html" title="개발자채용"><span>개발자채용</span></a>
         </li>
         <li>
-          <a href="./index.html" alt="NAVER D2"><span>NAVER D2</span></a>
+          <a href="./index.html" title="NAVER D2"><span>NAVER D2</span></a>
         </li>
         <li>
-          <a href="./index.html" alt="NAVER Open source"><span>NAVER Open source</span></a>
+          <a href="./index.html" title="NAVER Open source"><span>NAVER Open source</span></a>
         </li>
       </ul>
       <div class="copyright">
-        <a href="http://www.naver.com" class="logo_fnaver" target="_blank"></a>
+        <a href="http://www.naver.com" class="logo_fnaver" target="_blank" rel="noopener noreferrer" aria-label="네이버 홈으로 이동 (새 창)"></a>
         Copyright ©
         <a href="http://www.navercorp.com/" class="txt">
           <strong>NAVER Corp.</strong>
