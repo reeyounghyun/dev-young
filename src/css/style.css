@@ -429,7 +429,7 @@ main {position: relative; overflow: hidden;}
   .portfolio .portfolio_list li .image img.sub-img{display: none;}
   .portfolio .portfolio_list li .comm-inner{margin: 0 0.9375rem; gap: 1.5rem;}
   .portfolio .portfolio_list li .img_area {width: 100%;}
-  .portfolio .portfolio_list li + li{padding: 2rem 0;}
+  .portfolio .portfolio_list > li + li{padding: 2rem 0;}
 	.portfolio .portfolio_list > li:nth-child(odd) .img_area {margin-right: 0;}
   .portfolio .portfolio_list li .image{max-width: 37.5rem; min-height: 19.75rem; position: inherit;}
 	.portfolio .portfolio_list > li:nth-child(6) .portfolio_cont {padding-top: 8%;}
