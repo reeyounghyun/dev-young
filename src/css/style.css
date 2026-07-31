@@ -426,12 +426,12 @@ main {position: relative; overflow: hidden;}
   .portfolio-header{max-width: 90%; padding: 3.75rem 0 2.875rem 0;}
   .portfolio h2{max-width: 100%;font-size: 2.25rem;font-weight: 400;}
   .portfolio .portfolio_list li .image img{object-fit: cover;}
-  .portfolio .portfolio_list li .image img.sub-img{display: none;}
   .portfolio .portfolio_list li .comm-inner{margin: 0 0.9375rem; gap: 1.5rem;}
   .portfolio .portfolio_list li .img_area {width: 100%;}
   .portfolio .portfolio_list > li + li{padding: 2rem 0;}
 	.portfolio .portfolio_list > li:nth-child(odd) .img_area {margin-right: 0;}
   .portfolio .portfolio_list li .image{max-width: 37.5rem; min-height: 19.75rem; position: inherit;}
+  .portfolio .portfolio_list li .image>img.sub-img{right: 0;}
 	.portfolio .portfolio_list > li:nth-child(6) .portfolio_cont {padding-top: 8%;}
 	.portfolio .portfolio_list > li:nth-child(7) .portfolio_cont {padding-top: 8%;}
 	.portfolio .portfolio_list > li:nth-child(9) .portfolio_cont {padding-top: 8%;}
@@ -452,6 +452,7 @@ main {position: relative; overflow: hidden;}
   .portfolio .portfolio_list li .comm-inner > div:nth-child(2){margin-left: 0;}
   .portfolio .portfolio_list li .comm-inner{width: 90%; margin: 0 auto; flex-direction: column; justify-content: center; align-items: center;  padding-bottom: 2rem;}
   .portfolio .portfolio_list li:nth-child(even) .comm-inner{flex-direction: column-reverse;}
+  .portfolio .portfolio_list li .image img.sub-img{display: none;}
 }
 
 @media screen and (max-width:40rem) {
@@ -510,7 +511,7 @@ li:nth-child(odd) .comm-inner .accordion-button{background-color: var(--color-wh
 }
 
 @media screen and (max-width:48rem) {
-  .img_area .add-icon {right: 0; bottom: -1.4375rem;}
+  .img_area .add-icon {display: none;}
 }
 
 @media screen and (max-width:26.25rem) {
