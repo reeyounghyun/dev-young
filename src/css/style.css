@@ -271,10 +271,17 @@ main {position: relative; overflow: hidden;}
   .num_portfolio {font-size: 1.6875rem;}
 }
 
+.portfolio {
+  background-color: var(--color-white);
+}
+
 .portfolio-header {
   max-width: var(--container-wide);
   margin: 0 auto;
   padding: var(--space-80) 0 var(--space-40);
+}
+.portfolio-header--group {
+  padding: var(--space-24) 0 var(--space-20);
 }
 .portfolio-eyebrow {
   display: block;
@@ -292,6 +299,11 @@ main {position: relative; overflow: hidden;}
 }
 .portfolio h2 {max-width: var(--container-wide); margin: 0; padding: 0; font-size: 2.125rem; font-weight: bold;}
 .portfolio h2::after {left: 11%;}
+.portfolio-header--group h2 {
+  font-size: 1.375rem;
+  color: var(--color-text-heading);
+  letter-spacing: 0.03rem;
+}
 .portfolio-count {
   color: var(--color-text-secondary);
   font-size: 0.875rem;
@@ -307,23 +319,30 @@ main {position: relative; overflow: hidden;}
 .portfolio .portfolio_list li .comm-inner > div{flex: 1; max-width: var(--portfolio-content-col); width: 100%;height: 100%;}
 .portfolio .portfolio_list li .comm-inner > div:nth-child(1){max-width: var(--portfolio-image-col); width: 100%; min-height: var(--portfolio-min-height);}
 .portfolio .portfolio_list li .comm-inner > div:nth-child(2){max-width: var(--portfolio-content-col); width: 100%; min-height: var(--portfolio-min-height);}
-.portfolio .portfolio_list li:nth-child(even) .img_area {position: relative; order: 2;}
+.portfolio .personal-list li:nth-child(odd) .img_area {position: relative; order: 2;}
 .portfolio .portfolio_list > li{background-color: var(--color-white); padding: var(--space-64) 0; box-shadow: 0 0.125rem 0.75rem rgba(15, 23, 42, 0.05); margin-bottom: var(--space-24);}
+.portfolio .personal-list > li{border: 0.0625rem solid var(--color-border); box-shadow: 0 0.25rem 1.25rem rgba(15, 23, 42, 0.08);}
+
+.professional-list > li:first-child {background-color: #0b1a2e;}
+.portfolio .professional-list > li:first-child .project-detail-card__title {color: #ffffff;}
+.portfolio .professional-list > li:first-child .project-detail-card__desc {color: #d3dae8;}
+.portfolio .professional-list > li:first-child .project-stack li {color: #ffffff; border-color: rgba(255, 255, 255, 0.35);}
+.portfolio .professional-list > li:first-child .accordion-button {color: #ffffff;}
+.portfolio .professional-list > li:first-child .accordion-content p {color: #d3dae8;}
+.portfolio .professional-list > li:first-child .project-cta .btn_goto {background-color: #ffffff; color: #0b1a2e;}
 .portfolio .portfolio_list > li:last-child{margin-bottom: 0;}
+.portfolio .professional-list > li:last-child {margin-bottom: var(--space-64);}
 .portfolio .portfolio_list li .image{max-width: var(--portfolio-media-width); width: 100%;}
 .portfolio .portfolio_list li .image img {width: 100%; height: 100%; object-fit: contain;}
 .portfolio .portfolio_list li .image img.main-img {height: min-content;}
 .portfolio .portfolio_list li .image img.sub-img {height: min-content;}
 .portfolio .portfolio_list li .file_link{max-width: var(--portfolio-media-width); margin: 0 auto;}
-.portfolio .portfolio_list li:nth-child(6) .portfolio_cont {padding-top: 0;}
-.portfolio .portfolio_list li:nth-child(7) .portfolio_cont {padding-top: 0;}
-.portfolio .portfolio_list li:nth-child(9) .portfolio_cont {padding-top: 0;}
+.portfolio .personal-list li:nth-child(5) .portfolio_cont {padding-top: 0;}
 .portfolio .portfolio_list .project-card-panel {
   display: flex;
   flex-direction: column;
 }
 .portfolio .portfolio_list .project-card-panel .accordion {
-  padding-top: var(--space-16);
   border-top: 0.0625rem solid var(--color-border);
 }
 .portfolio .portfolio_list .project-card-panel .accordion > div + div {
@@ -336,7 +355,7 @@ main {position: relative; overflow: hidden;}
   background-color: transparent;
 }
 .portfolio .portfolio_list .project-card-panel .accordion-button {
-  height: 4.25rem;
+  height: 3.25rem;
   padding: 0 var(--space-8) 0 0;
   background-color: transparent;
   color: var(--color-text-heading);
@@ -384,7 +403,7 @@ main {position: relative; overflow: hidden;}
 .portfolio .portfolio_list .project-card-panel .accordion-content p {
   padding: 0 0 var(--space-16);
   color: var(--color-text-muted);
-  font-size: 1rem;
+  font-size: 0.875rem;
   line-height: 1.6;
 }
 .portfolio .portfolio_list .project-card-panel .accordion-content p span {
@@ -429,12 +448,11 @@ main {position: relative; overflow: hidden;}
   .portfolio .portfolio_list li .comm-inner{margin: 0 0.9375rem; gap: 1.5rem;}
   .portfolio .portfolio_list li .img_area {width: 100%;}
   .portfolio .portfolio_list > li + li{padding: 2rem 0;}
-	.portfolio .portfolio_list > li:nth-child(odd) .img_area {margin-right: 0;}
+	.portfolio .professional-list > li:nth-child(odd) .img_area {margin-right: 0;}
+	.portfolio .personal-list > li:nth-child(even) .img_area {margin-right: 0;}
   .portfolio .portfolio_list li .image{max-width: 37.5rem; min-height: 19.75rem; position: inherit;}
   .portfolio .portfolio_list li .image>img.sub-img{right: 0;}
-	.portfolio .portfolio_list > li:nth-child(6) .portfolio_cont {padding-top: 8%;}
-	.portfolio .portfolio_list > li:nth-child(7) .portfolio_cont {padding-top: 8%;}
-	.portfolio .portfolio_list > li:nth-child(9) .portfolio_cont {padding-top: 8%;}
+	.portfolio .personal-list > li:nth-child(5) .portfolio_cont {padding-top: 8%;}
   .portfolio .portfolio_list .point span { padding-left: 0.5625rem;}
 }
 
@@ -451,7 +469,7 @@ main {position: relative; overflow: hidden;}
   .portfolio .portfolio_list li .comm-inner > div:nth-child(1){max-width: var(--portfolio-media-width);min-height: var(--portfolio-mobile-image-height);}
   .portfolio .portfolio_list li .comm-inner > div:nth-child(2){margin-left: 0;}
   .portfolio .portfolio_list li .comm-inner{width: 90%; margin: 0 auto; flex-direction: column; justify-content: center; align-items: center;  padding-bottom: 2rem;}
-  .portfolio .portfolio_list li:nth-child(even) .comm-inner{flex-direction: column-reverse;}
+  .portfolio .personal-list li:nth-child(odd) .comm-inner{flex-direction: column-reverse;}
   .portfolio .portfolio_list li .image img.sub-img{display: none;}
 }
 
@@ -461,8 +479,8 @@ main {position: relative; overflow: hidden;}
 }
 
 /* 7. Top Button ------------------------------------------- */
-.btn_top { visibility: hidden; position: fixed; bottom: var(--space-24); right: var(--space-32); width: var(--top-button-size); height: var(--top-button-size); border: 0; background-color: transparent; text-align: center; color: var(--color-white); font-size: 0.9375rem; font-weight: 500; cursor: pointer;}
-.btn_top::before {position: absolute; top: 0; left: 0; content: ''; width: 100%; height: 100%; border-radius: 0.3125rem; background-color: var(--color-top-button-bg); transition: all 0.2s linear;}
+.btn_top { visibility: hidden; position: fixed; bottom: var(--space-24); right: var(--space-32); width: var(--top-button-size); height: var(--top-button-size); border: 0; background-color: transparent; text-align: center; color: var(--color-white); font-size: 0.875rem; font-weight: 500; cursor: pointer;}
+.btn_top::before {position: absolute; top: 0; left: 0; content: ''; width: 100%; height: 100%; border-radius: 9999px; background-color: #4c7dce; transition: all 0.2s linear;}
 .btn_top::after {position: absolute; top: 50%; left: 0; right: 0; content: 'TOP'; transform: translateY(-50%);}
 .btn_top:hover::before {border-radius: 0.75rem; background-color: var(--color-top-button-hover-bg); transform: rotate(-45deg) scale(0.8, 0.8);}
 
@@ -499,6 +517,7 @@ li:nth-child(odd) .comm-inner .accordion-button{background-color: var(--color-wh
 .img_area .image{position: absolute;}
 .img_area .image>img.main-img{position: absolute; z-index: 200;}
 .img_area .image>img.sub-img{position: absolute; top: 2.1875rem; right: -3.875rem; z-index: 100;}
+.portfolio .professional-list > li:first-child .image>img.main-img{border: 0.0625rem solid rgba(255, 255, 255, 0.18); border-radius: 0.5rem; box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.45);}
 .img_area .add-icon{position: absolute; display: flex; justify-content: space-between; width: 67%; z-index: 120; right: 7.9375rem; bottom:0.5rem; align-items: center; padding-left: 1.25rem;}
 .img_area .add-icon>span{position: relative; color:var(--color-white); font-size: 1.25rem; font-weight: bold;}
 .img_area .add-icon>span::after{content: ""; clear: both; position: absolute; width: var(--overlay-line-width); height: 0.08125rem; background-color: var(--color-overlay-line); border-radius: 1.25rem; top: 0.5625rem; left: 2.75rem;}

@@ -37,7 +37,7 @@
 	/* component size */
 	--button-width: 6.125rem;
 	--button-radius: 1.5625rem;
-	--top-button-size: 3.625rem;
+	--top-button-size: 3.125rem;
 	--accordion-height: 3.875rem;
 	--header-height: 4.5rem;
 	--summary-radius: 0.625rem;
@@ -54,7 +54,7 @@
 	--color-border: #e8edf5;
 	--color-border-soft: #edf1f7;
 	--color-bg-soft: #f8fafc;
-	--color-page-bg: #eef1f6;
+	--color-page-bg: #dfe4ec;
 	--color-summary-border: rgba(46, 112, 208, 0.12);
 	--color-project-badge-bg: #f1f5ff;
 	--color-project-badge-text: #4f6bff;
@@ -117,6 +117,7 @@
 	/* spacing (4px 그리드) */
 	--space-8: 0.5rem;
 	--space-12: 0.75rem;
+	--space-14: 0.875em;
 	--space-16: 1rem;
 	--space-20: 1.25rem;
 	--space-24: 1.5rem;
@@ -146,7 +147,7 @@ body {
 	font-weight: 400;
 	line-height: 1;
 	color: var(--color-body);
-	background-color: var(--color-page-bg);
+	background-color: var(--color-white);
 	margin: 0;
 	padding: 0;
 }
