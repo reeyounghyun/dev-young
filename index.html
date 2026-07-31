@@ -88,9 +88,12 @@
               </div>
               <p>담당 범위·기간·스택 배치와 명확한 CTA를 갖춘 카드를 세로로 나열했습니다.</p>
             </div>
-            <ol class="portfolio_list">
+            <div class="portfolio-header portfolio-header--group">
+              <h2>PROFESSIONAL PROJECT</h2>
+            </div>
+            <ol class="portfolio_list professional-list">
               <li>
-                <div class="section1 comm-inner">
+                <div class="section0 section1 comm-inner">
                   <div class="img_area">
                     <div class="image">
                       <img src="./src/image/add_project.png" alt="경력 포트폴리오 입니다. welcome to my projects" class="main-img">
@@ -106,14 +109,14 @@
                   <div class="portfolio_cont project-card-panel">
                     <div class="project-detail-card">
                       <ul class="project-badges" aria-label="프로젝트 요약 정보">
-                        <li>사이드 프로젝트</li>
-                        <li>제작 4주</li>
-                        <li>퍼블리싱 100%</li>
+                        <li>실무 프로젝트</li>
+                        <li>인터랙션 퍼블리싱</li>
+                        <li>기여도 100%</li>
                       </ul>
-                      <strong class="project-detail-card__title">GSAP 인터랙티브 포트폴리오</strong>
+                      <strong class="project-detail-card__title">실무 포트폴리오</strong>
                       <p class="project-detail-card__desc">
-                        React·Tailwind 환경에서 GSAP ScrollTrigger로 스크롤 인터랙션을 구현한 포트폴리오 사이트입니다.
-                        실무에서 참여한 주요 프로젝트들을 중심으로 구성했습니다.
+                        스크롤에 따라 콘텐츠가 반응하는 인터랙티브 포트폴리오입니다.
+                        실무에서 참여한 주요 프로젝트를 GSAP ScrollTrigger 연출로 구성했습니다.
                       </p>
                       <ul class="project-stack" aria-label="사용 기술">
                         <li>React</li>
@@ -136,10 +139,10 @@
                         </button>
                         <div class="accordion-content">
                           <p class="accordion-list">
-                            <span><strong>GSAP ScrollTrigger</strong>를 활용한 스크롤 인터랙션 구현</span>
-                            <span><strong>Screen Resolution</strong>에 따른 반응형 레이아웃 최적화</span>
-                            <span><strong> Component</strong> 모듈화로 유지보수성 향상</span>
-                            <span><strong>Animation Timeline</strong> 최적화 및 성능개선</span>
+                            <span>GSAP ScrollTrigger를 활용한 스크롤 인터랙션 구현</span>
+                            <span>화면 크기에 따른 반응형 레이아웃 최적화</span>
+                            <span>페이지 구성 요소를 컴포넌트 단위로 분리</span>
+                            <span>애니메이션 타임라인 조정 및 렌더링 성능 개선</span>
                           </p>
                         </div>
                       </div>
@@ -156,19 +159,25 @@
                         </button>
                         <div class="accordion-content">
                             <p class="accordion-list">
-                              <span>GSAP Animation 성능 최적화  복수의 섹션 Animation 구현 과정에서 발생한 Performance 저하 이슈 를 식별했습니다.</span>
-                              <span>GSAP 공식문서와 개발자 커뮤니티의 Best Practice를 참조하여 Animation Timeline을 재구성</span>
-                              <span>requestAnimationFrame의 효율적 활용을 통해 최적화를 진행했습니다. 결과적으로 Animation 간 충돌을 해소하고 페이지 렌더링 성능을 약 30% 개선할 수 있었습니다.</span> 
+                              <span>ScrollTrigger의 실행 구간과 타이밍을 조정해 자연스러운 스크롤 흐름 구현</span>
+                              <span>섹션별 애니메이션 타임라인을 정리해 동작 구조 개선</span>
+                              <span>중복된 애니메이션 설정을 줄여 코드 가독성 향상</span>
+                              <span>반응형 환경에서 발생하는 애니메이션 위치 오차 보완</span>
                             </p>
                         </div>
                       </div>
                     </div>
                     <div class="project-cta">
-                      <a href="https://main--leeyounghyun.netlify.app/" target="_blank" class="btn_goto">사이트 방문하기 <span aria-hidden="true">&#8599;</span></a>
+                      <a href="https://main--leeyounghyun.netlify.app/" target="_blank" class="btn_goto">프로젝트 상세 보기 <span aria-hidden="true">&#8599;</span></a>
                     </div>
                   </div>
                 </div>
               </li>
+            </ol>
+            <div class="portfolio-header portfolio-header--group">
+              <h2>PERSONAL PROJECTS</h2>
+            </div>
+            <ol class="portfolio_list personal-list">
               <li>
                 <div class="bg">
                   <div class="section2 comm-inner">
@@ -193,7 +202,7 @@
                         </ul>
                         <strong class="project-detail-card__title">퍼블리싱 컨벤션 + 가이드</strong>
                         <p class="project-detail-card__desc">
-                          CSS 디자인 토큰을 기반으로 컴포넌트 스타일과 퍼블리싱 규칙을 정리한 가이드 프로젝트입니다. 반복되는 UI 작업에 일관된 기준을 적용할 수 있도록 구성했습니다.
+                          반복되는 UI 작업에 일관된 기준을 세우기 위한 퍼블리싱 가이드입니다. CSS 디자인 토큰을 기준으로 컴포넌트 스타일과 작성 규칙을 문서화했습니다.
                         </p>
                         <ul class="project-stack" aria-label="사용 기술">
                           <li>HTML5</li>
@@ -209,9 +218,9 @@
                           </button>
                           <div class="accordion-content">
                             <p class="accordion-list">
-                              <span>tokens.css를 기준으로 색상, 간격, 타이포, radius, shadow 값을 관리하는 구조 정리</span>
-                              <span>Button, Form, Table, Modal 등 반복 사용되는 UI 컴포넌트를 문서화</span>
-                              <span>BEM 네이밍, CSS 작성 순서, 접근성 QA 기준을 퍼블리싱 규칙으로 정리</span>
+                              <span>tokens.css를 기준으로 색상, 간격, 타이포그래피, radius, shadow 값 체계화</span>
+                              <span>Button, Form, Table, Modal 등 반복 사용되는 UI 컴포넌트 문서화</span>
+                              <span>BEM 네이밍, CSS 작성 순서, 접근성 및 QA 기준을 퍼블리싱 규칙으로 정리</span>
                             </p>
                           </div>
                         </div>
@@ -222,14 +231,15 @@
                           </button>
                           <div class="accordion-content">
                             <p class="accordion-list">
-                              <span>화면별로 반복되던 스타일 작성 방식을 디자인 토큰과 컴포넌트 단위로 정리했습니다.</span>
-                              <span>작업 전 요구사항 정리, 구현 단계, QA 체크리스트를 분리해 작업 효율을 높였습니다.</span>
+                              <span>tokens.css를 기준으로 색상, 간격, 타이포그래피, radius, shadow 값 체계화</span>
+                              <span>Button, Form, Table, Modal 등 반복 사용되는 UI 컴포넌트 문서화</span>
+                              <span>BEM 네이밍, CSS 작성 순서, 접근성 및 QA 기준을 퍼블리싱 규칙으로 정리</span>
                             </p>
                           </div>
                         </div>
                       </div>
                       <div class="project-cta">
-                        <a href="https://reeyounghyun.github.io/css-token-publishing/" target="_blank" class="btn_goto">사이트 방문하기 <span aria-hidden="true">&#8599;</span></a>
+                        <a href="https://reeyounghyun.github.io/css-token-publishing/" target="_blank" class="btn_goto">프로젝트 상세 보기 <span aria-hidden="true">&#8599;</span></a>
                       </div>
                     </div>
                   </div>
@@ -259,7 +269,7 @@
                         </ul>
                         <strong class="project-detail-card__title">하나 투어</strong>
                         <p class="project-detail-card__desc">
-                          HTML·CSS·jQuery로 제작한 반응형 여행 예약 웹사이트입니다. Desktop·Mobile 환경 모두에 최적화된 UI/UX를 구현했습니다.
+                          데스크톱과 모바일을 함께 고려한 반응형 여행 예약 사이트입니다. jQuery로 메뉴·탭·슬라이드 인터랙션을 구현했습니다.
                         </p>
                         <ul class="project-stack" aria-label="사용 기술">
                           <li>HTML5</li>
@@ -275,8 +285,8 @@
                           </button>
                           <div class="accordion-content">
                             <p class="accordion-list">
-                              <span>PC와 Mobile 해상도에 맞춘 반응형 레이아웃 구현</span>
-                              <span>jQuery 기반 메뉴, 탭, 슬라이드 인터랙션 구현</span>
+                              <span>PC와 모바일 화면에 대응하는 반응형 여행 예약 레이아웃 구현</span>
+                              <span>jQuery를 활용한 내비게이션 메뉴, 탭, 슬라이드 인터랙션 구현</span>
                             </p>
                           </div>
                         </div>
@@ -287,14 +297,15 @@
                           </button>
                           <div class="accordion-content">
                             <p class="accordion-list">
-                              <span>반복되는 섹션 구조를 공통 클래스 기준으로 정리해 유지보수성을 개선했습니다.</span>
-                              <span>화면 너비별 이미지와 여백을 조정해 모바일 사용성을 높였습니다.</span>
+                              <span>반복되는 섹션 구조와 스타일을 공통 클래스 단위로 정리해 코드 중복 감소</span>
+                              <span>모바일 화면에서 이미지 크기와 여백을 조정해 콘텐츠 가독성 개선</span>
+                              <span>화면 너비에 따라 메뉴와 콘텐츠가 안정적으로 배치되도록 반응형 화면 구현</span>
                             </p>
                           </div>
                         </div>
                       </div>
                       <div class="project-cta">
-                        <a href="./HanaTour/html/index.html" target="_blank" class="btn_goto">사이트 방문하기 <span aria-hidden="true">&#8599;</span></a>
+                        <a href="./HanaTour/html/index.html" target="_blank" class="btn_goto">프로젝트 상세 보기 <span aria-hidden="true">&#8599;</span></a>
                       </div>
                     </div>
                   </div>
@@ -345,8 +356,9 @@
                         </button>
                         <div class="accordion-content">
                           <p class="accordion-list">
-                            <span><strong>Vanilla JavaScript</strong>를 활용한 커스텀 슬라이더 구현</span>
-                            <span><strong>Mouse Hover Event</strong>를 통한 인터랙티브한 사용자 경험 제공</span>
+                            <span>Vanilla JavaScript를 활용한 커스텀 슬라이더 구현</span>
+                            <span>마우스 호버 이벤트를 활용한 인터랙션 구현</span>
+                            <span>화면 크기에 대응하는 반응형 레이아웃 구성</span>
                           </p>
                         </div>
                       </div>
@@ -363,15 +375,15 @@
                         </button>
                         <div class="accordion-content">
                           <p class="accordion-list">
-                            <span>슬라이더 직접 구현을 통한 기술적 성장: 기존에 익숙하게 사용하던 Swiper.js 대신 직접 JavaScript로 슬라이더를 구현했습니다</span>
-                            <span>슬라이드의 작동 원리와 페이지네이션, 네비게이션 기능의 내부 로직을 깊이 있게 이해할 수 있었습니다. </span>
-                            <span>라이브러리 의존성을 줄이고 직접 구현함으로써 코어 JavaScript에 대한 이해도를 높이는 의미 있는 경험이었습니</span>
+                            <span>Swiper.js 없이 JavaScript로 슬라이더를 직접 구현해 동작 구조 이해</span>
+                            <span>슬라이드 이동, 페이지네이션, 내비게이션 기능을 직접 구성</span>
+                            <span>라이브러리 의존도를 줄이고 DOM 제어 및 이벤트 처리 역량 강화</span>
                           </p>
                         </div>
                       </div>
                     </div>
                       <div class="project-cta">
-                        <a href="./developers.naver/index.html" target="_blank" class="btn_goto">사이트 방문하기 <span aria-hidden="true">&#8599;</span></a>
+                        <a href="./developers.naver/index.html" target="_blank" class="btn_goto">프로젝트 상세 보기 <span aria-hidden="true">&#8599;</span></a>
                       </div>
                   </div>
                 </div>
@@ -400,7 +412,7 @@
                         </ul>
                         <strong class="project-detail-card__title">티파니앤코</strong>
                         <p class="project-detail-card__desc">
-                          Swiper.js를 활용하여 제작한 반응형 웹사이트입니다. Mobile 환경에 최적화된 UI/UX를 구현했습니다.
+                          모바일 환경에 맞춰 제작한 반응형 프로모션 사이트입니다. Swiper.js로 무한 루프·페이지네이션 슬라이더와 스크롤 위치 기반 내비게이션을 구현했습니다.
                         </p>
                         <ul class="project-stack" aria-label="사용 기술">
                           <li>HTML5</li>
@@ -415,8 +427,8 @@
                           </button>
                           <div class="accordion-content">
                             <p class="accordion-list">
-                              <span>Swiper.js를 사용해 무한 루프, 페이지네이션 기능을 갖춘 커스텀 슬라이더 구현</span>
-                              <span>Scroll Position 기반의 자동 활성화 내비게이션 구현</span>
+                              <span>스크롤 위치에 따라 활성화되는 내비게이션 구현</span>
+                              <span>모바일 환경에 맞춘 반응형 레이아웃 구성</span>
                             </p>
                           </div>
                         </div>
@@ -427,14 +439,15 @@
                           </button>
                           <div class="accordion-content">
                             <p class="accordion-list">
-                              <span>Swiper 기본 기능을 프로젝트에 맞게 확장하며 플러그인 이해도를 높였습니다.</span>
-                              <span>모바일 환경에서 이미지와 터치 인터랙션 흐름을 정리했습니다.</span>
+                              <span>Swiper 옵션을 화면 구성에 맞게 조정해 자연스러운 슬라이드 흐름 구현</span>
+                              <span>슬라이드 이동과 페이지네이션 상태가 함께 변경되도록 동작 보완</span>
+                              <span>모바일 화면에 맞게 이미지 크기와 터치 영역을 조정</span>
                             </p>
                           </div>
                         </div>
                       </div>
                       <div class="project-cta">
-                        <a href="./tiffany.Korean/index.html" target="_blank" class="btn_goto">사이트 방문하기 <span aria-hidden="true">&#8599;</span></a>
+                        <a href="./tiffany.Korean/index.html" target="_blank" class="btn_goto">프로젝트 상세 보기 <span aria-hidden="true">&#8599;</span></a>
                       </div>
                     </div>
                   </div>
@@ -463,7 +476,7 @@
                         </ul>
                         <strong class="project-detail-card__title">Tving 티빙</strong>
                         <p class="project-detail-card__desc">
-                          React를 활용하여 개발한 OTT 플랫폼의 Desktop Web Application입니다. Tailwind CSS를 활용해 클래스 네이밍의 복잡성을 최소화했습니다.
+                          OTT 플랫폼을 모델로 제작한 데스크톱 웹 애플리케이션입니다. React 컴포넌트 단위로 화면을 모듈화하고 JSON으로 콘텐츠 데이터를 구조화했습니다.
                         </p>
                         <ul class="project-stack" aria-label="사용 기술">
                           <li>React</li>
@@ -483,8 +496,10 @@
                         </button>
                         <div class="accordion-content">
                           <p class="accordion-list">
-                            <span><strong>Tailwind CSS</strong> 활용으로 클래스 네이밍 간소화 및 인라인 스타일링 구현</span>
-                            <span>스타일 정의의 직관성 향상으로 개발 생산성 증대</span>
+                            <span>React 컴포넌트 기반으로 OTT 콘텐츠 화면 구성</span>
+                            <span>Tailwind CSS를 활용한 반응형 레이아웃 및 인라인 스타일링 구현</span>
+                            <span>JSON 데이터를 활용해 콘텐츠 목록과 슬라이드 화면을 동적으로 렌더링</span>
+                            <span>반복되는 콘텐츠 영역을 컴포넌트로 분리해 화면 구조 정리</span>
                           </p>
                         </div>
                       </div>
@@ -501,15 +516,16 @@
                         </button>
                         <div class="accordion-content">
                           <p class="accordion-list">
-                            <span>React 컴포넌트 기반 구조화: 프로젝트의 초기 환경 구성부터 배포까지 전 과정을 직접 수행했습니다</span>
-                            <span>컴포넌트 단위의 모듈화를 통해 기존 퍼블리싱 방식 대비 유지보수성을 크게 개선했습니다</span>
-                            <span>다중 슬라이드 페이지에서 발생하는 버그들을 컴포넌트 분리를 통해 효과적으로 관리했으며, JSON 데이터 구조화를 도입하여 콘텐츠 관리의 효율성을 높였습니다.</span>
+                            <span>반복되는 콘텐츠 영역을 컴포넌트로 분리해 코드 구조와 유지보수성 개선</span>
+                            <span>JSON 데이터와 화면 구조를 분리해 콘텐츠 관리 방식 개선</span>
+                            <span>다중 슬라이드에서 발생하던 상태 및 동작 충돌을 컴포넌트 단위로 분리해 해결</span>
+                            <span>개발 환경 구성부터 빌드와 배포까지 전체 작업 과정 경험</span>
                           </p>
                         </div>
                       </div>
                     </div>
                       <div class="project-cta">
-                        <a href="https://tving.netlify.app/" target="_blank" class="btn_goto">사이트 방문하기 <span aria-hidden="true">&#8599;</span></a>
+                        <a href="https://tving.netlify.app/" target="_blank" class="btn_goto">프로젝트 상세 보기 <span aria-hidden="true">&#8599;</span></a>
                       </div>
                   </div>
                 </div>
