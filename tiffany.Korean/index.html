@@ -23,26 +23,26 @@
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
 
-  <link rel="stylesheet" href="./src/style.css">
+  <link rel="stylesheet" href="./src/style.css?v=responsive-20260801-2">
 
   <title>티파니앤코 공식 온라인 스토어</title>
 </head>
 <body>
   <div class="wrap">
     <header id="navbar" class="fixed top-0 left-0 w-full transition-all duration-300">
-      <div class="topBanner swiper bg-[#81d8d0] h-[40px]">
+      <div class="topBanner swiper hidden h-[40px] bg-[#81d8d0] lg:block">
         <div class="swiper-wrapper">
-          <div class="swiper-slide lg:block hidden w-full h-[40px] flex items-center justify-center">
+          <div class="swiper-slide flex h-[40px] w-full items-center justify-center">
             <p class="text-[14px] text-[#111] font-normal text-center h-full leading-[40px]">
               가까운 티파니엔코 매장에서 우리의 전문 어드바이저와 함께 로맨틱한 순간을 계획해 보세요.
             </p>
           </div>
-          <div class="swiper-slide lg:block hidden w-full h-[40px] flex items-center justify-center">
+          <div class="swiper-slide flex h-[40px] w-full items-center justify-center">
             <p class="text-[14px] text-[#111] font-normal text-center h-full leading-[40px]">
               사랑스러운 연인에게 발란타인테이 기념으로 멋진 서프라이즈 선물을 해보세요.
             </p>
           </div>
-          <div class="swiper-slide lg:block hidden w-full h-[40px] flex items-center justify-center">
+          <div class="swiper-slide flex h-[40px] w-full items-center justify-center">
             <p class="text-[14px] text-[#111] font-normal text-center h-full leading-[40px]">
               티파니앤코 10주년 기념 이벤트 전품목 할인.
             </p>
@@ -136,7 +136,7 @@
       </figure>
       <div class="xl:absolute relative top-0 left-0 bottom-0 right-0 mx-auto w-full flex items-center justify-center pl-[0] mt-[63px]">
         <div class="flex flex-col items-center xl:bg-white/85 xl:backdrop-blur-sm xl:rounded-2xl xl:px-12 xl:py-10">
-          <h3 class="font-bold text-[32px] tracking-[-1.28px] leading-[40px] mb-6 text-center break-keep">
+          <h3 class="mb-6 break-keep text-center text-[24px] font-bold leading-[32px] tracking-[-0.96px] lg:text-[32px] lg:leading-[40px] lg:tracking-[-1.28px]">
             아이코닉 기프트, Since 1837
           </h3>
           <p class="inline-block text-center lg:flex flex-col items-center mb-[27px] text-[14px]">
@@ -294,8 +294,8 @@
           </figure>
         </div>
         <div class="title w-full mx-auto">
-          <div class="w-[50%] mx-auto pt-[20px]">
-            <h3 class="font-semibold xl:text-[48px] text-[30px] mb-[24px] mb-[32px] text-center xl:leading-[60px] xl:tracking-[-1.92px] font-change">커플링 & 웨딩 링</h3>
+          <div class="mx-auto w-full max-w-[360px] px-4 pt-[20px] xl:w-[50%] xl:max-w-none xl:px-0">
+            <h3 class="mb-[32px] whitespace-nowrap text-center text-[30px] font-semibold font-change xl:mb-[24px] xl:text-[48px] xl:leading-[60px] xl:tracking-[-1.92px]">커플링 & 웨딩 링</h3>
             <p class="font-norma xl:text-[16px] text-[14px] break-keep text-center block">티파니 웨딩 링은 200년에 걸쳐 티파니 시그니처로 자리 잡아 왔으며, 세계 최고의 다이아몬드와 독보적인 장인 정신을 만나볼 수 있습니다.</p>
             <div class="xl:mb-24 mb-0 mt-5 text-center">
               <div class="link text-center w-full pt-5 pb-2">
@@ -312,7 +312,7 @@
       <ul class="flex items-start justify-center xl:flex-row flex-wrap gap-[25px] ">
         <li class="se4_items">
           <a class="w-full block" href="./index.html">
-            <picture class="w-full h-full block">
+            <picture class="service-card-media w-full h-full block">
               <img 
                 src="./public/info1.jpeg" 
                 alt="배송 및 반품" 
@@ -334,7 +334,7 @@
         </li>
         <li class="se4_items">
           <a class="w-full block" href="./index.html">
-            <picture class="w-full h-full block">
+            <picture class="service-card-media w-full h-full block">
               <img src="./public/info2.jpeg" alt="상담 예약하기" class="block lg:w-full max-w-[250px] h-[250px] mx-auto object-cover">
             </picture>
           </a>
@@ -352,7 +352,7 @@
         </li>
         <li class="se4_items">
           <a class="w-full block" href="./index.html">
-            <picture class="w-full h-full block">
+            <picture class="service-card-media w-full h-full block">
               <img src="./public/info3.jpeg" alt="티파니 고객 서비스" class="block lg:w-full max-w-[250px] h-[250px] mx-auto object-cover">
             </picture>
           </a>
@@ -370,7 +370,7 @@
         </li>
         <li class="se4_items">
           <a class="w-full block" href="./index.html">
-            <picture class="w-full h-full block">
+            <picture class="service-card-media w-full h-full block">
               <img src="./public/info4.jpeg" alt="아이코닉한 블루 박스" class="block lg:w-full max-w-[250px] h-[250px] mx-auto object-cover">
             </picture>
           </a>
@@ -564,6 +564,6 @@
   </div>
 
   <!-- js -->
-  <script src="./src/app.js"></script>
+  <script src="./src/app.js?v=swiper-responsive-20260801"></script>
 </body>
 </html>

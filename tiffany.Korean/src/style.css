@@ -306,6 +306,11 @@ footer {
   .se4_items{
     width: 100%;
   }
+
+  .service-card-media.h-full {
+    height: 200px;
+    overflow: hidden;
+  }
 }
 
 /* productSlider 슬라이드 */
@@ -442,6 +447,19 @@ footer {
   text-align: center;
   word-wrap: break-word;
   font-size: 13px;
+}
+
+@media screen and (max-width: 767px) {
+  .productSlider .slide-item p {
+    display: -webkit-box;
+    min-height: 2.8em;
+    margin-top: 10px;
+    padding: 0 4px;
+    overflow: hidden;
+    line-height: 1.4;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
 }
 
 /* 페이지네이션 및 스타일 */

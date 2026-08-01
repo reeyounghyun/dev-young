@@ -35,10 +35,11 @@ document.addEventListener("DOMContentLoaded", function() {
 // handleScroll end
 
 const productSwiper = new Swiper(".productSlider", {
-  loop: true, // 768px 미만(모바일) 기본 설정
-  slidesPerView: 1.2, 
-  spaceBetween: 20,
-  centeredSlides: true,
+  loop: true,
+  // 768px 미만: 한 화면에 두 상품을 균등하게 표시
+  slidesPerView: 2,
+  spaceBetween: 12,
+  centeredSlides: false,
 
   autoplay: {
     delay: 3000,
@@ -71,26 +72,33 @@ const productSwiper = new Swiper(".productSlider", {
   },
 });
 
-const topSwiper = new Swiper(".topBanner", {
-  slidesPerView: "auto",
-  loop: true,
-  centeredSlides: true,
-  spaceBetween: 30,
+const topBannerMediaQuery = window.matchMedia('(min-width: 1024px)');
+let topSwiper;
 
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: false,
-    pauseOnMouseEnter: true,
-  },
+function syncTopSwiper() {
+  if (topBannerMediaQuery.matches && !topSwiper) {
+    topSwiper = new Swiper('.topBanner', {
+      slidesPerView: 1,
+      loop: true,
+      centeredSlides: true,
 
-  speed: 2000,
-  allowTouchMove: true,
-  grabCursor: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+      },
 
-  pagination: {
-    el: ".topBanner .swiper-pagination",
-    clickable: true,
-  },
-});
+      speed: 2000,
+      allowTouchMove: true,
+      grabCursor: true,
+    });
+  }
 
+  if (!topBannerMediaQuery.matches && topSwiper) {
+    topSwiper.destroy(true, true);
+    topSwiper = undefined;
+  }
+}
 
+topBannerMediaQuery.addEventListener('change', syncTopSwiper);
+syncTopSwiper();
