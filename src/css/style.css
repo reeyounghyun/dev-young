@@ -205,7 +205,7 @@ main {position: relative; overflow: hidden;}
   border-radius: var(--radius-full);
 }
 
-@media screen and (max-width:64rem) {
+@media screen and (max-width:75rem) {
   .publisher-skills {
     padding: var(--space-64) 0 var(--space-60);
   }
@@ -244,13 +244,6 @@ main {position: relative; overflow: hidden;}
     flex-direction: column;
     gap: var(--space-16);
   }
-}
-
-/* 5. Legacy Skills Responsive ----------------------------- */
-@media screen and (max-width:64rem) {
-  h2 {padding: 2.5rem 0; position:inherit;}
-	h2::after{width: 0;}
-  .portfolio h2::after {left: 13.4375rem;}
 }
 
 @media screen and (max-width:48rem) {
@@ -468,15 +461,16 @@ main {position: relative; overflow: hidden;}
   .portfolio .portfolio_list li .image {max-width: var(--portfolio-media-width);}
   .portfolio .portfolio_list > li .img_area{max-width: var(--portfolio-media-width); margin-top: 0;}
   .portfolio .portfolio_list li .comm-inner > div:nth-child(1){max-width: var(--portfolio-media-width);min-height: var(--portfolio-mobile-image-height);}
-  .portfolio .portfolio_list li .comm-inner > div:nth-child(2){margin-left: 0;}
+  .portfolio .portfolio_list li .comm-inner > div:nth-child(2){margin-left: 0; margin-top: 0;}
   .portfolio .portfolio_list li .comm-inner{width: 90%; margin: 0 auto; flex-direction: column; justify-content: center; align-items: center;  padding-bottom: 2rem;}
   .portfolio .personal-list li:nth-child(odd) .comm-inner{flex-direction: column-reverse;}
   .portfolio .portfolio_list li .image img.sub-img{display: none;}
-}
-
-@media screen and (max-width:40rem) {
-  .img_area .add-icon {bottom: -1.1875rem;}
-  .portfolio .portfolio_list li .comm-inner > div:nth-child(2){margin-top:0;}
+  .portfolio .portfolio_list .project-card-panel .project-cta .btn_goto {
+    min-width: 9rem;
+    width: auto;
+    padding: var(--space-14) var(--space-20);
+    font-size: 0.9375rem;
+  }
 }
 
 /* 7. Top Button ------------------------------------------- */
@@ -497,7 +491,7 @@ main {position: relative; overflow: hidden;}
 .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease;}
 .accordion-content p{padding: 0 var(--space-20) var(--space-20); line-height: 1.7; color: var(--color-accordion-text); font-size: 0.9375rem; word-break: keep-all;}
 
-@media screen and (max-width:64rem) {
+@media screen and (max-width:75rem) {
 	.accordion-content p{
 		text-align: left;
 	}
@@ -532,9 +526,5 @@ li:nth-child(odd) .comm-inner .accordion-button{background-color: var(--color-wh
 
 @media screen and (max-width:48rem) {
   .img_area .add-icon {display: none;}
-}
-
-@media screen and (max-width:26.25rem) {
-.img_area .add-icon>span::after {width: var(--overlay-line-width-mobile);}
 }
 
