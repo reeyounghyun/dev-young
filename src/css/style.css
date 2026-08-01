@@ -280,7 +280,7 @@ main {position: relative; overflow: hidden;}
   margin: 0 auto;
   padding: var(--space-80) 0 var(--space-40);
 }
-.portfolio-header--group {
+.portfolio .portfolio-header--group {
   padding: var(--space-24) 0 var(--space-20);
 }
 .portfolio-eyebrow {
@@ -299,7 +299,7 @@ main {position: relative; overflow: hidden;}
 }
 .portfolio h2 {max-width: var(--container-wide); margin: 0; padding: 0; font-size: 2.125rem; font-weight: bold;}
 .portfolio h2::after {left: 11%;}
-.portfolio-header--group h2 {
+.portfolio .portfolio-header--group h2 {
   font-size: 1.375rem;
   color: var(--color-text-heading);
   letter-spacing: 0.03rem;
@@ -451,7 +451,7 @@ main {position: relative; overflow: hidden;}
 	.portfolio .professional-list > li:nth-child(odd) .img_area {margin-right: 0;}
 	.portfolio .personal-list > li:nth-child(even) .img_area {margin-right: 0;}
   .portfolio .portfolio_list li .image{max-width: 37.5rem; min-height: 19.75rem; position: inherit;}
-  .portfolio .portfolio_list li .image>img.sub-img{right: 0;}
+  .portfolio .portfolio_list li .image>img.sub-img{display: none;}
 	.portfolio .personal-list > li:nth-child(5) .portfolio_cont {padding-top: 8%;}
   .portfolio .portfolio_list .point span { padding-left: 0.5625rem;}
 }
@@ -464,6 +464,7 @@ main {position: relative; overflow: hidden;}
   .portfolio-count{font-size: 1rem;}
   .portfolio-header p{font-size: 0.9375rem;}
   .portfolio .portfolio_list > li{padding: 1.875rem 0;}
+  .portfolio .portfolio_list > li + li{padding: 1.875rem 0;}
   .portfolio .portfolio_list li .image {max-width: var(--portfolio-media-width);}
   .portfolio .portfolio_list > li .img_area{max-width: var(--portfolio-media-width); margin-top: 0;}
   .portfolio .portfolio_list li .comm-inner > div:nth-child(1){max-width: var(--portfolio-media-width);min-height: var(--portfolio-mobile-image-height);}
