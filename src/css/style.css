@@ -321,6 +321,9 @@ main {position: relative; overflow: hidden;}
 .portfolio .professional-list > li:first-child .project-detail-card__desc {color: #d3dae8;}
 .portfolio .professional-list > li:first-child .project-stack li {color: #ffffff; border-color: rgba(255, 255, 255, 0.35);}
 .portfolio .professional-list > li:first-child .accordion-button {color: #ffffff;}
+.portfolio .professional-list > li:first-child .accordion-button:hover,
+.portfolio .professional-list > li:first-child .accordion-button:focus-visible {background-color: rgba(255, 255, 255, 0.05); color: #ffffff;}
+.portfolio .professional-list > li:first-child .accordion-button .icon {background-color: rgba(255, 255, 255, 0.12); color: #ffffff;}
 .portfolio .professional-list > li:first-child .accordion-content p {color: #d3dae8;}
 .portfolio .professional-list > li:first-child .project-cta .btn_goto {background-color: #ffffff; color: #0b1a2e;}
 .portfolio .portfolio_list > li:last-child{margin-bottom: 0;}
@@ -330,7 +333,6 @@ main {position: relative; overflow: hidden;}
 .portfolio .portfolio_list li .image img.main-img {height: min-content;}
 .portfolio .portfolio_list li .image img.sub-img {height: min-content;}
 .portfolio .portfolio_list li .file_link{max-width: var(--portfolio-media-width); margin: 0 auto;}
-.portfolio .personal-list li:nth-child(5) .portfolio_cont {padding-top: 0;}
 .portfolio .portfolio_list .project-card-panel {
   display: flex;
   flex-direction: column;
@@ -445,7 +447,6 @@ main {position: relative; overflow: hidden;}
 	.portfolio .personal-list > li:nth-child(even) .img_area {margin-right: 0;}
   .portfolio .portfolio_list li .image{max-width: 37.5rem; min-height: 19.75rem; position: inherit;}
   .portfolio .portfolio_list li .image>img.sub-img{display: none;}
-	.portfolio .personal-list > li:nth-child(5) .portfolio_cont {padding-top: 8%;}
   .portfolio .portfolio_list .point span { padding-left: 0.5625rem;}
 }
 
