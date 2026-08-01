@@ -256,7 +256,6 @@ main {position: relative; overflow: hidden;}
   .skills .skill_list > li:last-child:after{position: inherit;}
 	.skills .skill_list > li > ul > li > span {font-size: 0.9375rem;}
 	.portfolio h2 {padding: 3.75rem 0;}
-	.btn_top {display: none;}
 }
 
 /* 6. Portfolio Layout ------------------------------------- */

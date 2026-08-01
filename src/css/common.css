@@ -64,6 +64,7 @@ h3 {max-width: var(--container-width); margin: 0 auto;   display: block;  margin
 .portfolio .personal-list > li:nth-child(2) .project-badges li:first-child{background-color: var(--color-badge-green-bg); color: var(--color-badge-green-text);}
 .portfolio .personal-list > li:nth-child(3) .project-badges li:first-child{background-color: var(--color-badge-teal-bg); color: var(--color-badge-teal-text);}
 .portfolio .personal-list > li:nth-child(4) .project-badges li:first-child{background-color: var(--color-badge-pink-bg); color: var(--color-badge-pink-text);}
+.portfolio .personal-list > li:nth-child(5) .project-badges li:first-child{background-color: var(--color-badge-orange-bg); color: var(--color-badge-orange-text);}
 .portfolio .portfolio_list li:first-child .project-overview{display: none;}
 .portfolio .portfolio_list p{color: var(--color-text-body);}
 .portfolio .portfolio_list p strong{color: var(--color-text-strong);}
