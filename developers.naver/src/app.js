@@ -63,6 +63,28 @@ pageBtns.forEach((btn, idx) => {
 // 초기 페이지네이션 버튼 상태 업데이트
 updatePagination();
 
+// 태블릿·모바일 헤더 메뉴
+const menuToggle = document.querySelector('.menu-toggle');
+const primaryMenu = document.querySelector('.menu');
+
+if (menuToggle && primaryMenu) {
+  menuToggle.addEventListener('click', () => {
+    const isOpen = primaryMenu.classList.toggle('is-open');
+    menuToggle.classList.toggle('is-open', isOpen);
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
+    menuToggle.setAttribute('aria-label', isOpen ? '메뉴 닫기' : '메뉴 열기');
+  });
+
+  primaryMenu.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      primaryMenu.classList.remove('is-open');
+      menuToggle.classList.remove('is-open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.setAttribute('aria-label', '메뉴 열기');
+    });
+  });
+}
+
 //changeBackgroundImage
 function applyGreenFilter() {
   const listItems = document.querySelectorAll('.cont2 li');
