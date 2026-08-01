@@ -471,6 +471,9 @@ main {position: relative; overflow: hidden;}
     padding: var(--space-14) var(--space-20);
     font-size: 0.9375rem;
   }
+  .accordion-button:hover {background-color: var(--color-white);}
+  .portfolio .professional-list > li:first-child .accordion-button:hover {background-color: transparent;}
+  .btn_top:hover::before {background-color: #4c7dce;}
 }
 
 /* 7. Top Button ------------------------------------------- */
