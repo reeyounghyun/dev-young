@@ -70,7 +70,7 @@ main {position: relative; overflow: hidden;}
 .hero {
   position: relative;
   overflow: hidden;
-  padding: 9.5rem 0 5rem;
+  padding: 12rem 0 7.5rem;
   background: radial-gradient(120% 90% at 78% 20%, #2b3242 0%, #1a1e28 45%, #12151d 100%);
   color: var(--color-white);
 }
@@ -188,7 +188,7 @@ main {position: relative; overflow: hidden;}
 
 @media screen and (max-width:61.875rem) {
   .hero {
-    padding: 7.5rem 0 4rem;
+    padding: 10rem 0 6rem;
   }
   .hero__title {
     font-size: 2.125rem;
@@ -197,7 +197,7 @@ main {position: relative; overflow: hidden;}
 
 @media screen and (max-width:48rem) {
   .hero {
-    padding: 6rem 0 3rem;
+    padding: 8rem 0 4.5rem;
   }
   .hero::before {
     right: -6rem;
@@ -210,6 +210,9 @@ main {position: relative; overflow: hidden;}
     top: 1rem;
     width: 10rem;
     height: 10rem;
+  }
+  .hero__badge {
+    font-size: 0.6875rem;
   }
   .hero__title {
     font-size: 1.625rem;
