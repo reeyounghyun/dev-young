@@ -62,14 +62,161 @@ main {position: relative; overflow: hidden;}
   }
 }
 
-/* 3. Intro ------------------------------------------------- */
-.intro_bg {width: 100%; height: auto;}
-.intro_bg img{width: 100%;  height: auto; display: block; object-fit: cover; object-position: center;}
-.intro_bg .intro{display: block;}
-.intro_bg .mobile_intro{display: none;}
+/* 3. Intro (Hero) ------------------------------------------- */
+@keyframes heroGridPan {
+  from { background-position: 0 0, 0 0; }
+  to { background-position: 60px 60px, 60px 60px; }
+}
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 9.5rem 0 5rem;
+  background: radial-gradient(120% 90% at 78% 20%, #2b3242 0%, #1a1e28 45%, #12151d 100%);
+  color: var(--color-white);
+}
+.hero__grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 60px 60px;
+  animation: heroGridPan 18s linear infinite;
+  pointer-events: none;
+}
+.hero::before,
+.hero::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+.hero::before {
+  right: -7.5rem;
+  top: -5rem;
+  width: 40rem;
+  height: 40rem;
+  background: radial-gradient(circle at 35% 35%, rgba(122, 104, 216, 0.28), rgba(122, 104, 216, 0) 60%);
+  filter: blur(6px);
+}
+.hero::after {
+  right: 3.75rem;
+  top: 7.5rem;
+  width: 26.25rem;
+  height: 26.25rem;
+  border: 0.0625rem solid rgba(255, 255, 255, 0.08);
+}
+.hero__inner {
+  position: relative;
+  max-width: var(--container-width);
+  width: var(--container-gutter);
+  margin: 0 auto;
+}
+.hero__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-8);
+  margin-bottom: var(--space-16);
+  padding: var(--space-8) var(--space-16);
+  border: 0.0625rem solid rgba(255, 255, 255, 0.16);
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+.hero__badge-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: var(--color-accent-green);
+}
+.hero__title {
+  max-width: 44rem;
+  margin: 0 0 var(--space-16);
+  font-size: 2.75rem;
+  font-weight: 800;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+  word-break: keep-all;
+}
+.hero__title strong {
+  color: var(--color-accent-purple-2);
+}
+.hero__desc {
+  max-width: 34rem;
+  margin: 0 0 var(--space-32);
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 1rem;
+  line-height: 1.7;
+  word-break: keep-all;
+}
+.hero__desc strong {
+  color: var(--color-white);
+}
+.hero__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-8);
+  margin-bottom: var(--space-40);
+}
+.hero__tags li {
+  padding: var(--space-8) var(--space-14);
+  border: 0.0625rem solid rgba(255, 255, 255, 0.14);
+  border-radius: var(--radius-8);
+  background: rgba(255, 255, 255, 0.04);
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.8125rem;
+  font-weight: 500;
+}
+.hero__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-8);
+  padding: var(--space-14) var(--space-24);
+  border-radius: var(--radius-8);
+  background-color: var(--color-accent-purple-2);
+  color: var(--color-white);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  transition: background-color 0.2s ease;
+}
+.hero__cta:hover {
+  background-color: #6857c4;
+}
+
 @media screen and (max-width:61.875rem) {
-  .intro_bg .mobile_intro{display: block;}
-  .intro_bg .intro{display: none;}
+  .hero {
+    padding: 7.5rem 0 4rem;
+  }
+  .hero__title {
+    font-size: 2.125rem;
+  }
+}
+
+@media screen and (max-width:48rem) {
+  .hero {
+    padding: 6rem 0 3rem;
+  }
+  .hero::before {
+    right: -6rem;
+    top: -4rem;
+    width: 16rem;
+    height: 16rem;
+  }
+  .hero::after {
+    right: -1rem;
+    top: 1rem;
+    width: 10rem;
+    height: 10rem;
+  }
+  .hero__title {
+    font-size: 1.625rem;
+  }
+  .hero__desc {
+    font-size: 0.9375rem;
+  }
 }
 
 /* 4. Publisher Skills ------------------------------------- */
