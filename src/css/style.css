@@ -533,12 +533,6 @@ li:nth-child(odd) .comm-inner .accordion-button{background-color: var(--color-wh
 .btn_area{margin: 0;}
 @media screen and (max-width:75rem) {
   .btn_area .btn_goto{background-color: var(--color-black); color: var(--color-white);}
-  .img_area .add-icon>span{color: var(--color-black);}
-  .img_area .add-icon>span::after{background-color: var(--color-black); width: var(--overlay-line-width-tablet);}
-  .img_area .add-icon{width:100%; right: 0; bottom: 2rem;}
-}
-
-@media screen and (max-width:48rem) {
   .img_area .add-icon {display: none;}
 }
 
